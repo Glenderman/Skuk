@@ -9,12 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var skukLbl: UILabel!
 
+    @objc func nextVC() {
+        self.performSegue(withIdentifier: "toLogin", sender: self)
+    }
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.splashAnimation()
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(nextVC), userInfo: nil, repeats: false)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func splashAnimation() {
+        let appName = "Skük"
+        
+        for char in appName {
+            skukLbl.text! += "\(char)"
+            RunLoop.current.run(until: Date()+0.4)
+        }
+    }
 }
 
