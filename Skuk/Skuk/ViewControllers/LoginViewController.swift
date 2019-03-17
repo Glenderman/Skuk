@@ -13,11 +13,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameField.delegate = self
         passwordField.delegate = self
+        
+        let borderColour = UIColor.gray
+        usernameField.layer.borderColor = borderColour.cgColor
+        passwordField.layer.borderColor = borderColour.cgColor //sets border colours on textfields
+        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -31,10 +35,5 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true) //if the user touches outside the textfields/keyboard then the keyboard closes
-        
-        
     }
-    
-
-
 }
