@@ -15,6 +15,8 @@
 		73993707223E7B6600A95E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73993705223E7B6600A95E81 /* LaunchScreen.storyboard */; };
 		73993712223E7B6600A95E81 /* SkukTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73993711223E7B6600A95E81 /* SkukTests.swift */; };
 		7399371D223E7B6600A95E81 /* SkukUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7399371C223E7B6600A95E81 /* SkukUITests.swift */; };
+		73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AC502E223EA0D300566A73 /* LoginViewController.swift */; };
+		73AC5033223EA7F500566A73 /* ButtonAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AC5032223EA7F500566A73 /* ButtonAnimate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		73993718223E7B6600A95E81 /* SkukUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkukUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7399371C223E7B6600A95E81 /* SkukUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkukUITests.swift; sourceTree = "<group>"; };
 		7399371E223E7B6600A95E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AC502E223EA0D300566A73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		73AC5032223EA7F500566A73 /* ButtonAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +103,9 @@
 		739936F8223E7B6600A95E81 /* Skuk */ = {
 			isa = PBXGroup;
 			children = (
-				739936F9223E7B6600A95E81 /* AppDelegate.swift */,
-				739936FB223E7B6600A95E81 /* ViewController.swift */,
-				739936FD223E7B6600A95E81 /* Main.storyboard */,
+				73AC5031223EA3EC00566A73 /* ViewControllers */,
+				73AC5030223EA3D600566A73 /* Storyboards */,
 				73993703223E7B6600A95E81 /* Assets.xcassets */,
-				73993705223E7B6600A95E81 /* LaunchScreen.storyboard */,
 				73993708223E7B6600A95E81 /* Info.plist */,
 				73993700223E7B6600A95E81 /* Skuk.xcdatamodeld */,
 			);
@@ -126,6 +128,26 @@
 				7399371E223E7B6600A95E81 /* Info.plist */,
 			);
 			path = SkukUITests;
+			sourceTree = "<group>";
+		};
+		73AC5030223EA3D600566A73 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				739936FD223E7B6600A95E81 /* Main.storyboard */,
+				73993705223E7B6600A95E81 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		73AC5031223EA3EC00566A73 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				739936F9223E7B6600A95E81 /* AppDelegate.swift */,
+				739936FB223E7B6600A95E81 /* ViewController.swift */,
+				73AC502E223EA0D300566A73 /* LoginViewController.swift */,
+				73AC5032223EA7F500566A73 /* ButtonAnimate.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */,
 				739936FC223E7B6600A95E81 /* ViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
 				73993702223E7B6600A95E81 /* Skuk.xcdatamodeld in Sources */,
+				73AC5033223EA7F500566A73 /* ButtonAnimate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
