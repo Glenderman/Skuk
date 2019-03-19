@@ -119,6 +119,10 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginBtn:" destination="0X9-8X-brI" eventType="touchUpInside" id="fOc-nU-btk"/>
+                                    <segue destination="xhJ-4D-iXp" kind="show" identifier="loginToMealPlan" id="5SG-Mq-KEw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-CH-SLn">
                                 <rect key="frame" x="116" y="178" width="182" height="68"/>
@@ -158,5 +162,59 @@
             </objects>
             <point key="canvasLocation" x="1188.4057971014495" y="42.1875"/>
         </scene>
+        <!--Skük-->
+        <scene sceneID="AUl-LZ-aFe">
+            <objects>
+                <viewController id="xhJ-4D-iXp" customClass="MealPlanViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XA5-Z9-nNn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42i-g2-ve4">
+                                <rect key="frame" x="0.0" y="44" width="214" height="852"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZv-vv-81d">
+                                        <rect key="frame" x="56" y="8" width="103" height="91"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qZv-vv-81d" secondAttribute="trailing" constant="55" id="0ki-BP-kxd"/>
+                                    <constraint firstAttribute="bottom" secondItem="qZv-vv-81d" secondAttribute="bottom" constant="753" id="9qa-RV-N6G"/>
+                                    <constraint firstItem="qZv-vv-81d" firstAttribute="leading" secondItem="42i-g2-ve4" secondAttribute="leading" constant="56" id="PvJ-v6-LpL"/>
+                                    <constraint firstItem="qZv-vv-81d" firstAttribute="top" secondItem="42i-g2-ve4" secondAttribute="top" constant="8" id="iUO-84-RQf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="42i-g2-ve4" firstAttribute="top" secondItem="fFq-Vd-hAW" secondAttribute="top" id="aCt-Md-oSM"/>
+                            <constraint firstAttribute="bottom" secondItem="42i-g2-ve4" secondAttribute="bottom" id="hJ4-RH-0TM"/>
+                            <constraint firstItem="42i-g2-ve4" firstAttribute="leading" secondItem="fFq-Vd-hAW" secondAttribute="leading" id="tQh-Gk-hZX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fFq-Vd-hAW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Skük" id="afq-Xx-eEx">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Image" id="kMW-Rp-4bg">
+                            <connections>
+                                <action selector="slideOutMenu:" destination="xhJ-4D-iXp" id="Ufp-NF-eTv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="leadingConstraint" destination="tQh-Gk-hZX" id="OQe-2T-K1g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEX-Ba-i9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="151"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="37.5" height="37.5"/>
+    </resources>
 </document>

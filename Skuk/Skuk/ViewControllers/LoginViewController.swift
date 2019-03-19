@@ -13,6 +13,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
+    @IBAction func loginBtn(_ sender: Any) {
+        //let destinationNavigationController = segue.destination as! MealPlanViewController
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameField.delegate = self
