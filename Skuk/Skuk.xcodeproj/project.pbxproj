@@ -17,7 +17,6 @@
 		73993712223E7B6600A95E81 /* SkukTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73993711223E7B6600A95E81 /* SkukTests.swift */; };
 		7399371D223E7B6600A95E81 /* SkukUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7399371C223E7B6600A95E81 /* SkukUITests.swift */; };
 		73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AC502E223EA0D300566A73 /* LoginViewController.swift */; };
-		73AC5033223EA7F500566A73 /* ButtonAnimate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AC5032223EA7F500566A73 /* ButtonAnimate.swift */; };
 		73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		7399371C223E7B6600A95E81 /* SkukUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkukUITests.swift; sourceTree = "<group>"; };
 		7399371E223E7B6600A95E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73AC502E223EA0D300566A73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		73AC5032223EA7F500566A73 /* ButtonAnimate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimate.swift; sourceTree = "<group>"; };
 		73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +147,6 @@
 				739936F9223E7B6600A95E81 /* AppDelegate.swift */,
 				739936FB223E7B6600A95E81 /* ViewController.swift */,
 				73AC502E223EA0D300566A73 /* LoginViewController.swift */,
-				73AC5032223EA7F500566A73 /* ButtonAnimate.swift */,
 				73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */,
 				73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */,
 			);
@@ -293,7 +290,6 @@
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
 				73993702223E7B6600A95E81 /* Skuk.xcdatamodeld in Sources */,
 				73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */,
-				73AC5033223EA7F500566A73 /* ButtonAnimate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
