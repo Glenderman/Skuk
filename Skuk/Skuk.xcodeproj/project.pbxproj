@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */; };
 		739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936F9223E7B6600A95E81 /* AppDelegate.swift */; };
 		739936FC223E7B6600A95E81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936FB223E7B6600A95E81 /* ViewController.swift */; };
 		739936FF223E7B6600A95E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739936FD223E7B6600A95E81 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		739936F6223E7B6600A95E81 /* Skuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		739936F9223E7B6600A95E81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		739936FB223E7B6600A95E81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				73AC502E223EA0D300566A73 /* LoginViewController.swift */,
 				73AC5032223EA7F500566A73 /* ButtonAnimate.swift */,
 				73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */,
+				73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */,
 				73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */,
 				739936FC223E7B6600A95E81 /* ViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,

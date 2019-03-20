@@ -111,7 +111,7 @@
                                 <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-aO-Fql" customClass="ButtonAnimate" customModule="Skuk" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-aO-Fql">
                                 <rect key="frame" x="182.66666666666666" y="406" width="49" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="5Yt-nI-cji"/>

@@ -13,8 +13,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    @IBAction func loginBtn(_ sender: Any) {
-        //let destinationNavigationController = segue.destination as! MealPlanViewController
+    @IBAction func loginBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "loginToMealPlan", sender: self)
     }
     
     override func viewDidLoad() {
