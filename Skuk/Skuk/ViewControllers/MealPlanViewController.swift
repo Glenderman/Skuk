@@ -26,6 +26,23 @@ class MealPlanViewController: UIViewController {
         menuOpen = true
     }
     
+    @IBAction func shoppingListBtn(_ sender: Any) {
+        performSegue(withIdentifier: "MealPlanToShoppingList", sender: self)
+    }
+    
+    @IBAction func pantryBtn(_ sender: Any) {
+        performSegue(withIdentifier: "MealPlanToPantry", sender: self)
+    }
+    
+    @IBAction func recipeBtn(_ sender: Any) {
+        performSegue(withIdentifier: "MealPlanToRecipeBank", sender: self)
+    }
+    
+    @IBAction func settingsBtn(_ sender: Any) {
+        performSegue(withIdentifier: "MealPlanToSettings", sender: self)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

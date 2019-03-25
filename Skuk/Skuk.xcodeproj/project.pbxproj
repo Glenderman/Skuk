@@ -18,6 +18,10 @@
 		7399371D223E7B6600A95E81 /* SkukUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7399371C223E7B6600A95E81 /* SkukUITests.swift */; };
 		73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AC502E223EA0D300566A73 /* LoginViewController.swift */; };
 		73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */; };
+		73F3845C2248F973003BD5C3 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845B2248F973003BD5C3 /* ShoppingListViewController.swift */; };
+		73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845D2248F987003BD5C3 /* PantryViewController.swift */; };
+		73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */; };
+		73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F384612248F9AF003BD5C3 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,10 @@
 		7399371E223E7B6600A95E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73AC502E223EA0D300566A73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanViewController.swift; sourceTree = "<group>"; };
+		73F3845B2248F973003BD5C3 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
+		73F3845D2248F987003BD5C3 /* PantryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewController.swift; sourceTree = "<group>"; };
+		73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBankViewController.swift; sourceTree = "<group>"; };
+		73F384612248F9AF003BD5C3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +157,10 @@
 				73AC502E223EA0D300566A73 /* LoginViewController.swift */,
 				73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */,
 				73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */,
+				73F3845B2248F973003BD5C3 /* ShoppingListViewController.swift */,
+				73F3845D2248F987003BD5C3 /* PantryViewController.swift */,
+				73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */,
+				73F384612248F9AF003BD5C3 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -286,7 +298,11 @@
 			files = (
 				73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */,
 				73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */,
+				73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */,
+				73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */,
 				739936FC223E7B6600A95E81 /* ViewController.swift in Sources */,
+				73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */,
+				73F3845C2248F973003BD5C3 /* ShoppingListViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
 				73993702223E7B6600A95E81 /* Skuk.xcdatamodeld in Sources */,
 				73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */,
