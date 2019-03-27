@@ -18,5 +18,4 @@ extension UIButton {
             self.transform = CGAffineTransform.identity
         }, completion: nil)
     }
-    
 }

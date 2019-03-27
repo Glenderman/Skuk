@@ -9,7 +9,7 @@
 import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
@@ -26,7 +26,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let borderColour = UIColor.gray
         usernameField.layer.borderColor = borderColour.cgColor
         passwordField.layer.borderColor = borderColour.cgColor //sets border colours on textfields
-        
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

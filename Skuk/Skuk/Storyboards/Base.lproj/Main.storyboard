@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Launch Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LaunchScreenViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LAF-aP-V1j">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" red="1" green="0.76470588235294112" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-c7-VlZ">
-                                <rect key="frame" x="97.666666666666686" y="240" width="219" height="294"/>
+                                <rect key="frame" x="78" y="240" width="219" height="210"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="90"/>
                                 <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-di-Ndm">
-                                <rect key="frame" x="116" y="494" width="182" height="68"/>
+                                <rect key="frame" x="96.666666666666686" y="494" width="182" height="68"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -64,15 +64,15 @@
             <objects>
                 <viewController id="0X9-8X-brI" customClass="LoginViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9S-vY-oQR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-mh-bXW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <color key="backgroundColor" red="1" green="0.76470588240000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-1E-KLK">
-                                <rect key="frame" x="50" y="342" width="313" height="30"/>
+                                <rect key="frame" x="50" y="342" width="274" height="30"/>
                                 <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ydA-ur-UZT"/>
@@ -89,7 +89,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Username" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-aQ-uke">
-                                <rect key="frame" x="50" y="271" width="313" height="30"/>
+                                <rect key="frame" x="50" y="271" width="274" height="30"/>
                                 <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="top-5c-AOb"/>
@@ -106,17 +106,13 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nND-de-ZtO">
-                                <rect key="frame" x="97" y="24" width="220" height="228"/>
+                                <rect key="frame" x="77.666666666666686" y="24" width="220" height="228"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="90"/>
                                 <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-aO-Fql">
-                                <rect key="frame" x="182.66666666666666" y="406" width="49" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="5Yt-nI-cji"/>
-                                    <constraint firstAttribute="width" constant="49" id="6QJ-CX-Dyb"/>
-                                </constraints>
+                                <rect key="frame" x="182.66666666666666" y="406" width="10" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
@@ -125,7 +121,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-CH-SLn">
-                                <rect key="frame" x="116" y="178" width="182" height="68"/>
+                                <rect key="frame" x="96.666666666666686" y="178" width="182" height="68"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -135,17 +131,18 @@
                         <constraints>
                             <constraint firstItem="q4g-aQ-uke" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="227" id="480-JU-juq"/>
                             <constraint firstItem="nND-de-ZtO" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="-20" id="48n-9s-BTB"/>
-                            <constraint firstItem="rxP-aO-Fql" firstAttribute="top" secondItem="hWa-1E-KLK" secondAttribute="bottom" constant="34" id="6eo-SW-1Vq"/>
+                            <constraint firstItem="rxP-aO-Fql" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="182.66999999999999" id="5VC-Ak-tiX"/>
                             <constraint firstItem="SxB-CH-SLn" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="134" id="7Ud-s2-IFK"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="q4g-aQ-uke" secondAttribute="trailing" constant="51" id="IsD-en-ijk"/>
                             <constraint firstItem="Jqb-mh-bXW" firstAttribute="bottom" secondItem="w9S-vY-oQR" secondAttribute="bottom" id="Iv3-ec-qFc"/>
-                            <constraint firstItem="rxP-aO-Fql" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="Ku2-LX-DkC"/>
                             <constraint firstItem="Jqb-mh-bXW" firstAttribute="trailing" secondItem="D1s-xx-7yr" secondAttribute="trailing" id="LHs-B0-5bD"/>
                             <constraint firstItem="hWa-1E-KLK" firstAttribute="top" secondItem="q4g-aQ-uke" secondAttribute="bottom" constant="41" id="LfG-qX-cmE"/>
                             <constraint firstItem="hWa-1E-KLK" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="50" id="Pk2-FQ-2mo"/>
                             <constraint firstItem="nND-de-ZtO" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="T8x-cS-5FC"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="hWa-1E-KLK" secondAttribute="trailing" constant="51" id="XCO-te-1fu"/>
+                            <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="rxP-aO-Fql" secondAttribute="trailing" constant="182.33000000000001" id="bcP-Ji-EUl"/>
                             <constraint firstItem="q4g-aQ-uke" firstAttribute="top" secondItem="nND-de-ZtO" secondAttribute="bottom" constant="19" id="jJd-dF-MZ4"/>
+                            <constraint firstItem="rxP-aO-Fql" firstAttribute="top" secondItem="hWa-1E-KLK" secondAttribute="bottom" constant="34" id="oDs-AH-84d"/>
                             <constraint firstItem="Jqb-mh-bXW" firstAttribute="top" secondItem="w9S-vY-oQR" secondAttribute="top" id="qOD-bb-S0W"/>
                             <constraint firstItem="Jqb-mh-bXW" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" id="vZW-pw-4E4"/>
                             <constraint firstItem="q4g-aQ-uke" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="50" id="yFH-WR-23p"/>
@@ -162,89 +159,94 @@
             </objects>
             <point key="canvasLocation" x="51" y="-388"/>
         </scene>
-        <!--Pantry View Controller-->
+        <!--Pantry-->
         <scene sceneID="xh5-aT-Qr9">
             <objects>
                 <viewController id="2Yq-zq-2GU" customClass="PantryViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P3o-SO-bSB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sbn-ni-7MA">
-                                <rect key="frame" x="0.0" y="88" width="214" height="808"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-7q-HDh">
+                                <rect key="frame" x="10" y="98" width="120" height="212"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TxE-n8-tNI">
-                                        <rect key="frame" x="18" y="8" width="178" height="272"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6e-hR-5ui">
-                                                <rect key="frame" x="0.0" y="0.0" width="126" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Meal Plan">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="mealPlanBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="Bam-aI-gAp"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWn-KH-vfD">
-                                                <rect key="frame" x="0.0" y="56" width="178" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Shopping List">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="shoppingListBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="kaV-ri-O5s"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMW-8O-dx3">
-                                                <rect key="frame" x="0.0" y="112" width="82" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Pantry">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WfF-0l-rUB">
-                                                <rect key="frame" x="0.0" y="168" width="161" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Recipe Bank">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="recipeBankBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="LLR-sE-tBm"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwO-U2-rCi">
-                                                <rect key="frame" x="0.0" y="224" width="107" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Settings">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="settingsBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="hpB-Pt-LXx"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIR-6H-HZX">
+                                        <rect key="frame" x="35" y="0.0" width="85" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Meal Plan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mealPlanBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="hHf-v2-9xf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9dH-vN-tGq">
+                                        <rect key="frame" x="0.0" y="44" width="120" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Shopping List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shoppingListBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="UCx-ar-IMp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tr-7x-aLK">
+                                        <rect key="frame" x="64" y="88" width="56" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Pantry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEv-6X-RqI">
+                                        <rect key="frame" x="11" y="132" width="109" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Recipe Bank">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recipeBankBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="Qdi-m7-WKH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gy-iX-rnh">
+                                        <rect key="frame" x="48" y="176" width="72" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="Z06-qi-y4H"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="TxE-n8-tNI" secondAttribute="trailing" constant="18" id="CKw-T6-r7k"/>
-                                    <constraint firstItem="TxE-n8-tNI" firstAttribute="leading" secondItem="Sbn-ni-7MA" secondAttribute="leading" constant="18" id="bdS-oL-R9s"/>
-                                    <constraint firstAttribute="width" constant="214" id="oWu-va-Bby"/>
-                                    <constraint firstItem="TxE-n8-tNI" firstAttribute="top" secondItem="Sbn-ni-7MA" secondAttribute="top" constant="8" id="tdo-Hb-u3C"/>
-                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnj-We-WEv">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Sbn-ni-7MA" secondAttribute="bottom" id="5zO-9b-O8e"/>
-                            <constraint firstItem="Sbn-ni-7MA" firstAttribute="leading" secondItem="A7t-jf-PDX" secondAttribute="leading" id="cjl-rb-ST5"/>
-                            <constraint firstItem="Sbn-ni-7MA" firstAttribute="top" secondItem="A7t-jf-PDX" secondAttribute="top" id="vht-QB-1xx"/>
+                            <constraint firstItem="Gnj-We-WEv" firstAttribute="leading" secondItem="A7t-jf-PDX" secondAttribute="leading" id="1rR-RN-rUU"/>
+                            <constraint firstItem="Gnj-We-WEv" firstAttribute="top" secondItem="A7t-jf-PDX" secondAttribute="top" id="9sA-R9-oOI"/>
+                            <constraint firstItem="bzs-7q-HDh" firstAttribute="leading" secondItem="A7t-jf-PDX" secondAttribute="leading" constant="10" id="Cgu-gG-O1A"/>
+                            <constraint firstAttribute="bottom" secondItem="Gnj-We-WEv" secondAttribute="bottom" id="Uhc-re-Ztz"/>
+                            <constraint firstItem="Gnj-We-WEv" firstAttribute="trailing" secondItem="A7t-jf-PDX" secondAttribute="trailing" id="keA-Db-r56"/>
+                            <constraint firstItem="bzs-7q-HDh" firstAttribute="top" secondItem="A7t-jf-PDX" secondAttribute="top" constant="10" id="oLG-YI-s8U"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="A7t-jf-PDX"/>
                     </view>
-                    <navigationItem key="navigationItem" id="APz-la-3rr"/>
+                    <navigationItem key="navigationItem" title="Pantry" id="APz-la-3rr">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="j2h-7p-7Xb">
+                            <connections>
+                                <action selector="navBtn:" destination="2Yq-zq-2GU" id="KaF-ay-IMi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="leadingConstraint" destination="1rR-RN-rUU" id="TOa-Fc-huu"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="PantryToMealPlan" id="zr7-z4-4SC"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="PantryToRecipeBank" id="mnn-Zc-r2n"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="PantryToSettings" id="dji-5m-AxN"/>
@@ -253,91 +255,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lp-br-qNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-420" y="456"/>
+            <point key="canvasLocation" x="-420" y="455.9113300492611"/>
         </scene>
-        <!--Recipe Bank View Controller-->
+        <!--Recipe Bank-->
         <scene sceneID="MaT-zG-you">
             <objects>
                 <viewController id="TW7-kx-80R" customClass="RecipeBankViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Agu-QT-Dun">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="996-oF-yuN">
-                                <rect key="frame" x="0.0" y="88" width="214" height="808"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-Ds-edI">
+                                <rect key="frame" x="10" y="98" width="120" height="212"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ppm-zU-Qvo">
-                                        <rect key="frame" x="18" y="8" width="178" height="272"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnk-Bo-hX5">
-                                                <rect key="frame" x="0.0" y="0.0" width="126" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Meal Plan">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="mealPlanBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="eWD-A5-2MB"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qS-Pd-JPI">
-                                                <rect key="frame" x="0.0" y="56" width="178" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Shopping List">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="shoppingListBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="NqN-xT-42P"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnv-Nr-Th8">
-                                                <rect key="frame" x="0.0" y="112" width="82" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Pantry">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="pantryBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="Gmh-pI-mk5"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lkj-BH-QmL">
-                                                <rect key="frame" x="0.0" y="168" width="161" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Recipe Bank">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6f-TN-Ufd">
-                                                <rect key="frame" x="0.0" y="224" width="107" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Settings">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="settingsBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="vw5-SA-cSt"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz6-q1-ZoH">
+                                        <rect key="frame" x="35" y="0.0" width="85" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Meal Plan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mealPlanBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="0oB-bG-Bb4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5K-1i-zVr">
+                                        <rect key="frame" x="0.0" y="44" width="120" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Shopping List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shoppingListBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="mQ3-n4-l73"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzf-77-lPg">
+                                        <rect key="frame" x="64" y="88" width="56" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Pantry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pantryBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="NCu-4Q-LZi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCu-nZ-MiU">
+                                        <rect key="frame" x="11" y="132" width="109" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Recipe Bank">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4e-gt-Sb0">
+                                        <rect key="frame" x="48" y="176" width="72" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="yQe-hc-wJZ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="214" id="1GD-Rw-yaR"/>
-                                    <constraint firstItem="ppm-zU-Qvo" firstAttribute="leading" secondItem="996-oF-yuN" secondAttribute="leading" constant="18" id="3f6-eY-XWe"/>
-                                    <constraint firstItem="ppm-zU-Qvo" firstAttribute="top" secondItem="996-oF-yuN" secondAttribute="top" constant="8" id="7oB-HI-Ab3"/>
-                                    <constraint firstAttribute="trailing" secondItem="ppm-zU-Qvo" secondAttribute="trailing" constant="18" id="pEB-WA-nCP"/>
-                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAR-zW-GBH">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="996-oF-yuN" firstAttribute="top" secondItem="nre-4f-efJ" secondAttribute="top" id="AK7-QG-Yxy"/>
-                            <constraint firstItem="996-oF-yuN" firstAttribute="leading" secondItem="nre-4f-efJ" secondAttribute="leading" id="Egw-DB-diM"/>
-                            <constraint firstAttribute="bottom" secondItem="996-oF-yuN" secondAttribute="bottom" id="I3l-qC-2o9"/>
+                            <constraint firstItem="KAR-zW-GBH" firstAttribute="trailing" secondItem="nre-4f-efJ" secondAttribute="trailing" id="AeG-V3-wkP"/>
+                            <constraint firstItem="KAR-zW-GBH" firstAttribute="leading" secondItem="nre-4f-efJ" secondAttribute="leading" id="Wgd-y5-QMI"/>
+                            <constraint firstItem="KAR-zW-GBH" firstAttribute="top" secondItem="nre-4f-efJ" secondAttribute="top" id="XaR-DG-K3f"/>
+                            <constraint firstItem="Hot-Ds-edI" firstAttribute="leading" secondItem="nre-4f-efJ" secondAttribute="leading" constant="10" id="oot-NN-MkI"/>
+                            <constraint firstItem="Hot-Ds-edI" firstAttribute="top" secondItem="nre-4f-efJ" secondAttribute="top" constant="10" id="t6H-I5-3oN"/>
+                            <constraint firstAttribute="bottom" secondItem="KAR-zW-GBH" secondAttribute="bottom" id="uWO-Bw-6za"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nre-4f-efJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ORT-fn-NRh"/>
+                    <navigationItem key="navigationItem" title="Recipe Bank" id="ORT-fn-NRh">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="cmA-Ol-aFJ">
+                            <connections>
+                                <action selector="navBtn:" destination="TW7-kx-80R" id="O3w-jW-qdV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="leadingConstraint" destination="Wgd-y5-QMI" id="w26-Nf-13r"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="RecipeBankToSettings" id="jV0-HJ-d0W"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="RecipeBankToShoppingList" id="vUZ-4s-0io"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="RecipeBankToMealPlan" id="C1O-2c-rE4"/>
@@ -346,91 +350,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1N-A3-WCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2361" y="455"/>
+            <point key="canvasLocation" x="2360.8000000000002" y="454.43349753694582"/>
         </scene>
-        <!--Settings View Controller-->
+        <!--Settings-->
         <scene sceneID="ho1-G2-ghc">
             <objects>
                 <viewController id="3ff-Hc-Ugn" customClass="SettingsViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cOt-Tf-UX9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnp-BN-OkK">
-                                <rect key="frame" x="0.0" y="88" width="214" height="808"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UpK-Rz-vzP">
+                                <rect key="frame" x="10" y="98" width="120" height="212"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ux3-pm-HBA">
-                                        <rect key="frame" x="18" y="8" width="178" height="272"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3K-NE-E6u">
-                                                <rect key="frame" x="0.0" y="0.0" width="126" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Meal Plan">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="mealPlanBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="tgY-oe-iWQ"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YSO-sk-7gd">
-                                                <rect key="frame" x="0.0" y="56" width="178" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Shopping List">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="shoppingListBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="g7p-3N-7xn"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOC-UX-K1o">
-                                                <rect key="frame" x="0.0" y="112" width="82" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Pantry">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="pantryBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="R6S-5K-9bx"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE9-Zb-zwJ">
-                                                <rect key="frame" x="0.0" y="168" width="161" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Recipe Bank">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="ePQ-hu-duC"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqw-QD-enI">
-                                                <rect key="frame" x="0.0" y="224" width="107" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Settings">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J3-Ku-ITa">
+                                        <rect key="frame" x="35" y="0.0" width="85" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Meal Plan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mealPlanBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="uNY-19-b8W"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnz-eD-Onl">
+                                        <rect key="frame" x="0.0" y="44" width="120" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Shopping List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shoppingListBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="elb-hk-GmK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-Hm-Ibg">
+                                        <rect key="frame" x="64" y="88" width="56" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Pantry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pantryBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="HI6-lv-se7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmx-lf-yZR">
+                                        <rect key="frame" x="11" y="132" width="109" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Recipe Bank">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="4WF-68-VTA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGG-1L-ntZ">
+                                        <rect key="frame" x="48" y="176" width="72" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="ux3-pm-HBA" firstAttribute="leading" secondItem="wnp-BN-OkK" secondAttribute="leading" constant="18" id="1PO-X4-4xn"/>
-                                    <constraint firstAttribute="width" constant="214" id="1iW-NB-f34"/>
-                                    <constraint firstItem="ux3-pm-HBA" firstAttribute="top" secondItem="wnp-BN-OkK" secondAttribute="top" constant="8" id="7f8-Vd-z6V"/>
-                                    <constraint firstAttribute="trailing" secondItem="ux3-pm-HBA" secondAttribute="trailing" constant="18" id="o4V-2Y-7ev"/>
-                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdZ-5S-k9R">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="wnp-BN-OkK" secondAttribute="bottom" id="VS4-lW-Rp0"/>
-                            <constraint firstItem="wnp-BN-OkK" firstAttribute="leading" secondItem="YVL-iw-Far" secondAttribute="leading" id="Vlr-p4-KFu"/>
-                            <constraint firstItem="wnp-BN-OkK" firstAttribute="top" secondItem="YVL-iw-Far" secondAttribute="top" id="pYU-7j-NXK"/>
+                            <constraint firstItem="UpK-Rz-vzP" firstAttribute="top" secondItem="YVL-iw-Far" secondAttribute="top" constant="10" id="AAR-3n-9jg"/>
+                            <constraint firstItem="YdZ-5S-k9R" firstAttribute="trailing" secondItem="YVL-iw-Far" secondAttribute="trailing" id="AUo-Nu-6Vq"/>
+                            <constraint firstItem="YdZ-5S-k9R" firstAttribute="leading" secondItem="YVL-iw-Far" secondAttribute="leading" id="Svw-55-uzm"/>
+                            <constraint firstItem="UpK-Rz-vzP" firstAttribute="leading" secondItem="YVL-iw-Far" secondAttribute="leading" constant="10" id="VwD-Nr-mGI"/>
+                            <constraint firstAttribute="bottom" secondItem="YdZ-5S-k9R" secondAttribute="bottom" id="XEX-qG-xRb"/>
+                            <constraint firstItem="YdZ-5S-k9R" firstAttribute="top" secondItem="YVL-iw-Far" secondAttribute="top" id="xdB-Sh-pqM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YVL-iw-Far"/>
                     </view>
-                    <navigationItem key="navigationItem" id="rXT-8Z-laQ"/>
+                    <navigationItem key="navigationItem" title="Settings" id="rXT-8Z-laQ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="hlE-Mv-Yx3">
+                            <connections>
+                                <action selector="navBtn:" destination="3ff-Hc-Ugn" id="ctz-fi-a11"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="leadingConstraint" destination="Svw-55-uzm" id="KhU-Hf-Q0t"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="SettingsToShoppingList" id="f7J-sz-Eau"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="SettingsToMealPlan" id="kR3-0N-4W9"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="SettingsToRecipeBank" id="86B-hn-Yym"/>
@@ -439,91 +445,93 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ar-eI-c13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5028.985507246377" y="466.74107142857139"/>
+            <point key="canvasLocation" x="5028" y="466.25615763546801"/>
         </scene>
-        <!--Shopping List View Controller-->
+        <!--Shopping List-->
         <scene sceneID="Fjq-Fw-SjY">
             <objects>
                 <viewController id="hRh-Vh-XDR" customClass="ShoppingListViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="10X-DJ-8Je">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PA7-fT-N8g">
-                                <rect key="frame" x="0.0" y="88" width="214" height="808"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="624-ff-a0K">
+                                <rect key="frame" x="10" y="98" width="111" height="202"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-1c-XgX">
-                                        <rect key="frame" x="18" y="8" width="178" height="272"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3s-ow-WwU">
-                                                <rect key="frame" x="0.0" y="0.0" width="126" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Meal Plan">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="mealPlanBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="CpM-as-xES"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SF7-Z7-gld">
-                                                <rect key="frame" x="0.0" y="56" width="178" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Shopping List">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQz-ax-Rkv">
-                                                <rect key="frame" x="0.0" y="112" width="82" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Pantry">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="pantryBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="KkV-0j-BSz"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hab-WW-Esw">
-                                                <rect key="frame" x="0.0" y="168" width="161" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Recipe Bank">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="recipeBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="UpY-Ar-H7T"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPP-SU-oca">
-                                                <rect key="frame" x="0.0" y="224" width="107" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Settings">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="settingsBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="MVI-hS-5KN"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-JU-a8z">
+                                        <rect key="frame" x="32" y="0.0" width="79" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Meal Plan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mealPlanBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="fkw-FB-lBC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGm-5O-4Cd">
+                                        <rect key="frame" x="0.0" y="42" width="111" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Shopping List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AL-kB-mQp">
+                                        <rect key="frame" x="58" y="84" width="53" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Pantry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pantryBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="Mr7-no-Qat"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-ZN-SG0">
+                                        <rect key="frame" x="11" y="126" width="100" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Recipe Bank">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recipeBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="6kE-BP-DAk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTb-dY-JSs">
+                                        <rect key="frame" x="44" y="168" width="67" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="XqZ-ov-l12"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="aLm-1c-XgX" secondAttribute="trailing" constant="18" id="6A2-JG-Ju3"/>
-                                    <constraint firstItem="aLm-1c-XgX" firstAttribute="top" secondItem="PA7-fT-N8g" secondAttribute="top" constant="8" id="Cq4-p3-gTr"/>
-                                    <constraint firstAttribute="width" constant="214" id="SBT-nK-Afz"/>
-                                    <constraint firstItem="aLm-1c-XgX" firstAttribute="leading" secondItem="PA7-fT-N8g" secondAttribute="leading" constant="18" id="lBG-e6-8Wq"/>
-                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OE-BW-GTd">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="PA7-fT-N8g" firstAttribute="leading" secondItem="Y8g-rw-cg2" secondAttribute="leading" id="4vx-ZF-FFN"/>
-                            <constraint firstAttribute="bottom" secondItem="PA7-fT-N8g" secondAttribute="bottom" id="GBg-zX-t16"/>
-                            <constraint firstItem="PA7-fT-N8g" firstAttribute="top" secondItem="Y8g-rw-cg2" secondAttribute="top" id="eAD-Vv-awj"/>
+                            <constraint firstItem="624-ff-a0K" firstAttribute="leading" secondItem="Y8g-rw-cg2" secondAttribute="leading" constant="10" id="IgU-eZ-C7d"/>
+                            <constraint firstItem="1OE-BW-GTd" firstAttribute="top" secondItem="Y8g-rw-cg2" secondAttribute="top" id="Nhu-jb-wQo"/>
+                            <constraint firstItem="624-ff-a0K" firstAttribute="top" secondItem="Y8g-rw-cg2" secondAttribute="top" constant="10" id="O8D-pp-Nvp"/>
+                            <constraint firstItem="1OE-BW-GTd" firstAttribute="leading" secondItem="Y8g-rw-cg2" secondAttribute="leading" id="QBd-LO-HlN"/>
+                            <constraint firstItem="1OE-BW-GTd" firstAttribute="trailing" secondItem="Y8g-rw-cg2" secondAttribute="trailing" id="Y9r-Ew-MOO"/>
+                            <constraint firstAttribute="bottom" secondItem="1OE-BW-GTd" secondAttribute="bottom" id="vma-qf-I9t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y8g-rw-cg2"/>
                     </view>
-                    <navigationItem key="navigationItem" id="zeh-VB-ykQ"/>
+                    <navigationItem key="navigationItem" title="Shopping List" id="zeh-VB-ykQ">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="Xrv-Rw-iIx">
+                            <connections>
+                                <action selector="navBtn:" destination="hRh-Vh-XDR" id="VOp-R8-E4r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="leadingConstraint" destination="QBd-LO-HlN" id="8em-k1-CGC"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="ShoppingListToSettings" id="V6A-vL-afU"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="ShoppingListToMealPlan" id="jrC-2Z-VOj"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="ShoppingListToRecipeBank" id="3yw-2c-Hg6"/>
@@ -532,97 +540,96 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpN-Ix-lXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4987" y="-388"/>
+            <point key="canvasLocation" x="4986.3999999999996" y="-388.66995073891627"/>
         </scene>
-        <!--Skük-->
+        <!--Meal Plan-->
         <scene sceneID="AUl-LZ-aFe">
             <objects>
                 <viewController id="xhJ-4D-iXp" customClass="MealPlanViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XA5-Z9-nNn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="42i-g2-ve4">
-                                <rect key="frame" x="0.0" y="88" width="214" height="808"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-CP-Pqw">
+                                <rect key="frame" x="10" y="98" width="120" height="212"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="d0X-SK-bem">
-                                        <rect key="frame" x="18" y="8" width="178" height="272"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF0-y9-CXh">
-                                                <rect key="frame" x="0.0" y="0.0" width="126" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Meal Plan">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICp-FD-sWJ">
-                                                <rect key="frame" x="0.0" y="56" width="178" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Shopping List">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="shoppingListBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="nwr-29-eW3"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pH5-ce-I0Z">
-                                                <rect key="frame" x="0.0" y="112" width="82" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Pantry">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="pantryBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="dVK-Kn-oq3"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QR-CN-qGI">
-                                                <rect key="frame" x="0.0" y="168" width="161" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Recipe Bank">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="recipeBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="nDd-Aa-H2w"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BH7-M1-ER7">
-                                                <rect key="frame" x="0.0" y="224" width="107" height="48"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <state key="normal" title="Settings">
-                                                    <color key="titleColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="settingsBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="aKn-cp-oe3"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjV-C2-bJ0">
+                                        <rect key="frame" x="35" y="0.0" width="85" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Meal Plan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeA-2v-XZz">
+                                        <rect key="frame" x="0.0" y="44" width="120" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Shopping List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shoppingListBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="1us-9j-mBI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yf-Jx-uBi">
+                                        <rect key="frame" x="64" y="88" width="56" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Pantry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pantryBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="803-68-dp1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJI-ih-WhU">
+                                        <rect key="frame" x="11" y="132" width="109" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Recipe Bank">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recipeBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="Jti-ad-21w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIt-1q-XdZ">
+                                        <rect key="frame" x="48" y="176" width="72" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="puf-lM-P5H"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="d0X-SK-bem" firstAttribute="leading" secondItem="42i-g2-ve4" secondAttribute="leading" constant="18" id="MSe-jS-Bh3"/>
-                                    <constraint firstItem="d0X-SK-bem" firstAttribute="top" secondItem="42i-g2-ve4" secondAttribute="top" constant="8" id="pXC-ig-npW"/>
-                                    <constraint firstAttribute="trailing" secondItem="d0X-SK-bem" secondAttribute="trailing" constant="18" id="sD4-8T-11K"/>
-                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBN-Yx-Pw7">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="42i-g2-ve4" firstAttribute="top" secondItem="fFq-Vd-hAW" secondAttribute="top" id="aCt-Md-oSM"/>
-                            <constraint firstAttribute="bottom" secondItem="42i-g2-ve4" secondAttribute="bottom" id="hJ4-RH-0TM"/>
-                            <constraint firstItem="42i-g2-ve4" firstAttribute="leading" secondItem="fFq-Vd-hAW" secondAttribute="leading" id="tQh-Gk-hZX"/>
+                            <constraint firstItem="kaN-CP-Pqw" firstAttribute="top" secondItem="fFq-Vd-hAW" secondAttribute="top" constant="10" id="Tsb-Xz-rQX"/>
+                            <constraint firstItem="eBN-Yx-Pw7" firstAttribute="trailing" secondItem="fFq-Vd-hAW" secondAttribute="trailing" id="pL3-B0-6Pd"/>
+                            <constraint firstItem="fFq-Vd-hAW" firstAttribute="bottom" secondItem="eBN-Yx-Pw7" secondAttribute="bottom" constant="-34" id="x7O-9o-mze"/>
+                            <constraint firstItem="kaN-CP-Pqw" firstAttribute="leading" secondItem="fFq-Vd-hAW" secondAttribute="leading" constant="10" id="yPk-jc-33f"/>
+                            <constraint firstItem="eBN-Yx-Pw7" firstAttribute="leading" secondItem="fFq-Vd-hAW" secondAttribute="leading" id="ymY-i3-aU9"/>
+                            <constraint firstItem="eBN-Yx-Pw7" firstAttribute="top" secondItem="fFq-Vd-hAW" secondAttribute="top" id="zBa-mk-qCN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fFq-Vd-hAW"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Skük" id="afq-Xx-eEx">
+                    <navigationItem key="navigationItem" title="Meal Plan" id="afq-Xx-eEx">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="kMW-Rp-4bg">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="slideOutMenu:" destination="xhJ-4D-iXp" id="Ufp-NF-eTv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint" destination="tQh-Gk-hZX" id="OQe-2T-K1g"/>
+                        <outlet property="leadingConstraint" destination="ymY-i3-aU9" id="xu8-as-Yxl"/>
+                        <outlet property="mainView" destination="eBN-Yx-Pw7" id="Dsg-TS-Lao"/>
+                        <outlet property="trailingConstraint" destination="pL3-B0-6Pd" id="s7L-Sh-W1J"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="MealPlanToShoppingList" id="TnZ-cb-CZm"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="MealPlanToPantry" id="phN-h3-22M"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="MealPlanToRecipeBank" id="9Fc-Ne-YN6"/>
@@ -631,7 +638,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEX-Ba-i9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2362" y="-388"/>
+            <point key="canvasLocation" x="2360.8000000000002" y="-388.66995073891627"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IHK-Ys-SiT">
@@ -639,7 +646,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4jf-VC-uth" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kWd-tG-viI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -657,7 +664,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q8O-Hs-PGq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fS4-BN-iCq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -675,7 +682,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Iy-3C-8yh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tCz-uD-ugh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -693,7 +700,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gjf-5W-Txe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tqC-yM-jIV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -711,7 +718,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cNH-ph-DcX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YR9-ob-2U7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -725,13 +732,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="hamburgerIcon" width="37.5" height="37.5"/>
+        <image name="hamburgerIcon" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="z1V-WW-tqb"/>
-        <segue reference="f7J-sz-Eau"/>
-        <segue reference="86B-hn-Yym"/>
-        <segue reference="H4J-7g-cOO"/>
-        <segue reference="kR3-0N-4W9"/>
+        <segue reference="TnZ-cb-CZm"/>
+        <segue reference="9Fc-Ne-YN6"/>
+        <segue reference="phN-h3-22M"/>
+        <segue reference="jrC-2Z-VOj"/>
     </inferredMetricsTieBreakers>
 </document>

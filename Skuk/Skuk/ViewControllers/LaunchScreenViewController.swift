@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class LaunchScreenViewController: UIViewController {
     
     @IBOutlet var skukLbl: UILabel!
     @IBOutlet var scanCookLbl: UILabel!
@@ -48,7 +48,5 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
-

@@ -9,13 +9,23 @@
 import UIKit
 
 class SettingsViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet var leadingConstraint: NSLayoutConstraint!
+    var menuOpen = false
+    
+    @IBAction func navBtn(_ sender: Any) {
+        if !menuOpen {
+            leadingConstraint.constant = 150
+            menuOpen = true
+        } else {
+            leadingConstraint.constant = 0
+            menuOpen = false
+        }
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
+        })
     }
-
+    
     @IBAction func mealPlanBtn(_ sender: Any) {
         performSegue(withIdentifier: "SettingsToMealPlan", sender: self)
     }
@@ -32,5 +42,7 @@ class SettingsViewController: UIViewController {
         performSegue(withIdentifier: "SettingsToRecipeBank", sender: self)
     }
     
-
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */; };
 		739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936F9223E7B6600A95E81 /* AppDelegate.swift */; };
-		739936FC223E7B6600A95E81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936FB223E7B6600A95E81 /* ViewController.swift */; };
+		739936FC223E7B6600A95E81 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936FB223E7B6600A95E81 /* LaunchScreenViewController.swift */; };
 		739936FF223E7B6600A95E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739936FD223E7B6600A95E81 /* Main.storyboard */; };
 		73993702223E7B6600A95E81 /* Skuk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73993700223E7B6600A95E81 /* Skuk.xcdatamodeld */; };
 		73993704223E7B6600A95E81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73993703223E7B6600A95E81 /* Assets.xcassets */; };
@@ -45,7 +45,7 @@
 		73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		739936F6223E7B6600A95E81 /* Skuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		739936F9223E7B6600A95E81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		739936FB223E7B6600A95E81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		739936FB223E7B6600A95E81 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		739936FE223E7B6600A95E81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73993701223E7B6600A95E81 /* Skuk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Skuk.xcdatamodel; sourceTree = "<group>"; };
 		73993703223E7B6600A95E81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -153,10 +153,10 @@
 			isa = PBXGroup;
 			children = (
 				739936F9223E7B6600A95E81 /* AppDelegate.swift */,
-				739936FB223E7B6600A95E81 /* ViewController.swift */,
+				73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */,
+				739936FB223E7B6600A95E81 /* LaunchScreenViewController.swift */,
 				73AC502E223EA0D300566A73 /* LoginViewController.swift */,
 				73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */,
-				73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */,
 				73F3845B2248F973003BD5C3 /* ShoppingListViewController.swift */,
 				73F3845D2248F987003BD5C3 /* PantryViewController.swift */,
 				73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */,
@@ -233,13 +233,16 @@
 				TargetAttributes = {
 					739936F5223E7B6600A95E81 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					7399370C223E7B6600A95E81 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 739936F5223E7B6600A95E81;
 					};
 					73993717223E7B6600A95E81 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 739936F5223E7B6600A95E81;
 					};
 				};
@@ -300,7 +303,7 @@
 				73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */,
 				73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */,
 				73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */,
-				739936FC223E7B6600A95E81 /* ViewController.swift in Sources */,
+				739936FC223E7B6600A95E81 /* LaunchScreenViewController.swift in Sources */,
 				73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */,
 				73F3845C2248F973003BD5C3 /* ShoppingListViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
@@ -489,7 +492,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ac.uk.glen.Skuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -507,7 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ac.uk.glen.Skuk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -527,7 +530,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ac.uk.glen.SkukTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skuk.app/Skuk";
 			};
@@ -548,7 +551,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ac.uk.glen.SkukTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skuk.app/Skuk";
 			};
@@ -568,7 +571,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ac.uk.glen.SkukUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Skuk;
 			};
@@ -588,7 +591,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ac.uk.glen.SkukUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Skuk;
 			};

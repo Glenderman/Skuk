@@ -9,21 +9,24 @@
 import UIKit
 
 class MealPlanViewController: UIViewController {
-
+    
+    @IBOutlet var mainView: UIView!
+    @IBOutlet var trailingConstraint: NSLayoutConstraint!
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     var menuOpen = false
     
     @IBAction func slideOutMenu(_ sender: Any) {
         
-        if (menuOpen) {
-            leadingConstraint.constant = -150
+        if !menuOpen {
+            leadingConstraint.constant = 150
+            menuOpen = true
         } else {
             leadingConstraint.constant = 0
-            UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
-                self.view.layoutIfNeeded()
-            })
+            menuOpen = false
         }
-        menuOpen = true
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
+        })
     }
     
     @IBAction func shoppingListBtn(_ sender: Any) {
@@ -42,22 +45,7 @@ class MealPlanViewController: UIViewController {
         performSegue(withIdentifier: "MealPlanToSettings", sender: self)
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
