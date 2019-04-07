@@ -40,4 +40,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true) //if the user touches outside the textfields/keyboard then the keyboard closes
     }
+    
+    @IBAction func forgottenPswdBtn(_ sender: Any) {
+        performSegue(withIdentifier: "LoginToForget", sender: self)
+    }
+    
+    @IBAction func registerBtn(_ sender: Any) {
+        performSegue(withIdentifier: "LoginToRegister", sender: self)
+    }
 }

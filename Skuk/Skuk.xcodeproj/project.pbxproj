@@ -22,6 +22,8 @@
 		73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845D2248F987003BD5C3 /* PantryViewController.swift */; };
 		73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */; };
 		73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F384612248F9AF003BD5C3 /* SettingsViewController.swift */; };
+		73F4C9DB225AB11C00853ED3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */; };
+		73F4C9DD225AB3D700853ED3 /* ForgottenPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		73F3845D2248F987003BD5C3 /* PantryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewController.swift; sourceTree = "<group>"; };
 		73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBankViewController.swift; sourceTree = "<group>"; };
 		73F384612248F9AF003BD5C3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				73F3845D2248F987003BD5C3 /* PantryViewController.swift */,
 				73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */,
 				73F384612248F9AF003BD5C3 /* SettingsViewController.swift */,
+				73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */,
+				73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -300,10 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */,
+				73F4C9DB225AB11C00853ED3 /* RegisterViewController.swift in Sources */,
 				73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */,
 				73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */,
 				73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */,
 				739936FC223E7B6600A95E81 /* LaunchScreenViewController.swift in Sources */,
+				73F4C9DD225AB3D700853ED3 /* ForgottenPasswordViewController.swift in Sources */,
 				73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */,
 				73F3845C2248F973003BD5C3 /* ShoppingListViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
