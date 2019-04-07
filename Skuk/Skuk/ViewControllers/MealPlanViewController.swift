@@ -10,16 +10,15 @@ import UIKit
 
 class MealPlanViewController: UIViewController {
     
-    @IBOutlet var leadingConstraint: NSLayoutConstraint!
     var menuOpen = false
+    @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
     @IBAction func slideOutMenu(_ sender: Any) {
-        
         if !menuOpen {
-            leadingConstraint.constant = 130
+            trailingConstraint.constant = -130
             menuOpen = true
         } else {
-            leadingConstraint.constant = 0
+            trailingConstraint.constant = 0
             menuOpen = false
         }
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
@@ -45,9 +44,5 @@ class MealPlanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.titleTextAttributes =
-            [NSAttributedString.Key.font: UIFont(name: "Kefa", size: 21)!]
-
     }
 }

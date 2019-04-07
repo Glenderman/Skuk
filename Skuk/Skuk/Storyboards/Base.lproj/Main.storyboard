@@ -169,11 +169,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-7q-HDh">
-                                <rect key="frame" x="10" y="98" width="105" height="192"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-7q-HDh">
+                                <rect key="frame" x="260" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIR-6H-HZX">
-                                        <rect key="frame" x="30" y="0.0" width="75" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Meal Plan">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -193,14 +193,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tr-7x-aLK">
-                                        <rect key="frame" x="54" y="80" width="51" height="32"/>
+                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Pantry">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEv-6X-RqI">
-                                        <rect key="frame" x="11" y="120" width="94" height="32"/>
+                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Recipe Bank">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -210,7 +210,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gy-iX-rnh">
-                                        <rect key="frame" x="41" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -233,7 +233,7 @@
                         <constraints>
                             <constraint firstItem="Gnj-We-WEv" firstAttribute="leading" secondItem="A7t-jf-PDX" secondAttribute="leading" id="1rR-RN-rUU"/>
                             <constraint firstItem="Gnj-We-WEv" firstAttribute="top" secondItem="A7t-jf-PDX" secondAttribute="top" id="9sA-R9-oOI"/>
-                            <constraint firstItem="bzs-7q-HDh" firstAttribute="leading" secondItem="A7t-jf-PDX" secondAttribute="leading" constant="10" id="Cgu-gG-O1A"/>
+                            <constraint firstItem="A7t-jf-PDX" firstAttribute="trailing" secondItem="bzs-7q-HDh" secondAttribute="trailing" constant="10" id="EGZ-Kg-M1l"/>
                             <constraint firstAttribute="bottom" secondItem="Gnj-We-WEv" secondAttribute="bottom" id="Uhc-re-Ztz"/>
                             <constraint firstItem="Gnj-We-WEv" firstAttribute="trailing" secondItem="A7t-jf-PDX" secondAttribute="trailing" id="keA-Db-r56"/>
                             <constraint firstItem="bzs-7q-HDh" firstAttribute="top" secondItem="A7t-jf-PDX" secondAttribute="top" constant="10" id="oLG-YI-s8U"/>
@@ -241,15 +241,15 @@
                         <viewLayoutGuide key="safeArea" id="A7t-jf-PDX"/>
                     </view>
                     <navigationItem key="navigationItem" title="Pantry" id="APz-la-3rr">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="j2h-7p-7Xb">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="j2h-7p-7Xb">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="navBtn:" destination="2Yq-zq-2GU" id="KaF-ay-IMi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint" destination="1rR-RN-rUU" id="TOa-Fc-huu"/>
+                        <outlet property="trailingConstraint" destination="keA-Db-r56" id="z0R-fQ-yxD"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="PantryToMealPlan" id="zr7-z4-4SC"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="PantryToRecipeBank" id="mnn-Zc-r2n"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="PantryToSettings" id="dji-5m-AxN"/>
@@ -268,11 +268,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-Ds-edI">
-                                <rect key="frame" x="10" y="98" width="105" height="192"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-Ds-edI">
+                                <rect key="frame" x="260" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz6-q1-ZoH">
-                                        <rect key="frame" x="30" y="0.0" width="75" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Meal Plan">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -292,7 +292,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gzf-77-lPg">
-                                        <rect key="frame" x="54" y="80" width="51" height="32"/>
+                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Pantry">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -302,14 +302,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zCu-nZ-MiU">
-                                        <rect key="frame" x="11" y="120" width="94" height="32"/>
+                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Recipe Bank">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4e-gt-Sb0">
-                                        <rect key="frame" x="41" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -328,24 +328,24 @@
                         <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="KAR-zW-GBH" firstAttribute="trailing" secondItem="nre-4f-efJ" secondAttribute="trailing" id="AeG-V3-wkP"/>
+                            <constraint firstItem="nre-4f-efJ" firstAttribute="trailing" secondItem="Hot-Ds-edI" secondAttribute="trailing" constant="10" id="Mre-AG-0Yd"/>
                             <constraint firstItem="KAR-zW-GBH" firstAttribute="leading" secondItem="nre-4f-efJ" secondAttribute="leading" id="Wgd-y5-QMI"/>
                             <constraint firstItem="KAR-zW-GBH" firstAttribute="top" secondItem="nre-4f-efJ" secondAttribute="top" id="XaR-DG-K3f"/>
-                            <constraint firstItem="Hot-Ds-edI" firstAttribute="leading" secondItem="nre-4f-efJ" secondAttribute="leading" constant="10" id="oot-NN-MkI"/>
                             <constraint firstItem="Hot-Ds-edI" firstAttribute="top" secondItem="nre-4f-efJ" secondAttribute="top" constant="10" id="t6H-I5-3oN"/>
                             <constraint firstAttribute="bottom" secondItem="KAR-zW-GBH" secondAttribute="bottom" id="uWO-Bw-6za"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nre-4f-efJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recipe Bank" id="ORT-fn-NRh">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="cmA-Ol-aFJ">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="cmA-Ol-aFJ">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="navBtn:" destination="TW7-kx-80R" id="O3w-jW-qdV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint" destination="Wgd-y5-QMI" id="w26-Nf-13r"/>
+                        <outlet property="trailingConstraint" destination="AeG-V3-wkP" id="yNF-xx-zCW"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="RecipeBankToSettings" id="jV0-HJ-d0W"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="RecipeBankToShoppingList" id="vUZ-4s-0io"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="RecipeBankToMealPlan" id="C1O-2c-rE4"/>
@@ -364,11 +364,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UpK-Rz-vzP">
-                                <rect key="frame" x="10" y="98" width="105" height="192"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UpK-Rz-vzP">
+                                <rect key="frame" x="260" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J3-Ku-ITa">
-                                        <rect key="frame" x="30" y="0.0" width="75" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Meal Plan">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -388,7 +388,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJe-Hm-Ibg">
-                                        <rect key="frame" x="54" y="80" width="51" height="32"/>
+                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Pantry">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -398,7 +398,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nmx-lf-yZR">
-                                        <rect key="frame" x="11" y="120" width="94" height="32"/>
+                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Recipe Bank">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -408,7 +408,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGG-1L-ntZ">
-                                        <rect key="frame" x="41" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -426,22 +426,22 @@
                             <constraint firstItem="UpK-Rz-vzP" firstAttribute="top" secondItem="YVL-iw-Far" secondAttribute="top" constant="10" id="AAR-3n-9jg"/>
                             <constraint firstItem="YdZ-5S-k9R" firstAttribute="trailing" secondItem="YVL-iw-Far" secondAttribute="trailing" id="AUo-Nu-6Vq"/>
                             <constraint firstItem="YdZ-5S-k9R" firstAttribute="leading" secondItem="YVL-iw-Far" secondAttribute="leading" id="Svw-55-uzm"/>
-                            <constraint firstItem="UpK-Rz-vzP" firstAttribute="leading" secondItem="YVL-iw-Far" secondAttribute="leading" constant="10" id="VwD-Nr-mGI"/>
                             <constraint firstAttribute="bottom" secondItem="YdZ-5S-k9R" secondAttribute="bottom" id="XEX-qG-xRb"/>
+                            <constraint firstItem="YVL-iw-Far" firstAttribute="trailing" secondItem="UpK-Rz-vzP" secondAttribute="trailing" constant="10" id="gW9-fC-fJ3"/>
                             <constraint firstItem="YdZ-5S-k9R" firstAttribute="top" secondItem="YVL-iw-Far" secondAttribute="top" id="xdB-Sh-pqM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YVL-iw-Far"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="rXT-8Z-laQ">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="hlE-Mv-Yx3">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="hlE-Mv-Yx3">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="navBtn:" destination="3ff-Hc-Ugn" id="ctz-fi-a11"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint" destination="Svw-55-uzm" id="KhU-Hf-Q0t"/>
+                        <outlet property="trailingConstraint" destination="AUo-Nu-6Vq" id="CPy-zX-Q10"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="SettingsToShoppingList" id="f7J-sz-Eau"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="SettingsToMealPlan" id="kR3-0N-4W9"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="SettingsToRecipeBank" id="86B-hn-Yym"/>
@@ -460,11 +460,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="624-ff-a0K">
-                                <rect key="frame" x="10" y="98" width="105" height="192"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="624-ff-a0K">
+                                <rect key="frame" x="260" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-JU-a8z">
-                                        <rect key="frame" x="30" y="0.0" width="75" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Meal Plan">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -481,7 +481,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AL-kB-mQp">
-                                        <rect key="frame" x="54" y="80" width="51" height="32"/>
+                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Pantry">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -491,7 +491,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKT-ZN-SG0">
-                                        <rect key="frame" x="11" y="120" width="94" height="32"/>
+                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Recipe Bank">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -501,7 +501,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTb-dY-JSs">
-                                        <rect key="frame" x="41" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -519,7 +519,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="624-ff-a0K" firstAttribute="leading" secondItem="Y8g-rw-cg2" secondAttribute="leading" constant="10" id="IgU-eZ-C7d"/>
+                            <constraint firstItem="Y8g-rw-cg2" firstAttribute="trailing" secondItem="624-ff-a0K" secondAttribute="trailing" constant="10" id="4yz-WB-lBT"/>
                             <constraint firstItem="1OE-BW-GTd" firstAttribute="top" secondItem="Y8g-rw-cg2" secondAttribute="top" id="Nhu-jb-wQo"/>
                             <constraint firstItem="624-ff-a0K" firstAttribute="top" secondItem="Y8g-rw-cg2" secondAttribute="top" constant="10" id="O8D-pp-Nvp"/>
                             <constraint firstItem="1OE-BW-GTd" firstAttribute="leading" secondItem="Y8g-rw-cg2" secondAttribute="leading" id="QBd-LO-HlN"/>
@@ -529,15 +529,15 @@
                         <viewLayoutGuide key="safeArea" id="Y8g-rw-cg2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping List" id="zeh-VB-ykQ">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="Xrv-Rw-iIx">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="Xrv-Rw-iIx">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="navBtn:" destination="hRh-Vh-XDR" id="VOp-R8-E4r"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint" destination="QBd-LO-HlN" id="8em-k1-CGC"/>
+                        <outlet property="trailingConstraint" destination="Y9r-Ew-MOO" id="awP-cJ-CJy"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="ShoppingListToSettings" id="V6A-vL-afU"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="ShoppingListToMealPlan" id="jrC-2Z-VOj"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="ShoppingListToRecipeBank" id="3yw-2c-Hg6"/>
@@ -556,11 +556,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-CP-Pqw">
-                                <rect key="frame" x="10" y="98" width="105" height="192"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-CP-Pqw">
+                                <rect key="frame" x="260" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjV-C2-bJ0">
-                                        <rect key="frame" x="30" y="0.0" width="75" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Meal Plan">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -577,7 +577,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yf-Jx-uBi">
-                                        <rect key="frame" x="54" y="80" width="51" height="32"/>
+                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Pantry">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -587,7 +587,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJI-ih-WhU">
-                                        <rect key="frame" x="11" y="120" width="94" height="32"/>
+                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Recipe Bank">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -597,7 +597,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIt-1q-XdZ">
-                                        <rect key="frame" x="41" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -615,25 +615,25 @@
                         </subviews>
                         <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="fFq-Vd-hAW" firstAttribute="trailing" secondItem="kaN-CP-Pqw" secondAttribute="trailing" constant="10" id="4gu-5o-K3D"/>
                             <constraint firstItem="kaN-CP-Pqw" firstAttribute="top" secondItem="fFq-Vd-hAW" secondAttribute="top" constant="10" id="Tsb-Xz-rQX"/>
                             <constraint firstItem="eBN-Yx-Pw7" firstAttribute="trailing" secondItem="fFq-Vd-hAW" secondAttribute="trailing" id="pL3-B0-6Pd"/>
                             <constraint firstItem="fFq-Vd-hAW" firstAttribute="bottom" secondItem="eBN-Yx-Pw7" secondAttribute="bottom" constant="-34" id="x7O-9o-mze"/>
-                            <constraint firstItem="kaN-CP-Pqw" firstAttribute="leading" secondItem="fFq-Vd-hAW" secondAttribute="leading" constant="10" id="yPk-jc-33f"/>
                             <constraint firstItem="eBN-Yx-Pw7" firstAttribute="leading" secondItem="fFq-Vd-hAW" secondAttribute="leading" id="ymY-i3-aU9"/>
                             <constraint firstItem="eBN-Yx-Pw7" firstAttribute="top" secondItem="fFq-Vd-hAW" secondAttribute="top" id="zBa-mk-qCN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fFq-Vd-hAW"/>
                     </view>
                     <navigationItem key="navigationItem" title="Meal Plan" id="afq-Xx-eEx">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburgerIcon" id="kMW-Rp-4bg">
-                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="kMW-Rp-4bg">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="slideOutMenu:" destination="xhJ-4D-iXp" id="Ufp-NF-eTv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="leadingConstraint" destination="ymY-i3-aU9" id="xu8-as-Yxl"/>
+                        <outlet property="trailingConstraint" destination="pL3-B0-6Pd" id="3T8-IZ-uZx"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="MealPlanToShoppingList" id="TnZ-cb-CZm"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="MealPlanToPantry" id="phN-h3-22M"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="MealPlanToRecipeBank" id="9Fc-Ne-YN6"/>
@@ -743,6 +743,6 @@
         <segue reference="TnZ-cb-CZm"/>
         <segue reference="9Fc-Ne-YN6"/>
         <segue reference="phN-h3-22M"/>
-        <segue reference="zr7-z4-4SC"/>
+        <segue reference="jrC-2Z-VOj"/>
     </inferredMetricsTieBreakers>
 </document>

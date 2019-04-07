@@ -10,15 +10,15 @@ import UIKit
 
 class RecipeBankViewController: UIViewController {
     
-    @IBOutlet var leadingConstraint: NSLayoutConstraint!
+    @IBOutlet var trailingConstraint: NSLayoutConstraint!
     var menuOpen = false
     
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
-            leadingConstraint.constant = 130
+            trailingConstraint.constant = -130
             menuOpen = true
         } else {
-            leadingConstraint.constant = 0
+            trailingConstraint.constant = 0
             menuOpen = false
         }
         UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
@@ -44,8 +44,5 @@ class RecipeBankViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.navigationController?.navigationBar.titleTextAttributes =
-            [NSAttributedString.Key.font: UIFont(name: "Kefa", size: 21)!]
     }
 }
