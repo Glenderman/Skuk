@@ -19,10 +19,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LAF-aP-V1j">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" name="SkukYellow"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-c7-VlZ">
                                 <rect key="frame" x="107" y="240" width="200" height="294"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
@@ -36,14 +32,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" name="SkukYellow"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LAF-aP-V1j" secondAttribute="trailing" id="2kV-Vr-iUs"/>
-                            <constraint firstAttribute="bottom" secondItem="LAF-aP-V1j" secondAttribute="bottom" id="2pm-MW-b7u"/>
                             <constraint firstItem="MHd-c7-VlZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="30w-RL-cjJ"/>
-                            <constraint firstItem="LAF-aP-V1j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K0A-Fn-0eT"/>
                             <constraint firstItem="mGr-di-Ndm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZdJ-ad-wYa"/>
-                            <constraint firstItem="LAF-aP-V1j" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="cX3-Tb-e6a"/>
                             <constraint firstItem="MHd-c7-VlZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="dgH-vG-Nag"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MHd-c7-VlZ" secondAttribute="bottom" constant="328" id="eC0-Sf-LHd"/>
                             <constraint firstItem="mGr-di-Ndm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="450" id="w37-jS-vDL"/>
@@ -185,10 +177,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jqb-mh-bXW">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" name="SkukYellow"/>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-1E-KLK">
                                 <rect key="frame" x="50" y="327" width="313" height="30"/>
                                 <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -265,7 +253,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="SkukYellow"/>
                         <constraints>
                             <constraint firstItem="q4g-aQ-uke" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="227" id="480-JU-juq"/>
                             <constraint firstItem="nND-de-ZtO" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="-20" id="48n-9s-BTB"/>
@@ -273,8 +261,6 @@
                             <constraint firstItem="SxB-CH-SLn" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="134" id="7Ud-s2-IFK"/>
                             <constraint firstItem="hWa-1E-KLK" firstAttribute="top" secondItem="q4g-aQ-uke" secondAttribute="bottom" constant="26" id="GNB-5R-JYO"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="q4g-aQ-uke" secondAttribute="trailing" constant="51" id="IsD-en-ijk"/>
-                            <constraint firstItem="Jqb-mh-bXW" firstAttribute="bottom" secondItem="w9S-vY-oQR" secondAttribute="bottom" id="Iv3-ec-qFc"/>
-                            <constraint firstItem="Jqb-mh-bXW" firstAttribute="trailing" secondItem="D1s-xx-7yr" secondAttribute="trailing" id="LHs-B0-5bD"/>
                             <constraint firstItem="hWa-1E-KLK" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="50" id="Pk2-FQ-2mo"/>
                             <constraint firstItem="nND-de-ZtO" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="T8x-cS-5FC"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="hWa-1E-KLK" secondAttribute="trailing" constant="51" id="XCO-te-1fu"/>
@@ -283,9 +269,7 @@
                             <constraint firstItem="o8V-xx-zX2" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="150" id="iO9-Er-Hjg"/>
                             <constraint firstItem="q4g-aQ-uke" firstAttribute="top" secondItem="nND-de-ZtO" secondAttribute="bottom" constant="19" id="jJd-dF-MZ4"/>
                             <constraint firstItem="AJD-TC-1w8" firstAttribute="centerX" secondItem="rxP-aO-Fql" secondAttribute="centerX" id="lgr-sv-saq"/>
-                            <constraint firstItem="Jqb-mh-bXW" firstAttribute="top" secondItem="w9S-vY-oQR" secondAttribute="top" id="qOD-bb-S0W"/>
                             <constraint firstItem="rxP-aO-Fql" firstAttribute="top" secondItem="o8V-xx-zX2" secondAttribute="bottom" constant="17" id="sPU-Gc-4IU"/>
-                            <constraint firstItem="Jqb-mh-bXW" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" id="vZW-pw-4E4"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="bottom" secondItem="AJD-TC-1w8" secondAttribute="bottom" constant="50" id="veJ-2H-Kg8"/>
                             <constraint firstItem="q4g-aQ-uke" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="50" id="yFH-WR-23p"/>
                             <constraint firstItem="SxB-CH-SLn" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="ynU-xp-ZWp"/>
@@ -889,6 +873,6 @@
         <segue reference="9Fc-Ne-YN6"/>
         <segue reference="phN-h3-22M"/>
         <segue reference="5SG-Mq-KEw"/>
-        <segue reference="9hK-Fm-1wI"/>
+        <segue reference="fbK-NT-iC6"/>
     </inferredMetricsTieBreakers>
 </document>
