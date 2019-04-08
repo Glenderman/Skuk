@@ -11,6 +11,7 @@ import UIKit
 class PantryViewController: UIViewController {
     
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
+    
     var menuOpen = false
     
     @IBAction func navBtn(_ sender: Any) {

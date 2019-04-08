@@ -11,6 +11,7 @@ import UIKit
 class ShoppingListViewController: UIViewController {
     
     var menuOpen = false
+    
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
     @IBAction func navBtn(_ sender: Any) {

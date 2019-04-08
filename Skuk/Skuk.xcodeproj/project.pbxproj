@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731D5C2E225BE8EA00518DF2 /* Recipe.swift */; };
 		73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */; };
 		739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936F9223E7B6600A95E81 /* AppDelegate.swift */; };
 		739936FC223E7B6600A95E81 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936FB223E7B6600A95E81 /* LaunchScreenViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		731D5C2E225BE8EA00518DF2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
 		739936F6223E7B6600A95E81 /* Skuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		739936F9223E7B6600A95E81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				73F384612248F9AF003BD5C3 /* SettingsViewController.swift */,
 				73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */,
 				73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */,
+				731D5C2E225BE8EA00518DF2 /* Recipe.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */,
 				73F3845C2248F973003BD5C3 /* ShoppingListViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
+				731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */,
 				73993702223E7B6600A95E81 /* Skuk.xcdatamodeld in Sources */,
 				73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */,
 			);

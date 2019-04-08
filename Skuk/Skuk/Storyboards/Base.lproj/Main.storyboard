@@ -52,14 +52,31 @@
             </objects>
             <point key="canvasLocation" x="-1329" y="-388"/>
         </scene>
-        <!--View Controller-->
+        <!--Forgotten Password View Controller-->
         <scene sceneID="CFh-5z-CVS">
             <objects>
-                <viewController id="Pbl-dJ-h6c" sceneMemberID="viewController">
+                <viewController id="Pbl-dJ-h6c" customClass="ForgottenPasswordViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pz9-fM-kez">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyp-iR-U6k">
+                                <rect key="frame" x="177" y="776" width="60" height="36"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelBtn:" destination="Pbl-dJ-h6c" eventType="touchUpInside" id="5I7-5j-0AB"/>
+                                    <action selector="cancelBtn:" destination="DIS-Fk-aQQ" eventType="touchUpInside" id="SKR-Zn-Y8q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" name="SkukYellow"/>
+                        <constraints>
+                            <constraint firstItem="jyp-iR-U6k" firstAttribute="centerX" secondItem="Pz9-fM-kez" secondAttribute="centerX" id="99z-M5-7JE"/>
+                            <constraint firstItem="BrR-0d-81y" firstAttribute="bottom" secondItem="jyp-iR-U6k" secondAttribute="bottom" constant="50" id="sin-OH-ikw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BrR-0d-81y"/>
                     </view>
                     <connections>
@@ -736,7 +753,56 @@
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBN-Yx-Pw7">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hpJ-sJ-CVa">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="120" id="Bbu-3W-Fgz" customClass="RecipeCell" customModule="Skuk" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bbu-3W-Fgz" id="SDF-b5-zfk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-T0-Cvb">
+                                                            <rect key="frame" x="20" y="15" width="187" height="89"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-DK-61e">
+                                                            <rect key="frame" x="256" y="49" width="42" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="Vub-T0-Cvb" secondAttribute="trailing" constant="187" id="F1g-ib-SHv"/>
+                                                        <constraint firstItem="Vub-T0-Cvb" firstAttribute="top" secondItem="SDF-b5-zfk" secondAttribute="topMargin" constant="4" id="IIK-8J-Bh6"/>
+                                                        <constraint firstItem="hOm-DK-61e" firstAttribute="leading" secondItem="Vub-T0-Cvb" secondAttribute="trailing" constant="49" id="Klk-0B-17c"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="Vub-T0-Cvb" secondAttribute="bottom" constant="5" id="LXg-Mc-PFU"/>
+                                                        <constraint firstItem="Vub-T0-Cvb" firstAttribute="leading" secondItem="SDF-b5-zfk" secondAttribute="leadingMargin" id="brL-N8-0vj"/>
+                                                        <constraint firstItem="hOm-DK-61e" firstAttribute="top" secondItem="SDF-b5-zfk" secondAttribute="topMargin" constant="38" id="tYU-nQ-Zfd"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="mealImg" destination="Vub-T0-Cvb" id="FXE-Wi-Ab0"/>
+                                                    <outlet property="mealLbl" destination="hOm-DK-61e" id="1tF-xk-UaA"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="xhJ-4D-iXp" id="Lyf-pl-fQm"/>
+                                            <outlet property="delegate" destination="xhJ-4D-iXp" id="HEp-r6-cy4"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="hpJ-sJ-CVa" firstAttribute="top" secondItem="eBN-Yx-Pw7" secondAttribute="top" id="GUi-Un-PgB"/>
+                                    <constraint firstAttribute="bottom" secondItem="hpJ-sJ-CVa" secondAttribute="bottom" id="TmO-wV-UPW"/>
+                                    <constraint firstAttribute="trailing" secondItem="hpJ-sJ-CVa" secondAttribute="trailing" id="dmV-fx-vrN"/>
+                                    <constraint firstItem="hpJ-sJ-CVa" firstAttribute="leading" secondItem="eBN-Yx-Pw7" secondAttribute="leading" id="kdl-o5-Twl"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -759,6 +825,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="mealPlanTable" destination="hpJ-sJ-CVa" id="r1K-QW-kLG"/>
                         <outlet property="trailingConstraint" destination="pL3-B0-6Pd" id="3T8-IZ-uZx"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="MealPlanToShoppingList" id="TnZ-cb-CZm"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="MealPlanToPantry" id="phN-h3-22M"/>
@@ -768,7 +835,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEX-Ba-i9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360.8000000000002" y="-388.66995073891627"/>
+            <point key="canvasLocation" x="2359.4202898550725" y="-389.0625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IHK-Ys-SiT">
@@ -873,6 +940,6 @@
         <segue reference="9Fc-Ne-YN6"/>
         <segue reference="phN-h3-22M"/>
         <segue reference="5SG-Mq-KEw"/>
-        <segue reference="fbK-NT-iC6"/>
+        <segue reference="x5T-3z-t3a"/>
     </inferredMetricsTieBreakers>
 </document>
