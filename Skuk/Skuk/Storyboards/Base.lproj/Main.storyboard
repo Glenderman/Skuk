@@ -710,7 +710,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-K3-i0l">
-                                        <rect key="frame" x="166" y="203" width="132" height="20.5"/>
+                                        <rect key="frame" x="122" y="291.5" width="131.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -729,10 +729,9 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="hUD-Sg-LlI" secondAttribute="bottom" constant="50" id="6Gh-ON-CEj"/>
-                                    <constraint firstAttribute="trailing" secondItem="5cs-K3-i0l" secondAttribute="trailing" constant="77" id="7at-9c-aGc"/>
-                                    <constraint firstItem="5cs-K3-i0l" firstAttribute="top" secondItem="St7-49-JtG" secondAttribute="top" constant="203" id="MNQ-7z-fd0"/>
-                                    <constraint firstItem="5cs-K3-i0l" firstAttribute="leading" secondItem="St7-49-JtG" secondAttribute="leading" constant="166" id="coM-Nm-85A"/>
+                                    <constraint firstItem="5cs-K3-i0l" firstAttribute="centerX" secondItem="St7-49-JtG" secondAttribute="centerX" id="GHq-LZ-g25"/>
                                     <constraint firstItem="hUD-Sg-LlI" firstAttribute="centerX" secondItem="St7-49-JtG" secondAttribute="centerX" id="iDA-9W-lEQ"/>
+                                    <constraint firstItem="5cs-K3-i0l" firstAttribute="centerY" secondItem="St7-49-JtG" secondAttribute="centerY" id="s7z-BM-w9s"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1099,7 +1098,7 @@
                                                             <rect key="frame" x="15" y="15" width="158" height="89"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-DK-61e">
-                                                            <rect key="frame" x="222" y="49" width="42" height="21"/>
+                                                            <rect key="frame" x="181" y="15" width="179" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1108,10 +1107,11 @@
                                                     <constraints>
                                                         <constraint firstAttribute="trailingMargin" secondItem="Vub-T0-Cvb" secondAttribute="trailing" constant="187" id="F1g-ib-SHv"/>
                                                         <constraint firstItem="Vub-T0-Cvb" firstAttribute="top" secondItem="SDF-b5-zfk" secondAttribute="topMargin" constant="4" id="IIK-8J-Bh6"/>
-                                                        <constraint firstItem="hOm-DK-61e" firstAttribute="leading" secondItem="Vub-T0-Cvb" secondAttribute="trailing" constant="49" id="Klk-0B-17c"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="Vub-T0-Cvb" secondAttribute="bottom" constant="5" id="LXg-Mc-PFU"/>
                                                         <constraint firstItem="Vub-T0-Cvb" firstAttribute="leading" secondItem="SDF-b5-zfk" secondAttribute="leadingMargin" id="brL-N8-0vj"/>
-                                                        <constraint firstItem="hOm-DK-61e" firstAttribute="top" secondItem="SDF-b5-zfk" secondAttribute="topMargin" constant="38" id="tYU-nQ-Zfd"/>
+                                                        <constraint firstItem="hOm-DK-61e" firstAttribute="top" secondItem="SDF-b5-zfk" secondAttribute="topMargin" constant="4" id="fbf-fa-WFb"/>
+                                                        <constraint firstItem="hOm-DK-61e" firstAttribute="trailing" secondItem="SDF-b5-zfk" secondAttribute="trailingMargin" id="hA9-6n-uWY"/>
+                                                        <constraint firstItem="hOm-DK-61e" firstAttribute="leading" secondItem="Vub-T0-Cvb" secondAttribute="trailing" constant="8" id="hXM-mL-2uh"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -1165,7 +1165,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEX-Ba-i9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1610" y="-390"/>
+            <point key="canvasLocation" x="1608.8" y="-390.85457271364322"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IHK-Ys-SiT">
@@ -1268,11 +1268,10 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="tqh-G1-TE1"/>
-        <segue reference="yzY-Xv-0bF"/>
-        <segue reference="JcM-ZJ-VPL"/>
-        <segue reference="diT-qj-MW7"/>
-        <segue reference="5It-LO-T8O"/>
+        <segue reference="z1V-WW-tqb"/>
+        <segue reference="TnZ-cb-CZm"/>
+        <segue reference="9Fc-Ne-YN6"/>
+        <segue reference="phN-h3-22M"/>
         <segue reference="2UY-5b-khf"/>
         <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
