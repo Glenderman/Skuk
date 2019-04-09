@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,17 +16,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LaunchScreenViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-c7-VlZ">
-                                <rect key="frame" x="107" y="240" width="200" height="294"/>
+                                <rect key="frame" x="87.5" y="216" width="200" height="123"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
                                 <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-di-Ndm">
-                                <rect key="frame" x="116" y="494" width="182" height="68"/>
+                                <rect key="frame" x="96.5" y="470" width="182" height="68"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,11 +57,11 @@
             <objects>
                 <viewController id="Pbl-dJ-h6c" customClass="ForgottenPasswordViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pz9-fM-kez">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyp-iR-U6k">
-                                <rect key="frame" x="177" y="776" width="60" height="36"/>
+                                <rect key="frame" x="157.5" y="581" width="60" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,30 +85,30 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Ao-Ra-Eub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-433" y="-1247"/>
+            <point key="canvasLocation" x="-1330" y="-1254"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="FLJ-IS-pH6">
             <objects>
                 <viewController id="DIS-Fk-aQQ" customClass="RegisterViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="de4-In-A8z">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-cO-sPy">
-                                <rect key="frame" x="123.5" y="66" width="167" height="87"/>
+                                <rect key="frame" x="104" y="42" width="167" height="87"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="75"/>
                                 <color key="textColor" red="0.99672025440000001" green="0.9921321273" blue="0.98764926200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDy-wz-nTh">
-                                <rect key="frame" x="139" y="153" width="136" height="51"/>
+                                <rect key="frame" x="119.5" y="129" width="136" height="51"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-Dk-yD7">
-                                <rect key="frame" x="177" y="776" width="60" height="36"/>
+                                <rect key="frame" x="157.5" y="581" width="60" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -118,7 +118,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-PM-rme">
-                                <rect key="frame" x="30" y="247" width="354" height="30"/>
+                                <rect key="frame" x="30" y="223" width="315" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next" textContentType="name"/>
@@ -131,7 +131,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OuL-VT-cpK">
-                                <rect key="frame" x="30" y="302" width="354" height="30"/>
+                                <rect key="frame" x="30" y="278" width="315" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="username"/>
@@ -144,7 +144,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-BL-yBo">
-                                <rect key="frame" x="30" y="357" width="354" height="30"/>
+                                <rect key="frame" x="30" y="333" width="315" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
@@ -157,7 +157,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smc-Sd-kt2">
-                                <rect key="frame" x="150.5" y="477" width="113" height="47"/>
+                                <rect key="frame" x="131" y="453" width="113" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -167,7 +167,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-OO-2TK">
-                                <rect key="frame" x="30" y="412" width="354" height="30"/>
+                                <rect key="frame" x="30" y="388" width="315" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
@@ -212,18 +212,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjX-BU-ZcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956.52173913043487" y="-1254.2410714285713"/>
+            <point key="canvasLocation" x="-420" y="-1254"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="KCX-rL-YtK">
             <objects>
                 <viewController id="0X9-8X-brI" customClass="LoginViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9S-vY-oQR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-1E-KLK">
-                                <rect key="frame" x="50" y="327" width="313" height="30"/>
+                                <rect key="frame" x="50" y="303" width="274" height="30"/>
                                 <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="ydA-ur-UZT"/>
@@ -240,7 +240,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Username" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-aQ-uke">
-                                <rect key="frame" x="50" y="271" width="313" height="30"/>
+                                <rect key="frame" x="50" y="247" width="274" height="30"/>
                                 <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="top-5c-AOb"/>
@@ -257,19 +257,19 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nND-de-ZtO">
-                                <rect key="frame" x="107" y="24" width="200" height="228"/>
+                                <rect key="frame" x="87.5" y="0.0" width="200" height="228"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
                                 <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-CH-SLn">
-                                <rect key="frame" x="116" y="178" width="182" height="68"/>
+                                <rect key="frame" x="96.5" y="154" width="182" height="68"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-aO-Fql">
-                                <rect key="frame" x="169.5" y="412" width="75" height="47"/>
+                                <rect key="frame" x="150" y="388" width="75" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -280,7 +280,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-xx-zX2">
-                                <rect key="frame" x="150" y="365" width="213" height="30"/>
+                                <rect key="frame" x="150" y="341" width="174" height="30"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                 <state key="normal" title="Forgotten Password"/>
                                 <connections>
@@ -288,7 +288,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-TC-1w8">
-                                <rect key="frame" x="169.5" y="776" width="75" height="36"/>
+                                <rect key="frame" x="150" y="581" width="75" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -330,18 +330,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O08-TN-27I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="50.399999999999999" y="-388.66995073891627"/>
+            <point key="canvasLocation" x="-420" y="-388"/>
         </scene>
         <!--Pantry-->
         <scene sceneID="xh5-aT-Qr9">
             <objects>
                 <viewController id="2Yq-zq-2GU" customClass="PantryViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P3o-SO-bSB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-7q-HDh">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="260" y="74" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIR-6H-HZX">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -396,7 +396,7 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnj-We-WEv">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -436,11 +436,11 @@
             <objects>
                 <viewController id="TW7-kx-80R" customClass="RecipeBankViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Agu-QT-Dun">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-Ds-edI">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="260" y="74" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz6-q1-ZoH">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -492,7 +492,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAR-zW-GBH">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -525,18 +525,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1N-A3-WCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2360.8000000000002" y="454.43349753694582"/>
+            <point key="canvasLocation" x="1612" y="454"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ho1-G2-ghc">
             <objects>
                 <viewController id="3ff-Hc-Ugn" customClass="SettingsViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cOt-Tf-UX9">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UpK-Rz-vzP">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="260" y="74" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J3-Ku-ITa">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -588,7 +588,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdZ-5S-k9R">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -621,18 +621,303 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ar-eI-c13" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5028" y="466.25615763546801"/>
+            <point key="canvasLocation" x="3702" y="453"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f94-Jb-O8X">
+            <objects>
+                <navigationController id="rhb-BZ-mJC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gnj-xv-OVB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="NQ1-sU-FlJ" kind="relationship" relationship="rootViewController" id="tqh-G1-TE1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3GF-Bk-U5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2750" y="-1395"/>
+        </scene>
+        <!--Shopping List-->
+        <scene sceneID="Oef-BT-08P">
+            <objects>
+                <viewController id="NQ1-sU-FlJ" customClass="BarcodeScannerViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KNk-PH-HFy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NRt-Lz-CE7">
+                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbF-Y9-PgW">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Meal Plan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mealPlanBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="ZFB-NX-Ebp"/>
+                                            <action selector="mealPlanBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="b9h-8f-bOs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL7-19-Uwe">
+                                        <rect key="frame" x="0.0" y="40" width="105" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Shopping List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shoppingListBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="Qqe-Vw-gc3"/>
+                                            <action selector="shoppingListBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="Sho-Ei-CL9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrm-Cv-n4n">
+                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Pantry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pantryBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="CqG-s3-tUK"/>
+                                            <action selector="pantryBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="gWf-ol-GBO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-4q-cRg">
+                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Recipe Bank">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recipeBankBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="hOH-er-Clh"/>
+                                            <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="igB-oB-Rp8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76F-6i-cEe">
+                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="settingsBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="bpQ-T0-ZAg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="St7-49-JtG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-K3-i0l">
+                                        <rect key="frame" x="166" y="203" width="132" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-Sg-LlI">
+                                        <rect key="frame" x="126" y="517" width="123" height="36"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <state key="normal" title="Add Manually">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="manualAddBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="bhM-7C-7eO"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hUD-Sg-LlI" secondAttribute="bottom" constant="50" id="6Gh-ON-CEj"/>
+                                    <constraint firstAttribute="trailing" secondItem="5cs-K3-i0l" secondAttribute="trailing" constant="77" id="7at-9c-aGc"/>
+                                    <constraint firstItem="5cs-K3-i0l" firstAttribute="top" secondItem="St7-49-JtG" secondAttribute="top" constant="203" id="MNQ-7z-fd0"/>
+                                    <constraint firstItem="5cs-K3-i0l" firstAttribute="leading" secondItem="St7-49-JtG" secondAttribute="leading" constant="166" id="coM-Nm-85A"/>
+                                    <constraint firstItem="hUD-Sg-LlI" firstAttribute="centerX" secondItem="St7-49-JtG" secondAttribute="centerX" id="iDA-9W-lEQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="NavigationGrey"/>
+                        <constraints>
+                            <constraint firstItem="St7-49-JtG" firstAttribute="top" secondItem="HLd-BO-ZXC" secondAttribute="top" id="F5C-gW-L9o"/>
+                            <constraint firstItem="St7-49-JtG" firstAttribute="leading" secondItem="HLd-BO-ZXC" secondAttribute="leading" id="PUo-63-Be1"/>
+                            <constraint firstItem="St7-49-JtG" firstAttribute="trailing" secondItem="HLd-BO-ZXC" secondAttribute="trailing" id="cW0-9P-fEi"/>
+                            <constraint firstItem="HLd-BO-ZXC" firstAttribute="trailing" secondItem="NRt-Lz-CE7" secondAttribute="trailing" constant="10" id="iza-E9-PQe"/>
+                            <constraint firstItem="NRt-Lz-CE7" firstAttribute="top" secondItem="HLd-BO-ZXC" secondAttribute="top" constant="10" id="nrU-3c-2RV"/>
+                            <constraint firstItem="HLd-BO-ZXC" firstAttribute="bottom" secondItem="St7-49-JtG" secondAttribute="bottom" id="w1h-iT-oKJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HLd-BO-ZXC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shopping List" id="NFf-oY-2I3">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="iph-Ii-hnB">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="doneBtn:" destination="NQ1-sU-FlJ" id="Etp-d0-8VU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="hiP-Ar-gh7">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="navBtn:" destination="NQ1-sU-FlJ" id="Hnw-KA-nJT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="trailingConstraint" destination="cW0-9P-fEi" id="fo4-UL-zgD"/>
+                        <segue destination="aNi-vF-2bg" kind="show" identifier="BarcodeToManual" id="REE-fE-Ru7"/>
+                        <segue destination="Gjf-5W-Txe" kind="show" identifier="BarcodeToShoppingList" id="tvc-fp-ygu"/>
+                        <segue destination="4jf-VC-uth" kind="show" identifier="BarcodeScannerToMealPlan" id="rLG-7n-q6j"/>
+                        <segue destination="Q8O-Hs-PGq" kind="show" identifier="BarcodeScannerToPantry" id="ENV-fU-IpZ"/>
+                        <segue destination="5Iy-3C-8yh" kind="show" identifier="BarcodeScannerToRecipeBank" id="gYv-gl-rmz"/>
+                        <segue destination="cNH-ph-DcX" kind="show" identifier="BarcodeScannerToSettings" id="raM-5L-eGB"/>
+                        <segue destination="Gjf-5W-Txe" kind="show" identifier="BarcodeScannerToShoppingList" id="Foa-xf-F3t"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wBs-Ku-ww4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3660" y="-1395.6521739130435"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="h0E-1c-f2y">
+            <objects>
+                <navigationController id="aNi-vF-2bg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Za-iG-5bj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="k5M-pB-fuX" kind="relationship" relationship="rootViewController" id="nkz-oF-dxx"/>
+                        <segue destination="Gjf-5W-Txe" kind="show" identifier="ManualToShoppingList" id="eKF-F8-YCL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acv-g9-66R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4668" y="-1395"/>
+        </scene>
+        <!--Shopping List-->
+        <scene sceneID="3IS-DH-V2y">
+            <objects>
+                <viewController id="k5M-pB-fuX" customClass="ManualAddViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fI0-5R-5LK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5lY-kC-dkP">
+                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-nR-rdz">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Meal Plan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="MealPlanBtn:" destination="k5M-pB-fuX" eventType="touchUpInside" id="DMF-Fz-uki"/>
+                                            <action selector="mealPlanBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="Boe-2Y-Hkk"/>
+                                            <action selector="mealPlanBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="dpS-Hm-f9y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MHu-4z-Vhr">
+                                        <rect key="frame" x="0.0" y="40" width="105" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Shopping List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ShoppingListBtn:" destination="k5M-pB-fuX" eventType="touchUpInside" id="Z6t-U4-bI4"/>
+                                            <action selector="shoppingListBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="9sz-I2-DKz"/>
+                                            <action selector="shoppingListBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="wcD-GY-q3c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ro1-mT-W5X">
+                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Pantry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="PantryBtn:" destination="k5M-pB-fuX" eventType="touchUpInside" id="whC-Bn-oF3"/>
+                                            <action selector="pantryBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="Cl2-1f-oUr"/>
+                                            <action selector="pantryBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="K6z-cw-AOI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4LA-Kb-cth">
+                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Recipe Bank">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="RecipeBankBtn:" destination="k5M-pB-fuX" eventType="touchUpInside" id="jun-Gm-Df6"/>
+                                            <action selector="recipeBankBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="4ur-QS-lD7"/>
+                                            <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="Ybd-OH-viD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY9-L8-vk5">
+                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="SettingsBtn:" destination="k5M-pB-fuX" eventType="touchUpInside" id="Vnw-8G-fW5"/>
+                                            <action selector="settingsBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="LZy-dr-iaq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQX-kS-GDG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="NavigationGrey"/>
+                        <constraints>
+                            <constraint firstItem="IQX-kS-GDG" firstAttribute="leading" secondItem="D3M-Ji-wLM" secondAttribute="leading" id="2DI-TB-Ivr"/>
+                            <constraint firstItem="IQX-kS-GDG" firstAttribute="top" secondItem="D3M-Ji-wLM" secondAttribute="top" id="4Wb-p6-NpC"/>
+                            <constraint firstItem="IQX-kS-GDG" firstAttribute="trailing" secondItem="D3M-Ji-wLM" secondAttribute="trailing" id="D4d-ni-03s"/>
+                            <constraint firstItem="D3M-Ji-wLM" firstAttribute="trailing" secondItem="5lY-kC-dkP" secondAttribute="trailing" constant="10" id="gqK-Th-ywA"/>
+                            <constraint firstItem="IQX-kS-GDG" firstAttribute="bottom" secondItem="D3M-Ji-wLM" secondAttribute="bottom" id="wKe-fp-req"/>
+                            <constraint firstItem="5lY-kC-dkP" firstAttribute="top" secondItem="D3M-Ji-wLM" secondAttribute="top" constant="10" id="whb-uB-QxD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="D3M-Ji-wLM"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shopping List" id="Sk6-aX-NlM">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="LiY-VZ-pvp">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="doneBtn:" destination="k5M-pB-fuX" id="6mo-XT-B8l"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="zg8-Kx-cjT">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="navBtn:" destination="k5M-pB-fuX" id="qfT-E7-9oW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="trailingConstraint" destination="D4d-ni-03s" id="ROw-qP-6Ex"/>
+                        <segue destination="Gjf-5W-Txe" kind="show" identifier="ManualAddToShoppingList" id="JcM-ZJ-VPL"/>
+                        <segue destination="cNH-ph-DcX" kind="show" identifier="ManualAddToSettings" id="yzY-Xv-0bF"/>
+                        <segue destination="4jf-VC-uth" kind="show" identifier="ManualAddToMealPlan" id="2UY-5b-khf"/>
+                        <segue destination="5Iy-3C-8yh" kind="show" identifier="ManualAddToRecipeBank" id="diT-qj-MW7"/>
+                        <segue destination="Q8O-Hs-PGq" kind="show" identifier="ManualAddToPantry" id="5It-LO-T8O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNm-SJ-1Oy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5549.6000000000004" y="-1395.6521739130435"/>
         </scene>
         <!--Shopping List-->
         <scene sceneID="Fjq-Fw-SjY">
             <objects>
                 <viewController id="hRh-Vh-XDR" customClass="ShoppingListViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="10X-DJ-8Je">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="624-ff-a0K">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="260" y="74" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-JU-a8z">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -684,8 +969,20 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OE-BW-GTd">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ZE-4h-NW3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0ZE-4h-NW3" secondAttribute="trailing" id="4OD-Nh-rVH"/>
+                                    <constraint firstItem="0ZE-4h-NW3" firstAttribute="top" secondItem="1OE-BW-GTd" secondAttribute="top" id="V2P-2R-WBe"/>
+                                    <constraint firstItem="0ZE-4h-NW3" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" id="Y6h-BY-KoM"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="279" id="wR8-ff-Bwj"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.92157477140426636" green="0.92155748605728149" blue="0.92156916856765747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -700,6 +997,12 @@
                         <viewLayoutGuide key="safeArea" id="Y8g-rw-cg2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping List" id="zeh-VB-ykQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="fYl-Cs-dFh">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addShoppingList:" destination="hRh-Vh-XDR" id="omU-IM-PF5"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="Xrv-Rw-iIx">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -713,22 +1016,23 @@
                         <segue destination="4jf-VC-uth" kind="show" identifier="ShoppingListToMealPlan" id="jrC-2Z-VOj"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="ShoppingListToRecipeBank" id="3yw-2c-Hg6"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="ShoppingListToPantry" id="ApW-or-95P"/>
+                        <segue destination="rhb-BZ-mJC" kind="show" identifier="ShoppingListToBarcodeScanner" id="EZ0-ha-F8f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpN-Ix-lXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4986.3999999999996" y="-388.66995073891627"/>
+            <point key="canvasLocation" x="3658" y="-403"/>
         </scene>
         <!--Meal Plan-->
         <scene sceneID="AUl-LZ-aFe">
             <objects>
                 <viewController id="xhJ-4D-iXp" customClass="MealPlanViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XA5-Z9-nNn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-CP-Pqw">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="260" y="74" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjV-C2-bJ0">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -780,24 +1084,24 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBN-Yx-Pw7">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="637"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hpJ-sJ-CVa">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="637"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="120" id="Bbu-3W-Fgz" customClass="RecipeCell" customModule="Skuk" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
+                                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bbu-3W-Fgz" id="SDF-b5-zfk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-T0-Cvb">
-                                                            <rect key="frame" x="20" y="15" width="187" height="89"/>
+                                                            <rect key="frame" x="15" y="15" width="197" height="89"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-DK-61e">
-                                                            <rect key="frame" x="256" y="49" width="42" height="21"/>
+                                                            <rect key="frame" x="261" y="49" width="42" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -863,7 +1167,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEX-Ba-i9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2359.4202898550725" y="-389.0625"/>
+            <point key="canvasLocation" x="1610" y="-390"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IHK-Ys-SiT">
@@ -871,7 +1175,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4jf-VC-uth" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kWd-tG-viI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -881,7 +1185,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dGG-7F-nm7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1452" y="-388"/>
+            <point key="canvasLocation" x="703" y="-388"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bkc-UQ-tr8">
@@ -889,7 +1193,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q8O-Hs-PGq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fS4-BN-iCq">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -907,7 +1211,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Iy-3C-8yh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tCz-uD-ugh">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -917,7 +1221,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tcv-l3-NCN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1451" y="455"/>
+            <point key="canvasLocation" x="702" y="455"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZxS-YS-uP4">
@@ -925,7 +1229,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gjf-5W-Txe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tqC-yM-jIV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -935,7 +1239,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBE-DT-g1k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4077" y="-388"/>
+            <point key="canvasLocation" x="2750" y="-401"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4oJ-j1-QGL">
@@ -943,7 +1247,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cNH-ph-DcX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YR9-ob-2U7">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -953,21 +1257,24 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P0F-XW-oNk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4118.840579710145" y="466.74107142857139"/>
+            <point key="canvasLocation" x="2791" y="454"/>
         </scene>
     </scenes>
     <resources>
         <image name="hamburgerIcon" width="50" height="50"/>
+        <namedColor name="NavigationGrey">
+            <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="SkukYellow">
             <color red="1" green="0.75294117647058822" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z1V-WW-tqb"/>
-        <segue reference="TnZ-cb-CZm"/>
-        <segue reference="9Fc-Ne-YN6"/>
-        <segue reference="phN-h3-22M"/>
-        <segue reference="5SG-Mq-KEw"/>
+        <segue reference="yzY-Xv-0bF"/>
+        <segue reference="JcM-ZJ-VPL"/>
+        <segue reference="diT-qj-MW7"/>
+        <segue reference="5It-LO-T8O"/>
+        <segue reference="2UY-5b-khf"/>
         <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
 </document>

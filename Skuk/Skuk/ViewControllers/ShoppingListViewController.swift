@@ -43,6 +43,10 @@ class ShoppingListViewController: UIViewController {
         performSegue(withIdentifier: "ShoppingListToSettings", sender: self)
     }
     
+    @IBAction func addShoppingList(_ sender: Any) {
+        performSegue(withIdentifier: "ShoppingListToBarcodeScanner", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
