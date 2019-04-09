@@ -48,7 +48,7 @@ class BarcodeScannerViewController: UIViewController {
     }
     
     @IBAction func doneBtn(_ sender: Any) {
-        performSegue(withIdentifier: "BarcodeToShoppingList", sender: self)
+        performSegue(withIdentifier: "BarcodeScannerToShoppingList", sender: self)
     }
     
     @IBAction func manualAddBtn(_ sender: Any) {
