@@ -27,19 +27,23 @@ class RecipeBankViewController: UIViewController {
         })
     }
     
-    @IBAction func mealPlanBtn(_ sender: Any) {
+    @IBAction func mealPlanBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "RecipeBankToMealPlan", sender: self)
     }
     
-    @IBAction func shoppingListBtn(_ sender: Any) {
+    @IBAction func shoppingListBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "RecipeBankToShoppingList", sender: self)
     }
     
-    @IBAction func pantryBtn(_ sender: Any) {
+    @IBAction func pantryBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "RecipeBankToPantry", sender: self)
     }
     
-    @IBAction func settingsBtn(_ sender: Any) {
+    @IBAction func settingsBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "RecipeBankToSettings", sender: self)
     }
     

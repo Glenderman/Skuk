@@ -27,19 +27,23 @@ class SettingsViewController: UIViewController {
         })
     }
     
-    @IBAction func mealPlanBtn(_ sender: Any) {
+    @IBAction func mealPlanBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "SettingsToMealPlan", sender: self)
     }
     
-    @IBAction func shoppingListBtn(_ sender: Any) {
+    @IBAction func shoppingListBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "SettingsToShoppingList", sender: self)
     }
     
-    @IBAction func pantryBtn(_ sender: Any) {
+    @IBAction func pantryBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "SettingsToPantry", sender: self)
     }
     
-    @IBAction func recipeBankBtn(_ sender: Any) {
+    @IBAction func recipeBankBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "SettingsToRecipeBank", sender: self)
     }
     

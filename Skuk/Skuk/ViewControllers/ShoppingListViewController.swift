@@ -27,23 +27,28 @@ class ShoppingListViewController: UIViewController {
         })
     }
     
-    @IBAction func mealPlanBtn(_ sender: Any) {
+    @IBAction func mealPlanBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ShoppingListToMealPlan", sender: self)
     }
     
-    @IBAction func pantryBtn(_ sender: Any) {
+    @IBAction func pantryBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ShoppingListToPantry", sender: self)
     }
     
-    @IBAction func recipeBtn(_ sender: Any) {
+    @IBAction func recipeBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ShoppingListToRecipeBank", sender: self)
     }
     
-    @IBAction func settingsBtn(_ sender: Any) {
+    @IBAction func settingsBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ShoppingListToSettings", sender: self)
     }
     
-    @IBAction func addShoppingList(_ sender: Any) {
+    @IBAction func addShoppingList(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ShoppingListToBarcodeScanner", sender: self)
     }
     

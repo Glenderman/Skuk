@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,29 +16,31 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LaunchScreenViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-c7-VlZ">
-                                <rect key="frame" x="87.5" y="216" width="200" height="123"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
-                                <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-di-Ndm">
-                                <rect key="frame" x="96.5" y="470" width="182" height="68"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-yI-bU4">
+                                <rect key="frame" x="84.5" y="244" width="245" height="302"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-c7-VlZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="127.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="110"/>
+                                        <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-di-Ndm">
+                                        <rect key="frame" x="9.5" y="217.5" width="226.5" height="84.5"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="SkukYellow"/>
                         <constraints>
-                            <constraint firstItem="MHd-c7-VlZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="30w-RL-cjJ"/>
-                            <constraint firstItem="mGr-di-Ndm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZdJ-ad-wYa"/>
-                            <constraint firstItem="MHd-c7-VlZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="dgH-vG-Nag"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MHd-c7-VlZ" secondAttribute="bottom" constant="328" id="eC0-Sf-LHd"/>
-                            <constraint firstItem="mGr-di-Ndm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="450" id="w37-jS-vDL"/>
+                            <constraint firstItem="9ES-yI-bU4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="YVo-qh-X93"/>
+                            <constraint firstItem="9ES-yI-bU4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hCr-AZ-5Lx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -50,18 +52,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1329" y="-388"/>
+            <point key="canvasLocation" x="-1330.4347826086957" y="-388.39285714285711"/>
         </scene>
         <!--Forgotten Password View Controller-->
         <scene sceneID="CFh-5z-CVS">
             <objects>
                 <viewController id="Pbl-dJ-h6c" customClass="ForgottenPasswordViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pz9-fM-kez">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyp-iR-U6k">
-                                <rect key="frame" x="157.5" y="581" width="60" height="36"/>
+                                <rect key="frame" x="177" y="776" width="60" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,10 +73,29 @@
                                     <action selector="cancelBtn:" destination="DIS-Fk-aQQ" eventType="touchUpInside" id="SKR-Zn-Y8q"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z5C-vG-oBX">
+                                <rect key="frame" x="107" y="74" width="200.5" height="172.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShB-44-hV5">
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="104.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
+                                        <color key="textColor" red="0.99672025440000001" green="0.9921321273" blue="0.98764926200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GP-cW-PnF">
+                                        <rect key="frame" x="0.0" y="104.5" width="200.5" height="68"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="SkukYellow"/>
                         <constraints>
                             <constraint firstItem="jyp-iR-U6k" firstAttribute="centerX" secondItem="Pz9-fM-kez" secondAttribute="centerX" id="99z-M5-7JE"/>
+                            <constraint firstItem="Z5C-vG-oBX" firstAttribute="top" secondItem="BrR-0d-81y" secondAttribute="top" constant="30" id="fN8-gN-9N7"/>
+                            <constraint firstItem="Z5C-vG-oBX" firstAttribute="centerX" secondItem="Pz9-fM-kez" secondAttribute="centerX" id="kzh-OY-ZTC"/>
                             <constraint firstItem="BrR-0d-81y" firstAttribute="bottom" secondItem="jyp-iR-U6k" secondAttribute="bottom" constant="50" id="sin-OH-ikw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BrR-0d-81y"/>
@@ -92,23 +113,11 @@
             <objects>
                 <viewController id="DIS-Fk-aQQ" customClass="RegisterViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="de4-In-A8z">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMW-cO-sPy">
-                                <rect key="frame" x="104" y="42" width="167" height="87"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="75"/>
-                                <color key="textColor" red="0.99672025440000001" green="0.9921321273" blue="0.98764926200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GDy-wz-nTh">
-                                <rect key="frame" x="119.5" y="129" width="136" height="51"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-Dk-yD7">
-                                <rect key="frame" x="157.5" y="581" width="60" height="36"/>
+                                <rect key="frame" x="177" y="776" width="60" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -117,47 +126,65 @@
                                     <action selector="cancelBtn:" destination="DIS-Fk-aQQ" eventType="touchUpInside" id="8ff-rf-w4s"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-PM-rme">
-                                <rect key="frame" x="30" y="223" width="315" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next" textContentType="name"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OuL-VT-cpK">
-                                <rect key="frame" x="30" y="278" width="315" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES" textContentType="username"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-BL-yBo">
-                                <rect key="frame" x="30" y="333" width="315" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="alphabet" returnKeyType="go" secureTextEntry="YES" textContentType="password"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-u8-tsx">
+                                <rect key="frame" x="30" y="264" width="354" height="225"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-PM-rme">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartQuotesType="no" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a username" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OuL-VT-cpK">
+                                        <rect key="frame" x="0.0" y="65" width="354" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartQuotesType="no" textContentType="username"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-BL-yBo">
+                                        <rect key="frame" x="0.0" y="130" width="354" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="next" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Email Address" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-OO-2TK">
+                                        <rect key="frame" x="0.0" y="195" width="354" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartQuotesType="no" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smc-Sd-kt2">
-                                <rect key="frame" x="131" y="453" width="113" height="47"/>
+                                <rect key="frame" x="150.5" y="522" width="113" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -166,110 +193,100 @@
                                     <action selector="registerBtn:" destination="DIS-Fk-aQQ" eventType="touchUpInside" id="4dw-eJ-Tsp"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-OO-2TK">
-                                <rect key="frame" x="30" y="388" width="315" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="email"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-8Q-vdd">
+                                <rect key="frame" x="107" y="74" width="200.5" height="172.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYS-SQ-6eu">
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="104.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
+                                        <color key="textColor" red="0.99672025440000001" green="0.9921321273" blue="0.98764926200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-iU-eeM">
+                                        <rect key="frame" x="0.0" y="104.5" width="200.5" height="68"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" name="SkukYellow"/>
                         <constraints>
-                            <constraint firstItem="OuL-VT-cpK" firstAttribute="leading" secondItem="dX0-jR-oX0" secondAttribute="leading" constant="30" id="1VC-Ed-cbI"/>
-                            <constraint firstItem="jDb-OO-2TK" firstAttribute="leading" secondItem="dX0-jR-oX0" secondAttribute="leading" constant="30" id="2cb-wc-MCY"/>
-                            <constraint firstItem="jDb-OO-2TK" firstAttribute="top" secondItem="jwf-BL-yBo" secondAttribute="bottom" constant="25" id="EV7-yp-uMB"/>
-                            <constraint firstItem="GDy-wz-nTh" firstAttribute="centerX" secondItem="de4-In-A8z" secondAttribute="centerX" id="GMH-4b-d7B"/>
-                            <constraint firstItem="dX0-jR-oX0" firstAttribute="trailing" secondItem="jDb-OO-2TK" secondAttribute="trailing" constant="30" id="IMF-j9-1Ut"/>
+                            <constraint firstItem="dAJ-8Q-vdd" firstAttribute="top" secondItem="dX0-jR-oX0" secondAttribute="top" constant="30" id="6iJ-fu-CDw"/>
                             <constraint firstItem="wIK-Dk-yD7" firstAttribute="centerX" secondItem="de4-In-A8z" secondAttribute="centerX" id="SaH-nc-vcz"/>
-                            <constraint firstItem="GDy-wz-nTh" firstAttribute="top" secondItem="LMW-cO-sPy" secondAttribute="bottom" id="T5O-wR-IbZ"/>
-                            <constraint firstItem="jwf-BL-yBo" firstAttribute="leading" secondItem="dX0-jR-oX0" secondAttribute="leading" constant="30" id="TEi-aJ-HNR"/>
-                            <constraint firstItem="NC0-PM-rme" firstAttribute="leading" secondItem="dX0-jR-oX0" secondAttribute="leading" constant="30" id="c7A-ue-NVT"/>
-                            <constraint firstItem="jwf-BL-yBo" firstAttribute="top" secondItem="OuL-VT-cpK" secondAttribute="bottom" constant="25" id="cZ7-hK-xkE"/>
-                            <constraint firstItem="LMW-cO-sPy" firstAttribute="centerX" secondItem="de4-In-A8z" secondAttribute="centerX" id="cc7-4U-GIz"/>
-                            <constraint firstItem="OuL-VT-cpK" firstAttribute="top" secondItem="NC0-PM-rme" secondAttribute="bottom" constant="25" id="dMH-W7-wc9"/>
+                            <constraint firstItem="hWb-u8-tsx" firstAttribute="top" secondItem="dX0-jR-oX0" secondAttribute="top" constant="220" id="W5r-3J-H78"/>
                             <constraint firstItem="dX0-jR-oX0" firstAttribute="bottom" secondItem="wIK-Dk-yD7" secondAttribute="bottom" constant="50" id="dbq-RV-9sl"/>
-                            <constraint firstItem="LMW-cO-sPy" firstAttribute="top" secondItem="dX0-jR-oX0" secondAttribute="top" constant="22" id="dog-2e-1to"/>
-                            <constraint firstItem="NC0-PM-rme" firstAttribute="top" secondItem="GDy-wz-nTh" secondAttribute="bottom" constant="43" id="h12-dL-JBv"/>
-                            <constraint firstItem="smc-Sd-kt2" firstAttribute="top" secondItem="jDb-OO-2TK" secondAttribute="bottom" constant="35" id="k9G-8r-RDO"/>
-                            <constraint firstItem="dX0-jR-oX0" firstAttribute="trailing" secondItem="OuL-VT-cpK" secondAttribute="trailing" constant="30" id="p2i-B3-t0C"/>
-                            <constraint firstItem="dX0-jR-oX0" firstAttribute="trailing" secondItem="jwf-BL-yBo" secondAttribute="trailing" constant="30" id="qfl-B1-M8l"/>
+                            <constraint firstItem="dX0-jR-oX0" firstAttribute="trailing" secondItem="hWb-u8-tsx" secondAttribute="trailing" constant="30" id="nw4-bs-FYz"/>
+                            <constraint firstItem="dAJ-8Q-vdd" firstAttribute="centerX" secondItem="de4-In-A8z" secondAttribute="centerX" id="nwg-4v-OAg"/>
+                            <constraint firstItem="smc-Sd-kt2" firstAttribute="top" secondItem="hWb-u8-tsx" secondAttribute="bottom" constant="33" id="rVV-Tk-YQP"/>
                             <constraint firstItem="smc-Sd-kt2" firstAttribute="centerX" secondItem="de4-In-A8z" secondAttribute="centerX" id="uec-Qe-r49"/>
-                            <constraint firstItem="dX0-jR-oX0" firstAttribute="trailing" secondItem="NC0-PM-rme" secondAttribute="trailing" constant="30" id="xfA-dx-OBI"/>
+                            <constraint firstItem="hWb-u8-tsx" firstAttribute="leading" secondItem="dX0-jR-oX0" secondAttribute="leading" constant="30" id="vJx-jL-R3y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dX0-jR-oX0"/>
                     </view>
                     <navigationItem key="navigationItem" id="bzA-4o-IKd"/>
                     <connections>
+                        <outlet property="emailAddressField" destination="jDb-OO-2TK" id="c8n-1c-d3V"/>
+                        <outlet property="nameField" destination="NC0-PM-rme" id="StL-pl-Kw1"/>
+                        <outlet property="passwordField" destination="jwf-BL-yBo" id="p6d-YY-bIx"/>
+                        <outlet property="userNameField" destination="OuL-VT-cpK" id="IRI-Fv-EHK"/>
                         <segue destination="0X9-8X-brI" kind="show" identifier="RegisterToLogin" id="9hK-Fm-1wI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PjX-BU-ZcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-420" y="-1254"/>
+            <point key="canvasLocation" x="-420" y="-1254.4227886056972"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="KCX-rL-YtK">
             <objects>
                 <viewController id="0X9-8X-brI" customClass="LoginViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="w9S-vY-oQR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-1E-KLK">
-                                <rect key="frame" x="50" y="303" width="274" height="30"/>
-                                <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="ydA-ur-UZT"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done" secureTextEntry="YES" textContentType="password"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Username" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-aQ-uke">
-                                <rect key="frame" x="50" y="247" width="274" height="30"/>
-                                <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="top-5c-AOb"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next" textContentType="username"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nND-de-ZtO">
-                                <rect key="frame" x="87.5" y="0.0" width="200" height="228"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
-                                <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-CH-SLn">
-                                <rect key="frame" x="96.5" y="154" width="182" height="68"/>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-g8-DOP">
+                                <rect key="frame" x="30" y="276.5" width="354" height="86"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Username" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-aQ-uke">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
+                                        <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="top-5c-AOb"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartQuotesType="no" textContentType="username"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hWa-1E-KLK">
+                                        <rect key="frame" x="0.0" y="56" width="354" height="30"/>
+                                        <color key="backgroundColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ydA-ur-UZT"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartQuotesType="no" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-aO-Fql">
-                                <rect key="frame" x="150" y="388" width="75" height="47"/>
+                                <rect key="frame" x="169.5" y="417.5" width="75" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -279,16 +296,8 @@
                                     <segue destination="4jf-VC-uth" kind="show" identifier="loginToMealPlan" id="5SG-Mq-KEw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-xx-zX2">
-                                <rect key="frame" x="150" y="341" width="174" height="30"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
-                                <state key="normal" title="Forgotten Password"/>
-                                <connections>
-                                    <action selector="forgottenPswdBtn:" destination="0X9-8X-brI" eventType="touchUpInside" id="kgJ-3u-CBy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-TC-1w8">
-                                <rect key="frame" x="150" y="581" width="75" height="36"/>
+                                <rect key="frame" x="169.5" y="776" width="75" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -297,27 +306,47 @@
                                     <action selector="registerBtn:" destination="0X9-8X-brI" eventType="touchUpInside" id="TzK-Vg-gWF"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jQq-9x-qvr">
+                                <rect key="frame" x="107" y="74" width="200.5" height="172.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nND-de-ZtO">
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="104.5"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
+                                        <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-CH-SLn">
+                                        <rect key="frame" x="0.0" y="104.5" width="200.5" height="68"/>
+                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-xx-zX2">
+                                <rect key="frame" x="240" y="370" width="144" height="30"/>
+                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                <state key="normal" title="Forgotten Password"/>
+                                <connections>
+                                    <action selector="forgottenPswdBtn:" destination="0X9-8X-brI" eventType="touchUpInside" id="kgJ-3u-CBy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="SkukYellow"/>
                         <constraints>
-                            <constraint firstItem="q4g-aQ-uke" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="227" id="480-JU-juq"/>
-                            <constraint firstItem="nND-de-ZtO" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="-20" id="48n-9s-BTB"/>
-                            <constraint firstItem="o8V-xx-zX2" firstAttribute="top" secondItem="hWa-1E-KLK" secondAttribute="bottom" constant="8" id="5Qc-ej-Mue"/>
-                            <constraint firstItem="SxB-CH-SLn" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="134" id="7Ud-s2-IFK"/>
-                            <constraint firstItem="hWa-1E-KLK" firstAttribute="top" secondItem="q4g-aQ-uke" secondAttribute="bottom" constant="26" id="GNB-5R-JYO"/>
-                            <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="q4g-aQ-uke" secondAttribute="trailing" constant="51" id="IsD-en-ijk"/>
-                            <constraint firstItem="hWa-1E-KLK" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="50" id="Pk2-FQ-2mo"/>
-                            <constraint firstItem="nND-de-ZtO" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="T8x-cS-5FC"/>
-                            <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="hWa-1E-KLK" secondAttribute="trailing" constant="51" id="XCO-te-1fu"/>
-                            <constraint firstItem="rxP-aO-Fql" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="Y5k-6v-GU0"/>
-                            <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="o8V-xx-zX2" secondAttribute="trailing" constant="51" id="bUY-1H-BSf"/>
-                            <constraint firstItem="o8V-xx-zX2" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="150" id="iO9-Er-Hjg"/>
-                            <constraint firstItem="q4g-aQ-uke" firstAttribute="top" secondItem="nND-de-ZtO" secondAttribute="bottom" constant="19" id="jJd-dF-MZ4"/>
-                            <constraint firstItem="AJD-TC-1w8" firstAttribute="centerX" secondItem="rxP-aO-Fql" secondAttribute="centerX" id="lgr-sv-saq"/>
-                            <constraint firstItem="rxP-aO-Fql" firstAttribute="top" secondItem="o8V-xx-zX2" secondAttribute="bottom" constant="17" id="sPU-Gc-4IU"/>
-                            <constraint firstItem="D1s-xx-7yr" firstAttribute="bottom" secondItem="AJD-TC-1w8" secondAttribute="bottom" constant="50" id="veJ-2H-Kg8"/>
-                            <constraint firstItem="q4g-aQ-uke" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="50" id="yFH-WR-23p"/>
-                            <constraint firstItem="SxB-CH-SLn" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="ynU-xp-ZWp"/>
+                            <constraint firstItem="3aB-g8-DOP" firstAttribute="top" secondItem="jQq-9x-qvr" secondAttribute="bottom" constant="30" id="8Dm-bj-5Qk"/>
+                            <constraint firstItem="3aB-g8-DOP" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="30" id="A8y-lF-dl2"/>
+                            <constraint firstItem="AJD-TC-1w8" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="Csc-Ae-ecr"/>
+                            <constraint firstItem="3aB-g8-DOP" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="Epu-c3-X5p"/>
+                            <constraint firstItem="rxP-aO-Fql" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="HN1-Dk-eec"/>
+                            <constraint firstItem="jQq-9x-qvr" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="a1t-eJ-us3"/>
+                            <constraint firstItem="o8V-xx-zX2" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="240" id="eN6-xm-41R"/>
+                            <constraint firstItem="jQq-9x-qvr" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="30" id="ekM-vQ-xrp"/>
+                            <constraint firstItem="D1s-xx-7yr" firstAttribute="bottom" secondItem="AJD-TC-1w8" secondAttribute="bottom" constant="50" id="q4N-Pj-dhU"/>
+                            <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="o8V-xx-zX2" secondAttribute="trailing" constant="30" id="q7g-jv-1KN"/>
+                            <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="3aB-g8-DOP" secondAttribute="trailing" constant="30" id="ujA-XQ-gfz"/>
+                            <constraint firstItem="rxP-aO-Fql" firstAttribute="top" secondItem="3aB-g8-DOP" secondAttribute="bottom" constant="55" id="zR1-Bx-X2j"/>
+                            <constraint firstItem="o8V-xx-zX2" firstAttribute="top" secondItem="3aB-g8-DOP" secondAttribute="bottom" constant="7.5" id="zYI-qM-OYD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D1s-xx-7yr"/>
                     </view>
@@ -330,18 +359,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O08-TN-27I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-420" y="-388"/>
+            <point key="canvasLocation" x="-420.28985507246381" y="-388.39285714285711"/>
         </scene>
         <!--Pantry-->
         <scene sceneID="xh5-aT-Qr9">
             <objects>
                 <viewController id="2Yq-zq-2GU" customClass="PantryViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P3o-SO-bSB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-7q-HDh">
-                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIR-6H-HZX">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -396,7 +425,7 @@
                                 </userDefinedRuntimeAttributes>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gnj-We-WEv">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -436,11 +465,11 @@
             <objects>
                 <viewController id="TW7-kx-80R" customClass="RecipeBankViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Agu-QT-Dun">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-Ds-edI">
-                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz6-q1-ZoH">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -492,7 +521,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KAR-zW-GBH">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -532,11 +561,11 @@
             <objects>
                 <viewController id="3ff-Hc-Ugn" customClass="SettingsViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cOt-Tf-UX9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UpK-Rz-vzP">
-                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J3-Ku-ITa">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -588,7 +617,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdZ-5S-k9R">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -628,7 +657,7 @@
             <objects>
                 <navigationController id="rhb-BZ-mJC" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gnj-xv-OVB">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -644,11 +673,11 @@
             <objects>
                 <viewController id="NQ1-sU-FlJ" customClass="BarcodeScannerViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KNk-PH-HFy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NRt-Lz-CE7">
-                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbF-Y9-PgW">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -707,16 +736,16 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="St7-49-JtG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-K3-i0l">
-                                        <rect key="frame" x="122" y="291.5" width="131.5" height="20.5"/>
+                                        <rect key="frame" x="141.5" y="377" width="131.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-Sg-LlI">
-                                        <rect key="frame" x="126" y="517" width="123" height="36"/>
+                                        <rect key="frame" x="145.5" y="688" width="123" height="36"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <state key="normal" title="Add Manually">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -779,7 +808,7 @@
             <objects>
                 <navigationController id="aNi-vF-2bg" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Za-iG-5bj">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -795,11 +824,11 @@
             <objects>
                 <viewController id="k5M-pB-fuX" customClass="ManualAddViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fI0-5R-5LK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5lY-kC-dkP">
-                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-nR-rdz">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -863,7 +892,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQX-kS-GDG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -910,11 +939,11 @@
             <objects>
                 <viewController id="hRh-Vh-XDR" customClass="ShoppingListViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="10X-DJ-8Je">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="624-ff-a0K">
-                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-JU-a8z">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -966,10 +995,10 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1OE-BW-GTd">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ZE-4h-NW3">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="324"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="529"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </tableView>
                                 </subviews>
@@ -1025,11 +1054,11 @@
             <objects>
                 <viewController id="xhJ-4D-iXp" customClass="MealPlanViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XA5-Z9-nNn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kaN-CP-Pqw">
-                                <rect key="frame" x="260" y="74" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjV-C2-bJ0">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -1081,24 +1110,24 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eBN-Yx-Pw7">
-                                <rect key="frame" x="0.0" y="64" width="375" height="637"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hpJ-sJ-CVa">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="637"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="120" id="Bbu-3W-Fgz" customClass="RecipeCell" customModule="Skuk" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                                <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bbu-3W-Fgz" id="SDF-b5-zfk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-T0-Cvb">
-                                                            <rect key="frame" x="15" y="15" width="158" height="89"/>
+                                                            <rect key="frame" x="20" y="15" width="607" height="89"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-DK-61e">
-                                                            <rect key="frame" x="181" y="15" width="179" height="21"/>
+                                                            <rect key="frame" x="635" y="15" width="179" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1173,7 +1202,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4jf-VC-uth" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kWd-tG-viI">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1191,7 +1220,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q8O-Hs-PGq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fS4-BN-iCq">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1209,7 +1238,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Iy-3C-8yh" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tCz-uD-ugh">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1227,7 +1256,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Gjf-5W-Txe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tqC-yM-jIV">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1245,7 +1274,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cNH-ph-DcX" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YR9-ob-2U7">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1268,11 +1297,11 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z1V-WW-tqb"/>
-        <segue reference="TnZ-cb-CZm"/>
-        <segue reference="9Fc-Ne-YN6"/>
-        <segue reference="phN-h3-22M"/>
-        <segue reference="2UY-5b-khf"/>
-        <segue reference="9hK-Fm-1wI"/>
+        <segue reference="raM-5L-eGB"/>
+        <segue reference="Foa-xf-F3t"/>
+        <segue reference="gYv-gl-rmz"/>
+        <segue reference="ENV-fU-IpZ"/>
+        <segue reference="5SG-Mq-KEw"/>
+        <segue reference="fbK-NT-iC6"/>
     </inferredMetricsTieBreakers>
 </document>

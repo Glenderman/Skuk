@@ -27,27 +27,33 @@ class ManualAddViewController: UIViewController {
         })
     }
     
-    @IBAction func doneBtn(_ sender: Any) {
+    @IBAction func doneBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ManualAddToShoppingList", sender: self)
     }
     
-    @IBAction func MealPlanBtn(_ sender: Any) {
+    @IBAction func MealPlanBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ManualAddToMealPlan", sender: self)
     }
     
-    @IBAction func ShoppingListBtn(_ sender: Any) {
+    @IBAction func ShoppingListBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ManualAddToShoppingList", sender: self)
     }
     
-    @IBAction func PantryBtn(_ sender: Any) {
+    @IBAction func PantryBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ManualAddToPantry", sender: self)
     }
     
-    @IBAction func RecipeBankBtn(_ sender: Any) {
+    @IBAction func RecipeBankBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ManualAddToRecipeBank", sender: self)
     }
     
-    @IBAction func SettingsBtn(_ sender: Any) {
+    @IBAction func SettingsBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ManualAddToSettings", sender: self)
     }
     

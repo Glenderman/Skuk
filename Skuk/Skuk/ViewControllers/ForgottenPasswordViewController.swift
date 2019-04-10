@@ -10,7 +10,8 @@ import UIKit
 
 class ForgottenPasswordViewController: UIViewController {
     
-    @IBAction func cancelBtn(_ sender: Any) {
+    @IBAction func cancelBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "ForgetToLogin", sender: self)
     }
     

@@ -27,31 +27,38 @@ class BarcodeScannerViewController: UIViewController {
         })
     }
     
-    @IBAction func mealPlanBtn(_ sender: Any) {
+    @IBAction func mealPlanBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "BarcodeScannerToMealPlan", sender: self)
     }
     
-    @IBAction func shoppingListBtn(_ sender: Any) {
+    @IBAction func shoppingListBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "BarcodeScannerToShoppingList", sender: self)
     }
     
-    @IBAction func pantryBtn(_ sender: Any) {
+    @IBAction func pantryBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "BarcodeScannerToPantry", sender: self)
     }
     
-    @IBAction func recipeBankBtn(_ sender: Any) {
+    @IBAction func recipeBankBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "BarcodeScannerToRecipeBank", sender: self)
     }
     
-    @IBAction func settingsBtn(_ sender: Any) {
+    @IBAction func settingsBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "BarcodeScannerToSettings", sender: self)
     }
     
-    @IBAction func doneBtn(_ sender: Any) {
+    @IBAction func doneBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "BarcodeScannerToShoppingList", sender: self)
     }
     
-    @IBAction func manualAddBtn(_ sender: Any) {
+    @IBAction func manualAddBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         performSegue(withIdentifier: "BarcodeToManual", sender: self)
     }
     

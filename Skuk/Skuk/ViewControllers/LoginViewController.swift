@@ -14,18 +14,18 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     
     @IBAction func loginBtn(_ sender: UIButton) {
-        sender.touchesBegan()
+        sender.touchesBegan()//button animation
         performSegue(withIdentifier: "loginToMealPlan", sender: self)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        usernameField.delegate = self
-        passwordField.delegate = self
-        
-        let borderColour = UIColor.gray
-        usernameField.layer.borderColor = borderColour.cgColor
-        passwordField.layer.borderColor = borderColour.cgColor //sets border colours on textfields
+    @IBAction func forgottenPswdBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "LoginToForget", sender: self)
+    }
+    
+    @IBAction func registerBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "LoginToRegister", sender: self)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -41,11 +41,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true) //if the user touches outside the textfields/keyboard then the keyboard closes
     }
     
-    @IBAction func forgottenPswdBtn(_ sender: Any) {
-        performSegue(withIdentifier: "LoginToForget", sender: self)
-    }
-    
-    @IBAction func registerBtn(_ sender: Any) {
-        performSegue(withIdentifier: "LoginToRegister", sender: self)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        usernameField.delegate = self
+        passwordField.delegate = self
+        
+        let borderColour = UIColor.gray
+        usernameField.layer.borderColor = borderColour.cgColor
+        passwordField.layer.borderColor = borderColour.cgColor //sets border colours on textfields
     }
 }
