@@ -47,8 +47,7 @@ class ShoppingListViewController: UIViewController {
         performSegue(withIdentifier: "ShoppingListToSettings", sender: self)
     }
     
-    @IBAction func addShoppingList(_ sender: UIButton) {
-        sender.touchesBegan()
+    @IBAction func addShoppingList(_ sender: Any) {
         performSegue(withIdentifier: "ShoppingListToBarcodeScanner", sender: self)
     }
     

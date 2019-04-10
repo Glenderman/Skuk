@@ -324,7 +324,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-xx-zX2">
-                                <rect key="frame" x="240" y="370" width="144" height="30"/>
+                                <rect key="frame" x="150" y="370" width="234" height="30"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                 <state key="normal" title="Forgotten Password"/>
                                 <connections>
@@ -340,7 +340,7 @@
                             <constraint firstItem="3aB-g8-DOP" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="Epu-c3-X5p"/>
                             <constraint firstItem="rxP-aO-Fql" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="HN1-Dk-eec"/>
                             <constraint firstItem="jQq-9x-qvr" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="a1t-eJ-us3"/>
-                            <constraint firstItem="o8V-xx-zX2" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="240" id="eN6-xm-41R"/>
+                            <constraint firstItem="o8V-xx-zX2" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="150" id="eN6-xm-41R"/>
                             <constraint firstItem="jQq-9x-qvr" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="30" id="ekM-vQ-xrp"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="bottom" secondItem="AJD-TC-1w8" secondAttribute="bottom" constant="50" id="q4N-Pj-dhU"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="o8V-xx-zX2" secondAttribute="trailing" constant="30" id="q7g-jv-1KN"/>
@@ -736,16 +736,16 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="St7-49-JtG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-K3-i0l">
-                                        <rect key="frame" x="141.5" y="377" width="131.5" height="20.5"/>
+                                        <rect key="frame" x="141.5" y="394" width="131.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-Sg-LlI">
-                                        <rect key="frame" x="145.5" y="688" width="123" height="36"/>
+                                        <rect key="frame" x="145.5" y="722" width="123" height="36"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <state key="normal" title="Add Manually">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -766,12 +766,12 @@
                         </subviews>
                         <color key="backgroundColor" name="NavigationGrey"/>
                         <constraints>
-                            <constraint firstItem="St7-49-JtG" firstAttribute="top" secondItem="HLd-BO-ZXC" secondAttribute="top" id="F5C-gW-L9o"/>
-                            <constraint firstItem="St7-49-JtG" firstAttribute="leading" secondItem="HLd-BO-ZXC" secondAttribute="leading" id="PUo-63-Be1"/>
-                            <constraint firstItem="St7-49-JtG" firstAttribute="trailing" secondItem="HLd-BO-ZXC" secondAttribute="trailing" id="cW0-9P-fEi"/>
+                            <constraint firstItem="St7-49-JtG" firstAttribute="leading" secondItem="HLd-BO-ZXC" secondAttribute="leading" id="T6a-OK-T0V"/>
+                            <constraint firstAttribute="bottom" secondItem="St7-49-JtG" secondAttribute="bottom" id="XJb-y0-aCi"/>
+                            <constraint firstItem="St7-49-JtG" firstAttribute="top" secondItem="HLd-BO-ZXC" secondAttribute="top" id="exI-ra-5hU"/>
                             <constraint firstItem="HLd-BO-ZXC" firstAttribute="trailing" secondItem="NRt-Lz-CE7" secondAttribute="trailing" constant="10" id="iza-E9-PQe"/>
                             <constraint firstItem="NRt-Lz-CE7" firstAttribute="top" secondItem="HLd-BO-ZXC" secondAttribute="top" constant="10" id="nrU-3c-2RV"/>
-                            <constraint firstItem="HLd-BO-ZXC" firstAttribute="bottom" secondItem="St7-49-JtG" secondAttribute="bottom" id="w1h-iT-oKJ"/>
+                            <constraint firstItem="St7-49-JtG" firstAttribute="trailing" secondItem="HLd-BO-ZXC" secondAttribute="trailing" id="p69-vE-aCJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HLd-BO-ZXC"/>
                     </view>
@@ -790,7 +790,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="trailingConstraint" destination="cW0-9P-fEi" id="fo4-UL-zgD"/>
+                        <outlet property="doneBtn" destination="iph-Ii-hnB" id="tpO-WN-UAb"/>
                         <segue destination="aNi-vF-2bg" kind="show" identifier="BarcodeToManual" id="REE-fE-Ru7"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="BarcodeScannerToMealPlan" id="rLG-7n-q6j"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="BarcodeScannerToPantry" id="ENV-fU-IpZ"/>
@@ -801,7 +801,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wBs-Ku-ww4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3660" y="-1395.6521739130435"/>
+            <point key="canvasLocation" x="3659.420289855073" y="-1396.2053571428571"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h0E-1c-f2y">
@@ -892,17 +892,17 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQX-kS-GDG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" name="NavigationGrey"/>
                         <constraints>
-                            <constraint firstItem="IQX-kS-GDG" firstAttribute="leading" secondItem="D3M-Ji-wLM" secondAttribute="leading" id="2DI-TB-Ivr"/>
-                            <constraint firstItem="IQX-kS-GDG" firstAttribute="top" secondItem="D3M-Ji-wLM" secondAttribute="top" id="4Wb-p6-NpC"/>
-                            <constraint firstItem="IQX-kS-GDG" firstAttribute="trailing" secondItem="D3M-Ji-wLM" secondAttribute="trailing" id="D4d-ni-03s"/>
+                            <constraint firstAttribute="bottom" secondItem="IQX-kS-GDG" secondAttribute="bottom" id="78T-U1-xSi"/>
+                            <constraint firstItem="IQX-kS-GDG" firstAttribute="leading" secondItem="D3M-Ji-wLM" secondAttribute="leading" id="U7Y-d9-odp"/>
+                            <constraint firstItem="IQX-kS-GDG" firstAttribute="trailing" secondItem="D3M-Ji-wLM" secondAttribute="trailing" id="XdU-fu-GOz"/>
+                            <constraint firstItem="IQX-kS-GDG" firstAttribute="top" secondItem="D3M-Ji-wLM" secondAttribute="top" id="ZCc-0d-Yjb"/>
                             <constraint firstItem="D3M-Ji-wLM" firstAttribute="trailing" secondItem="5lY-kC-dkP" secondAttribute="trailing" constant="10" id="gqK-Th-ywA"/>
-                            <constraint firstItem="IQX-kS-GDG" firstAttribute="bottom" secondItem="D3M-Ji-wLM" secondAttribute="bottom" id="wKe-fp-req"/>
                             <constraint firstItem="5lY-kC-dkP" firstAttribute="top" secondItem="D3M-Ji-wLM" secondAttribute="top" constant="10" id="whb-uB-QxD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D3M-Ji-wLM"/>
@@ -922,7 +922,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="trailingConstraint" destination="D4d-ni-03s" id="ROw-qP-6Ex"/>
+                        <outlet property="doneBtn" destination="LiY-VZ-pvp" id="xpB-3q-x8o"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="ManualAddToShoppingList" id="JcM-ZJ-VPL"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="ManualAddToSettings" id="yzY-Xv-0bF"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="ManualAddToMealPlan" id="2UY-5b-khf"/>
@@ -932,7 +932,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNm-SJ-1Oy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5549.6000000000004" y="-1395.6521739130435"/>
+            <point key="canvasLocation" x="5549.275362318841" y="-1396.2053571428571"/>
         </scene>
         <!--Shopping List-->
         <scene sceneID="Fjq-Fw-SjY">
@@ -1124,10 +1124,14 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-T0-Cvb">
-                                                            <rect key="frame" x="20" y="15" width="607" height="89"/>
+                                                            <rect key="frame" x="20" y="15" width="187" height="89"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="187" id="7CA-Eg-Qcu"/>
+                                                                <constraint firstAttribute="height" constant="89" id="VaK-ID-54c"/>
+                                                            </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-DK-61e">
-                                                            <rect key="frame" x="635" y="15" width="179" height="21"/>
+                                                            <rect key="frame" x="215" y="15" width="179" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1194,7 +1198,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEX-Ba-i9m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1608.8" y="-390.85457271364322"/>
+            <point key="canvasLocation" x="1608.6956521739132" y="-391.07142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IHK-Ys-SiT">
@@ -1297,11 +1301,11 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="raM-5L-eGB"/>
-        <segue reference="Foa-xf-F3t"/>
-        <segue reference="gYv-gl-rmz"/>
-        <segue reference="ENV-fU-IpZ"/>
-        <segue reference="5SG-Mq-KEw"/>
-        <segue reference="fbK-NT-iC6"/>
+        <segue reference="z1V-WW-tqb"/>
+        <segue reference="TnZ-cb-CZm"/>
+        <segue reference="9Fc-Ne-YN6"/>
+        <segue reference="phN-h3-22M"/>
+        <segue reference="2UY-5b-khf"/>
+        <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
 </document>

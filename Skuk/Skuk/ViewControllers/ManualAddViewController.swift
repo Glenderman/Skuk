@@ -12,6 +12,8 @@ class ManualAddViewController: UIViewController {
     
     var menuOpen = false
     
+    @IBOutlet var doneBtn: UIBarButtonItem!
+    
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
     @IBAction func navBtn(_ sender: Any) {
@@ -27,8 +29,7 @@ class ManualAddViewController: UIViewController {
         })
     }
     
-    @IBAction func doneBtn(_ sender: UIButton) {
-        sender.touchesBegan()
+    @IBAction func doneBtn(_ sender: Any) {
         performSegue(withIdentifier: "ManualAddToShoppingList", sender: self)
     }
     
@@ -59,5 +60,8 @@ class ManualAddViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        doneBtn.setTitleTextAttributes([
+            NSAttributedString.Key.font: UIFont(name: "Kefa", size: 20)!],for: .normal)
     }
 }
