@@ -51,7 +51,35 @@ class ShoppingListViewController: UIViewController {
         performSegue(withIdentifier: "ShoppingListToBarcodeScanner", sender: self)
     }
     
+    @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
+        if sender.state == .ended {
+            switch sender.direction {
+            case .right:
+                trailingConstraint.constant = 0
+                UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+                    self.view.layoutIfNeeded()
+                })
+            case .left:
+                trailingConstraint.constant = -130
+                UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+                    self.view.layoutIfNeeded()
+                })
+            default:
+                break
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        swipeRight.direction = .right
+        
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
+        swipeLeft.direction = .left
+        
+        view.addGestureRecognizer(swipeRight)
+        view.addGestureRecognizer(swipeLeft)
     }
 }
