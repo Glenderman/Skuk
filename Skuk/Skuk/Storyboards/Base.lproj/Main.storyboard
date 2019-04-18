@@ -755,22 +755,6 @@
             </objects>
             <point key="canvasLocation" x="1608.6956521739132" y="-1396.2053571428571"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="f94-Jb-O8X">
-            <objects>
-                <navigationController id="rhb-BZ-mJC" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gnj-xv-OVB">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="NQ1-sU-FlJ" kind="relationship" relationship="rootViewController" id="tqh-G1-TE1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3GF-Bk-U5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2750" y="-1395"/>
-        </scene>
         <!--Shopping List-->
         <scene sceneID="Oef-BT-08P">
             <objects>
@@ -879,12 +863,6 @@
                         <viewLayoutGuide key="safeArea" id="HLd-BO-ZXC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping List" id="NFf-oY-2I3">
-                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="done" id="iph-Ii-hnB">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="doneBtn:" destination="NQ1-sU-FlJ" id="Etp-d0-8VU"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="hiP-Ar-gh7">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -893,7 +871,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="doneBtn" destination="iph-Ii-hnB" id="tpO-WN-UAb"/>
                         <outlet property="leadingConstraint" destination="T6a-OK-T0V" id="obV-pI-oD1"/>
                         <outlet property="trailingConstraint" destination="p69-vE-aCJ" id="ZVL-yM-v1i"/>
                         <segue destination="aNi-vF-2bg" kind="show" identifier="BarcodeToManual" id="REE-fE-Ru7"/>
@@ -1150,7 +1127,7 @@
                         <segue destination="4jf-VC-uth" kind="show" identifier="ShoppingListToMealPlan" id="jrC-2Z-VOj"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="ShoppingListToRecipeBank" id="3yw-2c-Hg6"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="ShoppingListToPantry" id="ApW-or-95P"/>
-                        <segue destination="rhb-BZ-mJC" kind="show" identifier="ShoppingListToBarcodeScanner" id="EZ0-ha-F8f"/>
+                        <segue destination="NQ1-sU-FlJ" kind="show" identifier="ShoppingListToBarcodeScanner" id="5KN-i1-Dv2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpN-Ix-lXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1411,11 +1388,11 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z1V-WW-tqb"/>
-        <segue reference="TnZ-cb-CZm"/>
-        <segue reference="9Fc-Ne-YN6"/>
-        <segue reference="phN-h3-22M"/>
-        <segue reference="kR3-0N-4W9"/>
+        <segue reference="raM-5L-eGB"/>
+        <segue reference="Foa-xf-F3t"/>
+        <segue reference="gYv-gl-rmz"/>
+        <segue reference="ENV-fU-IpZ"/>
+        <segue reference="rLG-7n-q6j"/>
         <segue reference="fbK-NT-iC6"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,7 +12,6 @@ class BarcodeScannerViewController: UIViewController {
     
     var menuOpen = false
     
-    @IBOutlet var doneBtn: UIBarButtonItem!
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
@@ -95,8 +94,5 @@ class BarcodeScannerViewController: UIViewController {
         
         view.addGestureRecognizer(swipeRight)
         view.addGestureRecognizer(swipeLeft)
-        
-        doneBtn.setTitleTextAttributes([
-            NSAttributedString.Key.font: UIFont(name: "Kefa", size: 20)!],for: .normal)
     }
 }
