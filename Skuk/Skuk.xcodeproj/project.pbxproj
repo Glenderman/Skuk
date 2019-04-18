@@ -19,10 +19,10 @@
 		7399371D223E7B6600A95E81 /* SkukUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7399371C223E7B6600A95E81 /* SkukUITests.swift */; };
 		73AB576D2268B301006C2E8E /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB576C2268B301006C2E8E /* RecipeViewController.swift */; };
 		73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AC502E223EA0D300566A73 /* LoginViewController.swift */; };
+		73BEEFF522690F3300FEBB0D /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEEFF322690F3300FEBB0D /* ShoppingListViewController.swift */; };
 		73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */; };
 		73DCB567225CBB12006280F4 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCB566225CBB12006280F4 /* BarcodeScannerViewController.swift */; };
 		73DCB569225CC4B6006280F4 /* ManualAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCB568225CC4B6006280F4 /* ManualAddViewController.swift */; };
-		73F3845C2248F973003BD5C3 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845B2248F973003BD5C3 /* ShoppingListViewController.swift */; };
 		73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845D2248F987003BD5C3 /* PantryViewController.swift */; };
 		73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */; };
 		73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F384612248F9AF003BD5C3 /* SettingsViewController.swift */; };
@@ -66,10 +66,10 @@
 		7399371E223E7B6600A95E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73AB576C2268B301006C2E8E /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		73AC502E223EA0D300566A73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		73BEEFF322690F3300FEBB0D /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanViewController.swift; sourceTree = "<group>"; };
 		73DCB566225CBB12006280F4 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		73DCB568225CC4B6006280F4 /* ManualAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualAddViewController.swift; sourceTree = "<group>"; };
-		73F3845B2248F973003BD5C3 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		73F3845D2248F987003BD5C3 /* PantryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewController.swift; sourceTree = "<group>"; };
 		73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBankViewController.swift; sourceTree = "<group>"; };
 		73F384612248F9AF003BD5C3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -170,7 +170,7 @@
 				73AC502E223EA0D300566A73 /* LoginViewController.swift */,
 				73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */,
 				731D5C2E225BE8EA00518DF2 /* Recipe.swift */,
-				73F3845B2248F973003BD5C3 /* ShoppingListViewController.swift */,
+				73BEEFF322690F3300FEBB0D /* ShoppingListViewController.swift */,
 				73F3845D2248F987003BD5C3 /* PantryViewController.swift */,
 				73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */,
 				73F384612248F9AF003BD5C3 /* SettingsViewController.swift */,
@@ -318,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */,
+				73BEEFF522690F3300FEBB0D /* ShoppingListViewController.swift in Sources */,
 				73F4C9DB225AB11C00853ED3 /* RegisterViewController.swift in Sources */,
 				73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */,
 				73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */,
@@ -326,7 +327,6 @@
 				73DCB567225CBB12006280F4 /* BarcodeScannerViewController.swift in Sources */,
 				73F4C9DD225AB3D700853ED3 /* ForgottenPasswordViewController.swift in Sources */,
 				73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */,
-				73F3845C2248F973003BD5C3 /* ShoppingListViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
 				731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */,
 				73AB576D2268B301006C2E8E /* RecipeViewController.swift in Sources */,

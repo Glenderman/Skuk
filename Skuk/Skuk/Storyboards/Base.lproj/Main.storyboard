@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_5" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,16 +20,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="9ES-yI-bU4">
-                                <rect key="frame" x="84.666666666666671" y="244" width="244.66666666666663" height="302"/>
+                                <rect key="frame" x="84.5" y="244" width="245" height="302"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-c7-VlZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="244.66666666666666" height="127.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="127.5"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="110"/>
                                         <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGr-di-Ndm">
-                                        <rect key="frame" x="9" y="217.33333333333329" width="226.66666666666666" height="84.666666666666657"/>
+                                        <rect key="frame" x="9.5" y="217.5" width="226.5" height="84.5"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -74,16 +74,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z5C-vG-oBX">
-                                <rect key="frame" x="107.00000000000001" y="74" width="200.33333333333337" height="172"/>
+                                <rect key="frame" x="107" y="74" width="200.5" height="172.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShB-44-hV5">
-                                        <rect key="frame" x="0.0" y="0.0" width="200.33333333333334" height="104.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="104.5"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
                                         <color key="textColor" red="0.99672025440000001" green="0.9921321273" blue="0.98764926200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GP-cW-PnF">
-                                        <rect key="frame" x="0.0" y="104.33333333333334" width="200.33333333333334" height="67.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="104.5" width="200.5" height="68"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -184,7 +184,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smc-Sd-kt2">
-                                <rect key="frame" x="150.66666666666666" y="522" width="112.99999999999997" height="47"/>
+                                <rect key="frame" x="150.5" y="522" width="113" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -194,16 +194,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dAJ-8Q-vdd">
-                                <rect key="frame" x="107.00000000000001" y="74" width="200.33333333333337" height="172"/>
+                                <rect key="frame" x="107" y="74" width="200.5" height="172.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYS-SQ-6eu">
-                                        <rect key="frame" x="0.0" y="0.0" width="200.33333333333334" height="104.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="104.5"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
                                         <color key="textColor" red="0.99672025440000001" green="0.9921321273" blue="0.98764926200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L8T-iU-eeM">
-                                        <rect key="frame" x="0.0" y="104.33333333333334" width="200.33333333333334" height="67.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="104.5" width="200.5" height="68"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -247,7 +247,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-g8-DOP">
-                                <rect key="frame" x="30" y="276" width="354" height="86"/>
+                                <rect key="frame" x="30" y="276.5" width="354" height="86"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Username" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-aQ-uke">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
@@ -286,7 +286,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-aO-Fql">
-                                <rect key="frame" x="169.66666666666666" y="417" width="75" height="47"/>
+                                <rect key="frame" x="169.5" y="417.5" width="75" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -297,7 +297,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-TC-1w8">
-                                <rect key="frame" x="169.66666666666666" y="776" width="75" height="36"/>
+                                <rect key="frame" x="169.5" y="776" width="75" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -307,16 +307,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jQq-9x-qvr">
-                                <rect key="frame" x="107.00000000000001" y="74" width="200.33333333333337" height="172"/>
+                                <rect key="frame" x="107" y="74" width="200.5" height="172.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nND-de-ZtO">
-                                        <rect key="frame" x="0.0" y="0.0" width="200.33333333333334" height="104.33333333333333"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="104.5"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
                                         <color key="textColor" red="0.99672025442123413" green="0.99213212728500366" blue="0.98764926195144653" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SxB-CH-SLn">
-                                        <rect key="frame" x="0.0" y="104.33333333333334" width="200.33333333333334" height="67.666666666666657"/>
+                                        <rect key="frame" x="0.0" y="104.5" width="200.5" height="68"/>
                                         <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -324,7 +324,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-xx-zX2">
-                                <rect key="frame" x="150" y="369.66666666666669" width="234" height="30"/>
+                                <rect key="frame" x="150" y="370" width="234" height="30"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
                                 <state key="normal" title="Forgotten Password"/>
                                 <connections>
@@ -826,13 +826,13 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-K3-i0l">
-                                        <rect key="frame" x="141.33333333333331" y="416" width="131.33333333333331" height="20.333333333333314"/>
+                                        <rect key="frame" x="141.5" y="416" width="131.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-Sg-LlI">
-                                        <rect key="frame" x="145.66666666666666" y="766" width="122.99999999999997" height="36"/>
+                                        <rect key="frame" x="145.5" y="766" width="123" height="36"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <state key="normal" title="Add Manually">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1082,14 +1082,14 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ZE-4h-NW3">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="529"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="658"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="item" id="2pQ-75-Oo1">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2pQ-75-Oo1" id="TXb-bE-V3C">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -1099,17 +1099,18 @@
                                             <outlet property="delegate" destination="hRh-Vh-XDR" id="7jr-H9-bgr"/>
                                         </connections>
                                     </tableView>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTe-ej-Bu4">
-                                        <rect key="frame" x="46" y="587" width="177" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTe-ej-Bu4">
+                                        <rect key="frame" x="53" y="689" width="130" height="30"/>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfU-7m-XkL">
-                                        <rect key="frame" x="262" y="587" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfU-7m-XkL">
+                                        <rect key="frame" x="89" y="727" width="31" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Add">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="addItemBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="44l-A3-qLI"/>
                                         </connections>
@@ -1118,9 +1119,14 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0ZE-4h-NW3" secondAttribute="trailing" id="4OD-Nh-rVH"/>
+                                    <constraint firstItem="BTe-ej-Bu4" firstAttribute="top" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="31" id="H4O-jz-SB3"/>
+                                    <constraint firstAttribute="trailing" secondItem="BTe-ej-Bu4" secondAttribute="trailing" constant="231" id="Jy9-4c-Grs"/>
                                     <constraint firstItem="0ZE-4h-NW3" firstAttribute="top" secondItem="1OE-BW-GTd" secondAttribute="top" id="V2P-2R-WBe"/>
                                     <constraint firstItem="0ZE-4h-NW3" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" id="Y6h-BY-KoM"/>
-                                    <constraint firstAttribute="bottom" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="279" id="wR8-ff-Bwj"/>
+                                    <constraint firstItem="hfU-7m-XkL" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" constant="89" id="fH1-lJ-hK0"/>
+                                    <constraint firstItem="BTe-ej-Bu4" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" constant="53" id="vB6-WA-AUq"/>
+                                    <constraint firstAttribute="bottom" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="150" id="wR8-ff-Bwj"/>
+                                    <constraint firstItem="hfU-7m-XkL" firstAttribute="top" secondItem="BTe-ej-Bu4" secondAttribute="bottom" constant="8" id="yHY-kx-NTz"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1136,12 +1142,6 @@
                         <viewLayoutGuide key="safeArea" id="Y8g-rw-cg2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping List" id="zeh-VB-ykQ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="fYl-Cs-dFh">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="addShoppingList:" destination="hRh-Vh-XDR" id="omU-IM-PF5"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="Xrv-Rw-iIx">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -1236,7 +1236,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bbu-3W-Fgz" id="SDF-b5-zfk">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.66666666666667"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vub-T0-Cvb">
@@ -1247,7 +1247,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-DK-61e">
-                                                            <rect key="frame" x="215" y="15" width="179" height="20"/>
+                                                            <rect key="frame" x="215" y="15" width="40.5" height="20"/>
                                                             <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>

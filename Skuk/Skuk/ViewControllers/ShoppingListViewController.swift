@@ -57,10 +57,6 @@ class ShoppingListViewController: UIViewController {
         performSegue(withIdentifier: "ShoppingListToSettings", sender: self)
     }
     
-    @IBAction func addShoppingList(_ sender: Any) {
-        performSegue(withIdentifier: "ShoppingListToBarcodeScanner", sender: self)
-    }
-    
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
@@ -81,12 +77,13 @@ class ShoppingListViewController: UIViewController {
     }
     
     func insertShoppingItem() {
-        shoppingItems.append(addItemField.text!)
-        let indexPath = IndexPath(row: shoppingItems.count - 1, section: 0)
-        shoppingListTable.beginUpdates()
-        shoppingListTable.insertRows(at: [indexPath], with: .fade)
-        shoppingListTable.endUpdates()
-        
+        if (addItemField.text != "") {
+            shoppingItems.append(addItemField.text!)
+            let indexPath = IndexPath(row: shoppingItems.count - 1, section: 0)
+            shoppingListTable.beginUpdates()
+            shoppingListTable.insertRows(at: [indexPath], with: .fade)
+            shoppingListTable.endUpdates()
+        }
         addItemField.text = ""
         view.endEditing(true)
     }
@@ -128,7 +125,6 @@ extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             shoppingItems.remove(at: indexPath.row)
-            
             shoppingListTable.beginUpdates()
             shoppingListTable.deleteRows(at: [indexPath], with: .fade)
             shoppingListTable.endUpdates()
