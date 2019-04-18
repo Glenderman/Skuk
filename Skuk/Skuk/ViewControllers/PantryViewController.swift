@@ -10,6 +10,7 @@ import UIKit
 
 class PantryViewController: UIViewController {
     
+    @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
     var menuOpen = false
@@ -17,8 +18,10 @@ class PantryViewController: UIViewController {
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
             trailingConstraint.constant = -130
+            leadingConstraint.constant = -130
             menuOpen = true
         } else {
+            leadingConstraint.constant = 0
             trailingConstraint.constant = 0
             menuOpen = false
         }

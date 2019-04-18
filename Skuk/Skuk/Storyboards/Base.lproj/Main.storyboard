@@ -449,7 +449,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="trailingConstraint" destination="keA-Db-r56" id="z0R-fQ-yxD"/>
+                        <outlet property="leadingConstraint" destination="1rR-RN-rUU" id="KmH-1h-scD"/>
+                        <outlet property="trailingConstraint" destination="keA-Db-r56" id="Gch-dJ-bQn"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="PantryToMealPlan" id="zr7-z4-4SC"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="PantryToRecipeBank" id="mnn-Zc-r2n"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="PantryToSettings" id="dji-5m-AxN"/>
@@ -545,7 +546,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="trailingConstraint" destination="AeG-V3-wkP" id="yNF-xx-zCW"/>
+                        <outlet property="leadingConstraint" destination="Wgd-y5-QMI" id="0Q4-Uq-wrw"/>
+                        <outlet property="trailingConstraint" destination="AeG-V3-wkP" id="FWE-Sm-pUl"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="RecipeBankToSettings" id="jV0-HJ-d0W"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="RecipeBankToShoppingList" id="vUZ-4s-0io"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="RecipeBankToMealPlan" id="C1O-2c-rE4"/>
@@ -641,7 +643,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="trailingConstraint" destination="AUo-Nu-6Vq" id="CPy-zX-Q10"/>
+                        <outlet property="leadingConstraint" destination="Svw-55-uzm" id="9YQ-as-Hf1"/>
+                        <outlet property="trailingConstraint" destination="AUo-Nu-6Vq" id="aTu-MZ-Olz"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="SettingsToShoppingList" id="f7J-sz-Eau"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="SettingsToMealPlan" id="kR3-0N-4W9"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="SettingsToRecipeBank" id="86B-hn-Yym"/>
@@ -791,6 +794,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBtn" destination="iph-Ii-hnB" id="tpO-WN-UAb"/>
+                        <outlet property="leadingConstraint" destination="T6a-OK-T0V" id="obV-pI-oD1"/>
+                        <outlet property="trailingConstraint" destination="p69-vE-aCJ" id="ZVL-yM-v1i"/>
                         <segue destination="aNi-vF-2bg" kind="show" identifier="BarcodeToManual" id="REE-fE-Ru7"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="BarcodeScannerToMealPlan" id="rLG-7n-q6j"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="BarcodeScannerToPantry" id="ENV-fU-IpZ"/>
@@ -923,6 +928,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneBtn" destination="LiY-VZ-pvp" id="xpB-3q-x8o"/>
+                        <outlet property="leadingConstraint" destination="U7Y-d9-odp" id="cb7-XM-RvP"/>
+                        <outlet property="trailingConstraint" destination="XdU-fu-GOz" id="EDL-Ew-5Is"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="ManualAddToShoppingList" id="JcM-ZJ-VPL"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="ManualAddToSettings" id="yzY-Xv-0bF"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="ManualAddToMealPlan" id="2UY-5b-khf"/>
@@ -1037,7 +1044,8 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="trailingConstraint" destination="Y9r-Ew-MOO" id="awP-cJ-CJy"/>
+                        <outlet property="leadingConstraint" destination="QBd-LO-HlN" id="pN9-48-hs4"/>
+                        <outlet property="trailingConstraint" destination="Y9r-Ew-MOO" id="Lhz-AV-aj7"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="ShoppingListToSettings" id="V6A-vL-afU"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="ShoppingListToMealPlan" id="jrC-2Z-VOj"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="ShoppingListToRecipeBank" id="3yw-2c-Hg6"/>
@@ -1188,8 +1196,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="leadingConstraint" destination="ymY-i3-aU9" id="fsZ-I2-VhB"/>
                         <outlet property="mealPlanTable" destination="hpJ-sJ-CVa" id="r1K-QW-kLG"/>
-                        <outlet property="trailingConstraint" destination="pL3-B0-6Pd" id="3T8-IZ-uZx"/>
+                        <outlet property="trailingConstraint" destination="pL3-B0-6Pd" id="3cn-4h-MTF"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="MealPlanToShoppingList" id="TnZ-cb-CZm"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="MealPlanToPantry" id="phN-h3-22M"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="MealPlanToRecipeBank" id="9Fc-Ne-YN6"/>
@@ -1301,11 +1310,11 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z1V-WW-tqb"/>
-        <segue reference="TnZ-cb-CZm"/>
-        <segue reference="9Fc-Ne-YN6"/>
-        <segue reference="phN-h3-22M"/>
-        <segue reference="2UY-5b-khf"/>
+        <segue reference="jV0-HJ-d0W"/>
+        <segue reference="f7J-sz-Eau"/>
+        <segue reference="86B-hn-Yym"/>
+        <segue reference="H4J-7g-cOO"/>
+        <segue reference="kR3-0N-4W9"/>
         <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
 </document>

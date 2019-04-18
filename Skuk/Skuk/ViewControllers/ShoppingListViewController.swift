@@ -12,13 +12,16 @@ class ShoppingListViewController: UIViewController {
     
     var menuOpen = false
     
+    @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
+            leadingConstraint.constant = -130
             trailingConstraint.constant = -130
             menuOpen = true
         } else {
+            leadingConstraint.constant = 0
             trailingConstraint.constant = 0
             menuOpen = false
         }

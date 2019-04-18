@@ -10,15 +10,18 @@ import UIKit
 
 class SettingsViewController: UIViewController {
     
+    @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
     var menuOpen = false
     
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
+            leadingConstraint.constant = -130
             trailingConstraint.constant = -130
             menuOpen = true
         } else {
+            leadingConstraint.constant = 0
             trailingConstraint.constant = 0
             menuOpen = false
         }

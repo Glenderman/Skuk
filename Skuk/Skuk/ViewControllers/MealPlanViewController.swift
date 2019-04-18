@@ -13,14 +13,17 @@ class MealPlanViewController: UIViewController {
     var menuOpen = false
     var recipes: [Recipe] = []
     
+    @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     @IBOutlet var mealPlanTable: UITableView!
     
     @IBAction func slideOutMenu(_ sender: Any) {
         if !menuOpen {
+            leadingConstraint.constant = -130
             trailingConstraint.constant = -130
             menuOpen = true
         } else {
+            leadingConstraint.constant = 0
             trailingConstraint.constant = 0
             menuOpen = false
         }
