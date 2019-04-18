@@ -11,9 +11,16 @@ import UIKit
 class ShoppingListViewController: UIViewController {
     
     var menuOpen = false
+    var shoppingItems: [String] = []
     
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
+    @IBOutlet var shoppingListTable: UITableView!
+    @IBOutlet var addItemField: UITextField!
+    
+    @IBAction func addItemBtn(_ sender: Any) {
+        insertShoppingItem()
+    }
     
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
@@ -73,8 +80,20 @@ class ShoppingListViewController: UIViewController {
         }
     }
     
+    func insertShoppingItem() {
+        shoppingItems.append(addItemField.text!)
+        let indexPath = IndexPath(row: shoppingItems.count - 1, section: 0)
+        shoppingListTable.beginUpdates()
+        shoppingListTable.insertRows(at: [indexPath], with: .fade)
+        shoppingListTable.endUpdates()
+        
+        addItemField.text = ""
+        view.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        shoppingListTable.tableFooterView = UIView(frame: CGRect.zero)
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         swipeRight.direction = .right
@@ -84,5 +103,35 @@ class ShoppingListViewController: UIViewController {
         
         view.addGestureRecognizer(swipeRight)
         view.addGestureRecognizer(swipeLeft)
+    }
+}
+
+extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return shoppingItems.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let shoppingItem = shoppingItems[indexPath.row]
+        
+        let cell = shoppingListTable.dequeueReusableCell(withIdentifier: "item")
+        cell?.textLabel?.text = shoppingItem
+        
+        return cell!
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            shoppingItems.remove(at: indexPath.row)
+            
+            shoppingListTable.beginUpdates()
+            shoppingListTable.deleteRows(at: [indexPath], with: .fade)
+            shoppingListTable.endUpdates()
+        }
     }
 }

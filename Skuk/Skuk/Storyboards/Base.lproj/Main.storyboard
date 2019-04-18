@@ -764,7 +764,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NRt-Lz-CE7">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="299" y="54" width="105" height="192"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbF-Y9-PgW">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -823,16 +823,16 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="St7-49-JtG">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-K3-i0l">
-                                        <rect key="frame" x="141.33333333333331" y="394" width="131.33333333333331" height="20.333333333333314"/>
+                                        <rect key="frame" x="141.33333333333331" y="416" width="131.33333333333331" height="20.333333333333314"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-Sg-LlI">
-                                        <rect key="frame" x="145.66666666666666" y="722" width="122.99999999999997" height="36"/>
+                                        <rect key="frame" x="145.66666666666666" y="766" width="122.99999999999997" height="36"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <state key="normal" title="Add Manually">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1084,7 +1084,36 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0ZE-4h-NW3">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="529"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="item" id="2pQ-75-Oo1">
+                                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2pQ-75-Oo1" id="TXb-bE-V3C">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.666666666666664"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="hRh-Vh-XDR" id="DiQ-W0-E1H"/>
+                                            <outlet property="delegate" destination="hRh-Vh-XDR" id="7jr-H9-bgr"/>
+                                        </connections>
                                     </tableView>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTe-ej-Bu4">
+                                        <rect key="frame" x="46" y="587" width="177" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfU-7m-XkL">
+                                        <rect key="frame" x="262" y="587" width="46" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="addItemBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="44l-A3-qLI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -1121,7 +1150,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addItemField" destination="BTe-ej-Bu4" id="qKZ-gA-tB9"/>
                         <outlet property="leadingConstraint" destination="QBd-LO-HlN" id="pN9-48-hs4"/>
+                        <outlet property="shoppingListTable" destination="0ZE-4h-NW3" id="c0Z-fZ-hH8"/>
                         <outlet property="trailingConstraint" destination="Y9r-Ew-MOO" id="Lhz-AV-aj7"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="ShoppingListToSettings" id="V6A-vL-afU"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="ShoppingListToMealPlan" id="jrC-2Z-VOj"/>
@@ -1132,7 +1163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpN-Ix-lXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3658" y="-403"/>
+            <point key="canvasLocation" x="3657.971014492754" y="-403.125"/>
         </scene>
         <!--Meal Plan-->
         <scene sceneID="AUl-LZ-aFe">
@@ -1388,11 +1419,12 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="raM-5L-eGB"/>
+        <segue reference="5KN-i1-Dv2"/>
+        <segue reference="V6A-vL-afU"/>
         <segue reference="Foa-xf-F3t"/>
-        <segue reference="gYv-gl-rmz"/>
-        <segue reference="ENV-fU-IpZ"/>
-        <segue reference="rLG-7n-q6j"/>
+        <segue reference="3yw-2c-Hg6"/>
+        <segue reference="ApW-or-95P"/>
+        <segue reference="jrC-2Z-VOj"/>
         <segue reference="fbK-NT-iC6"/>
     </inferredMetricsTieBreakers>
 </document>
