@@ -1,20 +1,21 @@
 //
-//  SettingsViewController.swift
+//  RecipeViewController.swift
 //  Skuk
 //
-//  Created by Glen Griffiths on 25/03/2019.
+//  Created by Glen Griffiths on 18/04/2019.
 //  Copyright © 2019 Glen Griffiths. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class RecipeViewController: UIViewController {
     
     var menuOpen = false
+    var recipeInfo = ""
     
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
-    
+
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
             leadingConstraint.constant = -130
@@ -32,24 +33,24 @@ class SettingsViewController: UIViewController {
     
     @IBAction func mealPlanBtn(_ sender: UIButton) {
         sender.touchesBegan()
-        performSegue(withIdentifier: "SettingsToMealPlan", sender: self)
     }
     
     @IBAction func shoppingListBtn(_ sender: UIButton) {
         sender.touchesBegan()
-        performSegue(withIdentifier: "SettingsToShoppingList", sender: self)
     }
     
     @IBAction func pantryBtn(_ sender: UIButton) {
         sender.touchesBegan()
-        performSegue(withIdentifier: "SettingsToPantry", sender: self)
     }
     
     @IBAction func recipeBankBtn(_ sender: UIButton) {
         sender.touchesBegan()
-        performSegue(withIdentifier: "SettingsToRecipeBank", sender: self)
     }
     
+    @IBAction func settingsBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+    }
+
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {

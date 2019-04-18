@@ -53,13 +53,20 @@ class MealPlanViewController: UIViewController {
     }
     
     func createArray() -> [Recipe] {
-        
         let recipe1 = Recipe(image: #imageLiteral(resourceName: "Cheesecake"), title: "Cheesecake")
         let recipe2 = Recipe(image: #imageLiteral(resourceName: "ChickenPotPie"), title: "Chicken Pot Pie")
         let recipe3 = Recipe(image: #imageLiteral(resourceName: "Lasagna"), title: "Lasagna")
         
         return [recipe1, recipe2, recipe3]
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "MealPlanToRecipe", sender: nil)
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let detailVC = segue.destination as! RecipeViewController
+//    }
     
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {

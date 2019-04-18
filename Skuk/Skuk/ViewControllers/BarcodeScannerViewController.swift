@@ -13,7 +13,6 @@ class BarcodeScannerViewController: UIViewController {
     var menuOpen = false
     
     @IBOutlet var doneBtn: UIBarButtonItem!
-    
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     

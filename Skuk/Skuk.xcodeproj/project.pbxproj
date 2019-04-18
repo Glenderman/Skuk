@@ -17,6 +17,7 @@
 		73993707223E7B6600A95E81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73993705223E7B6600A95E81 /* LaunchScreen.storyboard */; };
 		73993712223E7B6600A95E81 /* SkukTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73993711223E7B6600A95E81 /* SkukTests.swift */; };
 		7399371D223E7B6600A95E81 /* SkukUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7399371C223E7B6600A95E81 /* SkukUITests.swift */; };
+		73AB576D2268B301006C2E8E /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AB576C2268B301006C2E8E /* RecipeViewController.swift */; };
 		73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AC502E223EA0D300566A73 /* LoginViewController.swift */; };
 		73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */; };
 		73DCB567225CBB12006280F4 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCB566225CBB12006280F4 /* BarcodeScannerViewController.swift */; };
@@ -63,6 +64,7 @@
 		73993718223E7B6600A95E81 /* SkukUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkukUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7399371C223E7B6600A95E81 /* SkukUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkukUITests.swift; sourceTree = "<group>"; };
 		7399371E223E7B6600A95E81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AB576C2268B301006C2E8E /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		73AC502E223EA0D300566A73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanViewController.swift; sourceTree = "<group>"; };
 		73DCB566225CBB12006280F4 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */,
 				73DCB566225CBB12006280F4 /* BarcodeScannerViewController.swift */,
 				73DCB568225CC4B6006280F4 /* ManualAddViewController.swift */,
+				73AB576C2268B301006C2E8E /* RecipeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				73F3845C2248F973003BD5C3 /* ShoppingListViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
 				731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */,
+				73AB576D2268B301006C2E8E /* RecipeViewController.swift in Sources */,
 				73993702223E7B6600A95E81 /* Skuk.xcdatamodeld in Sources */,
 				73DCB569225CC4B6006280F4 /* ManualAddViewController.swift in Sources */,
 				73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */,
