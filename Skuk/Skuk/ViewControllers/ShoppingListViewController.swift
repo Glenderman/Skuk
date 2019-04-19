@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShoppingListViewController: UIViewController {
+class ShoppingListViewController: UIViewController, UITextFieldDelegate {
     
     var menuOpen = false
     var shoppingItems: [String] = []
@@ -88,9 +88,31 @@ class ShoppingListViewController: UIViewController {
         view.endEditing(true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        addItemField.resignFirstResponder()
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func addBtn(_ sender: Any) {
+        let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpVC") as! AddItemViewController
+        self.addChild(popOverVC)
+        popOverVC.view.frame = self.view.frame
+        self.view.addSubview(popOverVC.view)
+        popOverVC.didMove(toParent: self)
+        self.view.isUserInteractionEnabled = false
+        self.view.isUserInteractionEnabled = true
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         shoppingListTable.tableFooterView = UIView(frame: CGRect.zero)
+        
+        addItemField.delegate = self
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         swipeRight.direction = .right
@@ -111,11 +133,10 @@ extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let shoppingItem = shoppingItems[indexPath.row]
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "item");
+        cell.textLabel?.text = shoppingItem
         
-        let cell = shoppingListTable.dequeueReusableCell(withIdentifier: "item")
-        cell?.textLabel?.text = shoppingItem
-        
-        return cell!
+        return cell
     }
     
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

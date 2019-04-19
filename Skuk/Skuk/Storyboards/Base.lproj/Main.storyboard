@@ -758,122 +758,102 @@
         <!--Shopping List-->
         <scene sceneID="Oef-BT-08P">
             <objects>
-                <viewController id="NQ1-sU-FlJ" customClass="BarcodeScannerViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="popUpVC" id="NQ1-sU-FlJ" customClass="AddItemViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KNk-PH-HFy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NRt-Lz-CE7">
-                                <rect key="frame" x="299" y="54" width="105" height="192"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7C2-sO-zzj">
+                                <rect key="frame" x="40" y="254" width="334" height="172"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gbF-Y9-PgW">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="Meal Plan">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="mealPlanBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="ZFB-NX-Ebp"/>
-                                            <action selector="mealPlanBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="b9h-8f-bOs"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dL7-19-Uwe">
-                                        <rect key="frame" x="0.0" y="40" width="105" height="32"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="Shopping List">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="shoppingListBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="Qqe-Vw-gc3"/>
-                                            <action selector="shoppingListBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="Sho-Ei-CL9"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrm-Cv-n4n">
-                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="Pantry">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="pantryBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="CqG-s3-tUK"/>
-                                            <action selector="pantryBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="gWf-ol-GBO"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXZ-4q-cRg">
-                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="Recipe Bank">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="recipeBankBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="hOH-er-Clh"/>
-                                            <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="igB-oB-Rp8"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76F-6i-cEe">
-                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="Settings">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="settingsBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="bpQ-T0-ZAg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="St7-49-JtG">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcode Scanner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cs-K3-i0l">
-                                        <rect key="frame" x="141.5" y="416" width="131.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Item to Shopping List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6J-BX-Gfy">
+                                        <rect key="frame" x="50" y="25" width="234" height="24"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUD-Sg-LlI">
-                                        <rect key="frame" x="145.5" y="766" width="123" height="36"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
-                                        <state key="normal" title="Add Manually">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JJr-PQ-oiF">
+                                        <rect key="frame" x="50" y="74" width="193" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Cc4-ez-xTG"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eca-ge-EKY">
+                                        <rect key="frame" x="251" y="74" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="TWP-Gb-zGG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
+                                        <state key="normal" title="+">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="manualAddBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="bhM-7C-7eO"/>
+                                            <action selector="addBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="wjm-jS-iKt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2x-f1-u3R">
+                                        <rect key="frame" x="0.0" y="132" width="167" height="40"/>
+                                        <color key="backgroundColor" name="NavigationGrey"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="167" id="dab-9g-uXR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                        <state key="normal" title="Barcode Scanner">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="barcodeScannerBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="yew-xC-pdg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEf-SJ-Mpe">
+                                        <rect key="frame" x="167" y="132" width="167" height="40"/>
+                                        <color key="backgroundColor" name="NavigationGrey"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="closeBtn:" destination="NQ1-sU-FlJ" eventType="touchUpInside" id="Emj-LZ-NZz"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" name="SkukYellow"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="hUD-Sg-LlI" secondAttribute="bottom" constant="50" id="6Gh-ON-CEj"/>
-                                    <constraint firstItem="5cs-K3-i0l" firstAttribute="centerX" secondItem="St7-49-JtG" secondAttribute="centerX" id="GHq-LZ-g25"/>
-                                    <constraint firstItem="hUD-Sg-LlI" firstAttribute="centerX" secondItem="St7-49-JtG" secondAttribute="centerX" id="iDA-9W-lEQ"/>
-                                    <constraint firstItem="5cs-K3-i0l" firstAttribute="centerY" secondItem="St7-49-JtG" secondAttribute="centerY" id="s7z-BM-w9s"/>
+                                    <constraint firstItem="JJr-PQ-oiF" firstAttribute="top" secondItem="eca-ge-EKY" secondAttribute="top" id="2om-Yh-UPM"/>
+                                    <constraint firstAttribute="width" constant="334" id="8Ns-F0-otX"/>
+                                    <constraint firstAttribute="trailing" secondItem="vEf-SJ-Mpe" secondAttribute="trailing" id="AbT-V7-pGd"/>
+                                    <constraint firstItem="T2x-f1-u3R" firstAttribute="leading" secondItem="7C2-sO-zzj" secondAttribute="leading" id="C2e-Ky-d2e"/>
+                                    <constraint firstItem="T2x-f1-u3R" firstAttribute="top" secondItem="JJr-PQ-oiF" secondAttribute="bottom" constant="28" id="F3t-DB-DeW"/>
+                                    <constraint firstItem="JJr-PQ-oiF" firstAttribute="top" secondItem="R6J-BX-Gfy" secondAttribute="bottom" constant="25" id="QLE-rj-z6P"/>
+                                    <constraint firstItem="JJr-PQ-oiF" firstAttribute="bottom" secondItem="eca-ge-EKY" secondAttribute="bottom" id="XdK-kU-Akw"/>
+                                    <constraint firstItem="vEf-SJ-Mpe" firstAttribute="leading" secondItem="T2x-f1-u3R" secondAttribute="trailing" id="XyH-Yf-B2e"/>
+                                    <constraint firstItem="T2x-f1-u3R" firstAttribute="baseline" secondItem="vEf-SJ-Mpe" secondAttribute="firstBaseline" id="bPM-i5-Sqs"/>
+                                    <constraint firstAttribute="height" constant="172" id="clW-qh-jEV"/>
+                                    <constraint firstAttribute="bottom" secondItem="T2x-f1-u3R" secondAttribute="bottom" id="eFG-kr-pvF"/>
+                                    <constraint firstAttribute="trailing" secondItem="eca-ge-EKY" secondAttribute="trailing" constant="53" id="jVn-e6-w57"/>
+                                    <constraint firstItem="JJr-PQ-oiF" firstAttribute="leading" secondItem="R6J-BX-Gfy" secondAttribute="leading" id="o3a-E0-bd1"/>
+                                    <constraint firstItem="T2x-f1-u3R" firstAttribute="top" secondItem="vEf-SJ-Mpe" secondAttribute="top" id="rVp-Ln-HW6"/>
+                                    <constraint firstItem="R6J-BX-Gfy" firstAttribute="top" secondItem="7C2-sO-zzj" secondAttribute="top" constant="25" id="s0W-yY-XuP"/>
+                                    <constraint firstItem="R6J-BX-Gfy" firstAttribute="centerX" secondItem="7C2-sO-zzj" secondAttribute="centerX" id="tav-52-Ffi"/>
+                                    <constraint firstItem="eca-ge-EKY" firstAttribute="leading" secondItem="JJr-PQ-oiF" secondAttribute="trailing" constant="8" symbolic="YES" id="yyx-hW-UjT"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="NavigationGrey"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="St7-49-JtG" firstAttribute="leading" secondItem="HLd-BO-ZXC" secondAttribute="leading" id="T6a-OK-T0V"/>
-                            <constraint firstAttribute="bottom" secondItem="St7-49-JtG" secondAttribute="bottom" id="XJb-y0-aCi"/>
-                            <constraint firstItem="St7-49-JtG" firstAttribute="top" secondItem="HLd-BO-ZXC" secondAttribute="top" id="exI-ra-5hU"/>
-                            <constraint firstItem="HLd-BO-ZXC" firstAttribute="trailing" secondItem="NRt-Lz-CE7" secondAttribute="trailing" constant="10" id="iza-E9-PQe"/>
-                            <constraint firstItem="NRt-Lz-CE7" firstAttribute="top" secondItem="HLd-BO-ZXC" secondAttribute="top" constant="10" id="nrU-3c-2RV"/>
-                            <constraint firstItem="St7-49-JtG" firstAttribute="trailing" secondItem="HLd-BO-ZXC" secondAttribute="trailing" id="p69-vE-aCJ"/>
+                            <constraint firstItem="HLd-BO-ZXC" firstAttribute="trailing" secondItem="7C2-sO-zzj" secondAttribute="trailing" constant="40" id="Gag-bN-arM"/>
+                            <constraint firstItem="7C2-sO-zzj" firstAttribute="top" secondItem="HLd-BO-ZXC" secondAttribute="top" constant="210" id="NQ6-zQ-XKb"/>
+                            <constraint firstItem="7C2-sO-zzj" firstAttribute="leading" secondItem="HLd-BO-ZXC" secondAttribute="leading" constant="40" id="qUC-Wd-pKK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HLd-BO-ZXC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Shopping List" id="NFf-oY-2I3">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="hiP-Ar-gh7">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="navBtn:" destination="NQ1-sU-FlJ" id="Hnw-KA-nJT"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Shopping List" id="NFf-oY-2I3"/>
                     <connections>
-                        <outlet property="leadingConstraint" destination="T6a-OK-T0V" id="obV-pI-oD1"/>
-                        <outlet property="trailingConstraint" destination="p69-vE-aCJ" id="ZVL-yM-v1i"/>
-                        <segue destination="aNi-vF-2bg" kind="show" identifier="BarcodeToManual" id="REE-fE-Ru7"/>
+                        <outlet property="addTextField" destination="JJr-PQ-oiF" id="lHA-Hf-53L"/>
+                        <segue destination="aNi-vF-2bg" kind="show" identifier="AddToBarcode" id="REE-fE-Ru7"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="BarcodeScannerToMealPlan" id="rLG-7n-q6j"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="BarcodeScannerToPantry" id="ENV-fU-IpZ"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="BarcodeScannerToRecipeBank" id="gYv-gl-rmz"/>
@@ -1099,34 +1079,34 @@
                                             <outlet property="delegate" destination="hRh-Vh-XDR" id="7jr-H9-bgr"/>
                                         </connections>
                                     </tableView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Item" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BTe-ej-Bu4">
-                                        <rect key="frame" x="53" y="689" width="130" height="30"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-3V-55a">
+                                        <rect key="frame" x="21" y="696" width="97" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="hdT-KJ-mZh"/>
+                                        </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfU-7m-XkL">
-                                        <rect key="frame" x="89" y="727" width="31" height="32"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="Add">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6g-kQ-xam">
+                                        <rect key="frame" x="168" y="696" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
                                         <connections>
-                                            <action selector="addItemBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="44l-A3-qLI"/>
+                                            <action selector="addItemBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="C52-6Q-zFI"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0ZE-4h-NW3" secondAttribute="trailing" id="4OD-Nh-rVH"/>
-                                    <constraint firstItem="BTe-ej-Bu4" firstAttribute="top" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="31" id="H4O-jz-SB3"/>
-                                    <constraint firstAttribute="trailing" secondItem="BTe-ej-Bu4" secondAttribute="trailing" constant="231" id="Jy9-4c-Grs"/>
+                                    <constraint firstItem="BoF-3V-55a" firstAttribute="top" secondItem="a6g-kQ-xam" secondAttribute="top" id="8y4-YZ-dbU"/>
+                                    <constraint firstItem="a6g-kQ-xam" firstAttribute="leading" secondItem="BoF-3V-55a" secondAttribute="trailing" constant="50" id="PoG-mf-etr"/>
+                                    <constraint firstItem="BoF-3V-55a" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" constant="21" id="UBM-53-WG5"/>
                                     <constraint firstItem="0ZE-4h-NW3" firstAttribute="top" secondItem="1OE-BW-GTd" secondAttribute="top" id="V2P-2R-WBe"/>
                                     <constraint firstItem="0ZE-4h-NW3" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" id="Y6h-BY-KoM"/>
-                                    <constraint firstItem="hfU-7m-XkL" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" constant="89" id="fH1-lJ-hK0"/>
-                                    <constraint firstItem="BTe-ej-Bu4" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" constant="53" id="vB6-WA-AUq"/>
+                                    <constraint firstItem="BoF-3V-55a" firstAttribute="top" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="38" id="YqZ-ib-e3Y"/>
                                     <constraint firstAttribute="bottom" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="150" id="wR8-ff-Bwj"/>
-                                    <constraint firstItem="hfU-7m-XkL" firstAttribute="top" secondItem="BTe-ej-Bu4" secondAttribute="bottom" constant="8" id="yHY-kx-NTz"/>
+                                    <constraint firstAttribute="trailing" secondItem="a6g-kQ-xam" secondAttribute="trailing" constant="200" id="zRC-di-Iex"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1142,6 +1122,12 @@
                         <viewLayoutGuide key="safeArea" id="Y8g-rw-cg2"/>
                     </view>
                     <navigationItem key="navigationItem" title="Shopping List" id="zeh-VB-ykQ">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="EdZ-NE-j6L">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addBtn:" destination="hRh-Vh-XDR" id="b49-8H-3ji"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="Xrv-Rw-iIx">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -1150,7 +1136,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="addItemField" destination="BTe-ej-Bu4" id="qKZ-gA-tB9"/>
+                        <outlet property="addItemField" destination="BoF-3V-55a" id="ump-n4-lW2"/>
                         <outlet property="leadingConstraint" destination="QBd-LO-HlN" id="pN9-48-hs4"/>
                         <outlet property="shoppingListTable" destination="0ZE-4h-NW3" id="c0Z-fZ-hH8"/>
                         <outlet property="trailingConstraint" destination="Y9r-Ew-MOO" id="Lhz-AV-aj7"/>
@@ -1158,7 +1144,6 @@
                         <segue destination="4jf-VC-uth" kind="show" identifier="ShoppingListToMealPlan" id="jrC-2Z-VOj"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="ShoppingListToRecipeBank" id="3yw-2c-Hg6"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="ShoppingListToPantry" id="ApW-or-95P"/>
-                        <segue destination="NQ1-sU-FlJ" kind="show" identifier="ShoppingListToBarcodeScanner" id="5KN-i1-Dv2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpN-Ix-lXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1247,7 +1232,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOm-DK-61e">
-                                                            <rect key="frame" x="215" y="15" width="40.5" height="20"/>
+                                                            <rect key="frame" x="215" y="15" width="179" height="20"/>
                                                             <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -1419,7 +1404,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5KN-i1-Dv2"/>
         <segue reference="V6A-vL-afU"/>
         <segue reference="Foa-xf-F3t"/>
         <segue reference="3yw-2c-Hg6"/>
