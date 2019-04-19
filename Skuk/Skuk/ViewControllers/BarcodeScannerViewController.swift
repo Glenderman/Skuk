@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ManualAddViewController: UIViewController {
+class BarcodeScannerViewController: UIViewController {
     
     var menuOpen = false
     

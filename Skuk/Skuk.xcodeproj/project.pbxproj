@@ -22,7 +22,7 @@
 		73AC502F223EA0D300566A73 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73AC502E223EA0D300566A73 /* LoginViewController.swift */; };
 		73BEEFF522690F3300FEBB0D /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEEFF322690F3300FEBB0D /* ShoppingListViewController.swift */; };
 		73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */; };
-		73DCB569225CC4B6006280F4 /* ManualAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCB568225CC4B6006280F4 /* ManualAddViewController.swift */; };
+		73DCB569225CC4B6006280F4 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCB568225CC4B6006280F4 /* BarcodeScannerViewController.swift */; };
 		73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845D2248F987003BD5C3 /* PantryViewController.swift */; };
 		73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */; };
 		73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F384612248F9AF003BD5C3 /* SettingsViewController.swift */; };
@@ -69,7 +69,7 @@
 		73AC502E223EA0D300566A73 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		73BEEFF322690F3300FEBB0D /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealPlanViewController.swift; sourceTree = "<group>"; };
-		73DCB568225CC4B6006280F4 /* ManualAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualAddViewController.swift; sourceTree = "<group>"; };
+		73DCB568225CC4B6006280F4 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
 		73F3845D2248F987003BD5C3 /* PantryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantryViewController.swift; sourceTree = "<group>"; };
 		73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBankViewController.swift; sourceTree = "<group>"; };
 		73F384612248F9AF003BD5C3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -168,17 +168,17 @@
 				73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */,
 				739936FB223E7B6600A95E81 /* LaunchScreenViewController.swift */,
 				73AC502E223EA0D300566A73 /* LoginViewController.swift */,
+				73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */,
+				73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */,
 				73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */,
+				73AB576C2268B301006C2E8E /* RecipeViewController.swift */,
 				731D5C2E225BE8EA00518DF2 /* Recipe.swift */,
 				73BEEFF322690F3300FEBB0D /* ShoppingListViewController.swift */,
+				733BD2BC2269E4F4008D70D4 /* AddItemViewController.swift */,
+				73DCB568225CC4B6006280F4 /* BarcodeScannerViewController.swift */,
 				73F3845D2248F987003BD5C3 /* PantryViewController.swift */,
 				73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */,
 				73F384612248F9AF003BD5C3 /* SettingsViewController.swift */,
-				73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */,
-				73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */,
-				733BD2BC2269E4F4008D70D4 /* AddItemViewController.swift */,
-				73DCB568225CC4B6006280F4 /* ManualAddViewController.swift */,
-				73AB576C2268B301006C2E8E /* RecipeViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -331,7 +331,7 @@
 				731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */,
 				73AB576D2268B301006C2E8E /* RecipeViewController.swift in Sources */,
 				73993702223E7B6600A95E81 /* Skuk.xcdatamodeld in Sources */,
-				73DCB569225CC4B6006280F4 /* ManualAddViewController.swift in Sources */,
+				73DCB569225CC4B6006280F4 /* BarcodeScannerViewController.swift in Sources */,
 				73DBAECA22418F12003A6CA1 /* MealPlanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

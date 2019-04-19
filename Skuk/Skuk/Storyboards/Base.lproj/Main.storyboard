@@ -884,7 +884,7 @@
         <!--Shopping List-->
         <scene sceneID="3IS-DH-V2y">
             <objects>
-                <viewController id="k5M-pB-fuX" customClass="ManualAddViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="k5M-pB-fuX" customClass="BarcodeScannerViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fI0-5R-5LK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1404,11 +1404,11 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V6A-vL-afU"/>
-        <segue reference="Foa-xf-F3t"/>
-        <segue reference="3yw-2c-Hg6"/>
-        <segue reference="ApW-or-95P"/>
-        <segue reference="jrC-2Z-VOj"/>
+        <segue reference="yzY-Xv-0bF"/>
+        <segue reference="JcM-ZJ-VPL"/>
+        <segue reference="diT-qj-MW7"/>
+        <segue reference="5It-LO-T8O"/>
+        <segue reference="2UY-5b-khf"/>
         <segue reference="fbK-NT-iC6"/>
     </inferredMetricsTieBreakers>
 </document>
