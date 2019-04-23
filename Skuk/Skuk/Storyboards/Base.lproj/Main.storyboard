@@ -54,60 +54,6 @@
             </objects>
             <point key="canvasLocation" x="-1330.4347826086957" y="-388.39285714285711"/>
         </scene>
-        <!--Forgotten Password View Controller-->
-        <scene sceneID="CFh-5z-CVS">
-            <objects>
-                <viewController id="Pbl-dJ-h6c" customClass="ForgottenPasswordViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Pz9-fM-kez">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyp-iR-U6k">
-                                <rect key="frame" x="177" y="776" width="60" height="36"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
-                                <state key="normal" title="Cancel">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="cancelBtn:" destination="Pbl-dJ-h6c" eventType="touchUpInside" id="5I7-5j-0AB"/>
-                                    <action selector="cancelBtn:" destination="DIS-Fk-aQQ" eventType="touchUpInside" id="SKR-Zn-Y8q"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Z5C-vG-oBX">
-                                <rect key="frame" x="107" y="74" width="200.5" height="172.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skük" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ShB-44-hV5">
-                                        <rect key="frame" x="0.0" y="0.0" width="200.5" height="104.5"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="90"/>
-                                        <color key="textColor" red="0.99672025440000001" green="0.9921321273" blue="0.98764926200000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan and Cook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3GP-cW-PnF">
-                                        <rect key="frame" x="0.0" y="104.5" width="200.5" height="68"/>
-                                        <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="20"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" name="SkukYellow"/>
-                        <constraints>
-                            <constraint firstItem="jyp-iR-U6k" firstAttribute="centerX" secondItem="Pz9-fM-kez" secondAttribute="centerX" id="99z-M5-7JE"/>
-                            <constraint firstItem="Z5C-vG-oBX" firstAttribute="top" secondItem="BrR-0d-81y" secondAttribute="top" constant="30" id="fN8-gN-9N7"/>
-                            <constraint firstItem="Z5C-vG-oBX" firstAttribute="centerX" secondItem="Pz9-fM-kez" secondAttribute="centerX" id="kzh-OY-ZTC"/>
-                            <constraint firstItem="BrR-0d-81y" firstAttribute="bottom" secondItem="jyp-iR-U6k" secondAttribute="bottom" constant="50" id="sin-OH-ikw"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="BrR-0d-81y"/>
-                    </view>
-                    <connections>
-                        <segue destination="0X9-8X-brI" kind="show" identifier="ForgetToLogin" id="x5T-3z-t3a"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ao-Ra-Eub" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1330" y="-1396"/>
-        </scene>
         <!--Register View Controller-->
         <scene sceneID="FLJ-IS-pH6">
             <objects>
@@ -117,9 +63,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIK-Dk-yD7">
-                                <rect key="frame" x="177" y="776" width="60" height="36"/>
+                                <rect key="frame" x="184" y="776" width="46" height="36"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
-                                <state key="normal" title="Cancel">
+                                <state key="normal" title="Done">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -127,9 +73,9 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="hWb-u8-tsx">
-                                <rect key="frame" x="30" y="264" width="354" height="225"/>
+                                <rect key="frame" x="30" y="264" width="354" height="260"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-PM-rme">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Name" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NC0-PM-rme">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
@@ -142,7 +88,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a username" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OuL-VT-cpK">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OuL-VT-cpK">
                                         <rect key="frame" x="0.0" y="65" width="354" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
@@ -155,7 +101,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-BL-yBo">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jwf-BL-yBo">
                                         <rect key="frame" x="0.0" y="130" width="354" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
@@ -168,7 +114,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Email Address" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-OO-2TK">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your Email Address" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="jDb-OO-2TK">
                                         <rect key="frame" x="0.0" y="195" width="354" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
@@ -181,10 +127,16 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-g8-Id1">
+                                        <rect key="frame" x="0.0" y="260" width="354" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smc-Sd-kt2">
-                                <rect key="frame" x="150.5" y="522" width="113" height="47"/>
+                                <rect key="frame" x="150.5" y="557" width="113" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Register">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -228,6 +180,7 @@
                     <navigationItem key="navigationItem" id="bzA-4o-IKd"/>
                     <connections>
                         <outlet property="emailAddressField" destination="jDb-OO-2TK" id="c8n-1c-d3V"/>
+                        <outlet property="labelMessage" destination="pQT-g8-Id1" id="tf5-sV-Qdv"/>
                         <outlet property="nameField" destination="NC0-PM-rme" id="StL-pl-Kw1"/>
                         <outlet property="passwordField" destination="jwf-BL-yBo" id="p6d-YY-bIx"/>
                         <outlet property="userNameField" destination="OuL-VT-cpK" id="IRI-Fv-EHK"/>
@@ -247,7 +200,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="3aB-g8-DOP">
-                                <rect key="frame" x="30" y="276.5" width="354" height="86"/>
+                                <rect key="frame" x="30" y="276.5" width="354" height="162"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Username" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-aQ-uke">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="30"/>
@@ -283,17 +236,22 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j2c-fX-5HL">
+                                        <rect key="frame" x="0.0" y="112" width="354" height="50"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rxP-aO-Fql">
-                                <rect key="frame" x="169.5" y="417.5" width="75" height="47"/>
+                                <rect key="frame" x="169.5" y="458.5" width="75" height="47"/>
                                 <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="30"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="loginBtn:" destination="0X9-8X-brI" eventType="touchUpInside" id="fOc-nU-btk"/>
-                                    <segue destination="4jf-VC-uth" kind="show" identifier="loginToMealPlan" id="5SG-Mq-KEw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AJD-TC-1w8">
@@ -323,14 +281,6 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8V-xx-zX2">
-                                <rect key="frame" x="150" y="370" width="234" height="30"/>
-                                <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="15"/>
-                                <state key="normal" title="Forgotten Password"/>
-                                <connections>
-                                    <action selector="forgottenPswdBtn:" destination="0X9-8X-brI" eventType="touchUpInside" id="kgJ-3u-CBy"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" name="SkukYellow"/>
                         <constraints>
@@ -340,21 +290,19 @@
                             <constraint firstItem="3aB-g8-DOP" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="Epu-c3-X5p"/>
                             <constraint firstItem="rxP-aO-Fql" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="HN1-Dk-eec"/>
                             <constraint firstItem="jQq-9x-qvr" firstAttribute="centerX" secondItem="w9S-vY-oQR" secondAttribute="centerX" id="a1t-eJ-us3"/>
-                            <constraint firstItem="o8V-xx-zX2" firstAttribute="leading" secondItem="D1s-xx-7yr" secondAttribute="leading" constant="150" id="eN6-xm-41R"/>
                             <constraint firstItem="jQq-9x-qvr" firstAttribute="top" secondItem="D1s-xx-7yr" secondAttribute="top" constant="30" id="ekM-vQ-xrp"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="bottom" secondItem="AJD-TC-1w8" secondAttribute="bottom" constant="50" id="q4N-Pj-dhU"/>
-                            <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="o8V-xx-zX2" secondAttribute="trailing" constant="30" id="q7g-jv-1KN"/>
                             <constraint firstItem="D1s-xx-7yr" firstAttribute="trailing" secondItem="3aB-g8-DOP" secondAttribute="trailing" constant="30" id="ujA-XQ-gfz"/>
-                            <constraint firstItem="rxP-aO-Fql" firstAttribute="top" secondItem="3aB-g8-DOP" secondAttribute="bottom" constant="55" id="zR1-Bx-X2j"/>
-                            <constraint firstItem="o8V-xx-zX2" firstAttribute="top" secondItem="3aB-g8-DOP" secondAttribute="bottom" constant="7.5" id="zYI-qM-OYD"/>
+                            <constraint firstItem="rxP-aO-Fql" firstAttribute="top" secondItem="3aB-g8-DOP" secondAttribute="bottom" constant="20" id="zR1-Bx-X2j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="D1s-xx-7yr"/>
                     </view>
                     <connections>
+                        <outlet property="labelMessage" destination="j2c-fX-5HL" id="9hL-UH-EG3"/>
                         <outlet property="passwordField" destination="hWa-1E-KLK" id="OHi-81-ZPS"/>
                         <outlet property="usernameField" destination="q4g-aQ-uke" id="gjf-Oe-Gxd"/>
                         <segue destination="DIS-Fk-aQQ" kind="show" identifier="LoginToRegister" id="d5K-tE-vvQ"/>
-                        <segue destination="Pbl-dJ-h6c" kind="show" identifier="LoginToForget" id="p9o-a2-csU"/>
+                        <segue destination="4jf-VC-uth" kind="show" identifier="loginToMealPlan" id="tHv-Ye-H4S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O08-TN-27I" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1089,7 +1037,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6g-kQ-xam">
-                                        <rect key="frame" x="168" y="696" width="46" height="30"/>
+                                        <rect key="frame" x="168" y="696" width="71" height="30"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="addItemBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="C52-6Q-zFI"/>
@@ -1106,7 +1054,7 @@
                                     <constraint firstItem="0ZE-4h-NW3" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" id="Y6h-BY-KoM"/>
                                     <constraint firstItem="BoF-3V-55a" firstAttribute="top" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="38" id="YqZ-ib-e3Y"/>
                                     <constraint firstAttribute="bottom" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="150" id="wR8-ff-Bwj"/>
-                                    <constraint firstAttribute="trailing" secondItem="a6g-kQ-xam" secondAttribute="trailing" constant="200" id="zRC-di-Iex"/>
+                                    <constraint firstAttribute="trailing" secondItem="a6g-kQ-xam" secondAttribute="trailing" constant="175" id="zRC-di-Iex"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1153,7 +1101,7 @@
         <!--Meal Plan-->
         <scene sceneID="AUl-LZ-aFe">
             <objects>
-                <viewController id="xhJ-4D-iXp" customClass="MealPlanViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MealPlanVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xhJ-4D-iXp" customClass="MealPlanViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XA5-Z9-nNn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1404,11 +1352,11 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yzY-Xv-0bF"/>
-        <segue reference="JcM-ZJ-VPL"/>
-        <segue reference="diT-qj-MW7"/>
-        <segue reference="5It-LO-T8O"/>
-        <segue reference="2UY-5b-khf"/>
-        <segue reference="fbK-NT-iC6"/>
+        <segue reference="V6A-vL-afU"/>
+        <segue reference="TnZ-cb-CZm"/>
+        <segue reference="3yw-2c-Hg6"/>
+        <segue reference="ApW-or-95P"/>
+        <segue reference="jrC-2Z-VOj"/>
+        <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
 </document>
