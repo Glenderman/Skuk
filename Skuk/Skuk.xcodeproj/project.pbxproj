@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1AEE72D73CA6BD1E250AC406 /* Pods_SkukTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 870FEA46569B4EDB2BED6BD9 /* Pods_SkukTests.framework */; };
 		731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731D5C2E225BE8EA00518DF2 /* Recipe.swift */; };
 		733BD2BD2269E4F4008D70D4 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733BD2BC2269E4F4008D70D4 /* AddItemViewController.swift */; };
 		73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */; };
@@ -28,8 +27,7 @@
 		73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */; };
 		73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F384612248F9AF003BD5C3 /* SettingsViewController.swift */; };
 		73F4C9DB225AB11C00853ED3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */; };
-		7F5D27D9F4F724636C3F4DFF /* Pods_SkukUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA2B44714CC4E60B5CCD1A8E /* Pods_SkukUITests.framework */; };
-		E467CC41483A1D015C4F5239 /* Pods_Skuk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7451557ED75C49D309A0BA89 /* Pods_Skuk.framework */; };
+		73F4C9DD225AB3D700853ED3 /* ForgottenPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5EA793F9D1D5EE7E9FA3C327 /* Pods-SkukTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkukTests.release.xcconfig"; path = "Target Support Files/Pods-SkukTests/Pods-SkukTests.release.xcconfig"; sourceTree = "<group>"; };
-		6C77E7474073C49298D4F1F4 /* Pods-SkukUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkukUITests.debug.xcconfig"; path = "Target Support Files/Pods-SkukUITests/Pods-SkukUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		731D5C2E225BE8EA00518DF2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		733BD2BC2269E4F4008D70D4 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
@@ -78,13 +74,7 @@
 		73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeBankViewController.swift; sourceTree = "<group>"; };
 		73F384612248F9AF003BD5C3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		7451557ED75C49D309A0BA89 /* Pods_Skuk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skuk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8618683173998903E691E539 /* Pods-SkukUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkukUITests.release.xcconfig"; path = "Target Support Files/Pods-SkukUITests/Pods-SkukUITests.release.xcconfig"; sourceTree = "<group>"; };
-		870FEA46569B4EDB2BED6BD9 /* Pods_SkukTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkukTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93D0F773FE2E78B8C79D4374 /* Pods-SkukTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkukTests.debug.xcconfig"; path = "Target Support Files/Pods-SkukTests/Pods-SkukTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A05207293F819C51AE58D664 /* Pods-Skuk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skuk.debug.xcconfig"; path = "Target Support Files/Pods-Skuk/Pods-Skuk.debug.xcconfig"; sourceTree = "<group>"; };
-		AA2B44714CC4E60B5CCD1A8E /* Pods_SkukUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkukUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF01D9533A73170F4ECE1487 /* Pods-Skuk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skuk.release.xcconfig"; path = "Target Support Files/Pods-Skuk/Pods-Skuk.release.xcconfig"; sourceTree = "<group>"; };
+		73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgottenPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E467CC41483A1D015C4F5239 /* Pods_Skuk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1AEE72D73CA6BD1E250AC406 /* Pods_SkukTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F5D27D9F4F724636C3F4DFF /* Pods_SkukUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,8 +109,6 @@
 				73993710223E7B6600A95E81 /* SkukTests */,
 				7399371B223E7B6600A95E81 /* SkukUITests */,
 				739936F7223E7B6600A95E81 /* Products */,
-				769D548401BAC5D35057784A /* Pods */,
-				CF1F32CD27894EB450B2D0CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -184,6 +169,7 @@
 				739936FB223E7B6600A95E81 /* LaunchScreenViewController.swift */,
 				73AC502E223EA0D300566A73 /* LoginViewController.swift */,
 				73F4C9DA225AB11C00853ED3 /* RegisterViewController.swift */,
+				73F4C9DC225AB3D700853ED3 /* ForgottenPasswordViewController.swift */,
 				73DBAEC922418F12003A6CA1 /* MealPlanViewController.swift */,
 				73AB576C2268B301006C2E8E /* RecipeViewController.swift */,
 				731D5C2E225BE8EA00518DF2 /* Recipe.swift */,
@@ -197,29 +183,6 @@
 			path = ViewControllers;
 			sourceTree = "<group>";
 		};
-		769D548401BAC5D35057784A /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A05207293F819C51AE58D664 /* Pods-Skuk.debug.xcconfig */,
-				FF01D9533A73170F4ECE1487 /* Pods-Skuk.release.xcconfig */,
-				93D0F773FE2E78B8C79D4374 /* Pods-SkukTests.debug.xcconfig */,
-				5EA793F9D1D5EE7E9FA3C327 /* Pods-SkukTests.release.xcconfig */,
-				6C77E7474073C49298D4F1F4 /* Pods-SkukUITests.debug.xcconfig */,
-				8618683173998903E691E539 /* Pods-SkukUITests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		CF1F32CD27894EB450B2D0CD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7451557ED75C49D309A0BA89 /* Pods_Skuk.framework */,
-				870FEA46569B4EDB2BED6BD9 /* Pods_SkukTests.framework */,
-				AA2B44714CC4E60B5CCD1A8E /* Pods_SkukUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,11 +190,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73993721223E7B6600A95E81 /* Build configuration list for PBXNativeTarget "Skuk" */;
 			buildPhases = (
-				9FBD913AA8C37921075CFCE1 /* [CP] Check Pods Manifest.lock */,
 				739936F2223E7B6600A95E81 /* Sources */,
 				739936F3223E7B6600A95E81 /* Frameworks */,
 				739936F4223E7B6600A95E81 /* Resources */,
-				5572AEF803C6E5D5E1FB4EA7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -246,7 +207,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73993724223E7B6600A95E81 /* Build configuration list for PBXNativeTarget "SkukTests" */;
 			buildPhases = (
-				577BBDD95B790AD3FF941396 /* [CP] Check Pods Manifest.lock */,
 				73993709223E7B6600A95E81 /* Sources */,
 				7399370A223E7B6600A95E81 /* Frameworks */,
 				7399370B223E7B6600A95E81 /* Resources */,
@@ -265,7 +225,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73993727223E7B6600A95E81 /* Build configuration list for PBXNativeTarget "SkukUITests" */;
 			buildPhases = (
-				D613BD24AB4A6328D858B061 /* [CP] Check Pods Manifest.lock */,
 				73993714223E7B6600A95E81 /* Sources */,
 				73993715223E7B6600A95E81 /* Frameworks */,
 				73993716223E7B6600A95E81 /* Resources */,
@@ -353,97 +312,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		5572AEF803C6E5D5E1FB4EA7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Skuk/Pods-Skuk-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skuk/Pods-Skuk-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		577BBDD95B790AD3FF941396 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SkukTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9FBD913AA8C37921075CFCE1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Skuk-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D613BD24AB4A6328D858B061 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SkukUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		739936F2223E7B6600A95E81 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -457,6 +325,7 @@
 				73F3845E2248F987003BD5C3 /* PantryViewController.swift in Sources */,
 				73F384622248F9AF003BD5C3 /* SettingsViewController.swift in Sources */,
 				739936FC223E7B6600A95E81 /* LaunchScreenViewController.swift in Sources */,
+				73F4C9DD225AB3D700853ED3 /* ForgottenPasswordViewController.swift in Sources */,
 				73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
 				731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */,
@@ -636,7 +505,6 @@
 		};
 		73993722223E7B6600A95E81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A05207293F819C51AE58D664 /* Pods-Skuk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -655,7 +523,6 @@
 		};
 		73993723223E7B6600A95E81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF01D9533A73170F4ECE1487 /* Pods-Skuk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -674,7 +541,6 @@
 		};
 		73993725223E7B6600A95E81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93D0F773FE2E78B8C79D4374 /* Pods-SkukTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -696,7 +562,6 @@
 		};
 		73993726223E7B6600A95E81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EA793F9D1D5EE7E9FA3C327 /* Pods-SkukTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -718,7 +583,6 @@
 		};
 		73993728223E7B6600A95E81 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C77E7474073C49298D4F1F4 /* Pods-SkukUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -739,7 +603,6 @@
 		};
 		73993729223E7B6600A95E81 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8618683173998903E691E539 /* Pods-SkukUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
