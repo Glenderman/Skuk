@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ApiAI
 import CoreData
 
 @UIApplicationMain
@@ -15,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        let configuration = AIDefaultConfiguration()
+        configuration.clientAccessToken = "dcfbe45760c448bba7f2058d08d6d43c"
+        
+        let apiai = ApiAI.shared()
+        apiai?.configuration = configuration
         
         let navigationBarAppearance = UINavigationBar.appearance()
         

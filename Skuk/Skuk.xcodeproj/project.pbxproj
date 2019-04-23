@@ -11,6 +11,7 @@
 		731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731D5C2E225BE8EA00518DF2 /* Recipe.swift */; };
 		733BD2BD2269E4F4008D70D4 /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733BD2BC2269E4F4008D70D4 /* AddItemViewController.swift */; };
 		73876EFB2242BD9D0065B725 /* ButtonAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */; };
+		738EA108226FADF5001E24B3 /* ChatBotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738EA107226FADF5001E24B3 /* ChatBotViewController.swift */; };
 		739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936F9223E7B6600A95E81 /* AppDelegate.swift */; };
 		739936FC223E7B6600A95E81 /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739936FB223E7B6600A95E81 /* LaunchScreenViewController.swift */; };
 		739936FF223E7B6600A95E81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 739936FD223E7B6600A95E81 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		731D5C2E225BE8EA00518DF2 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		733BD2BC2269E4F4008D70D4 /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 		73876EFA2242BD9D0065B725 /* ButtonAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAnimation.swift; sourceTree = "<group>"; };
+		738EA107226FADF5001E24B3 /* ChatBotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotViewController.swift; sourceTree = "<group>"; };
 		739936F6223E7B6600A95E81 /* Skuk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skuk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		739936F9223E7B6600A95E81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		739936FB223E7B6600A95E81 /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				73DCB568225CC4B6006280F4 /* BarcodeScannerViewController.swift */,
 				73F3845D2248F987003BD5C3 /* PantryViewController.swift */,
 				73F3845F2248F9A1003BD5C3 /* RecipeBankViewController.swift */,
+				738EA107226FADF5001E24B3 /* ChatBotViewController.swift */,
 				73F384612248F9AF003BD5C3 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
@@ -364,12 +367,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Skuk/Pods-Skuk-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ApiAI/ApiAI.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ApiAI.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -459,6 +464,7 @@
 				739936FC223E7B6600A95E81 /* LaunchScreenViewController.swift in Sources */,
 				73F384602248F9A1003BD5C3 /* RecipeBankViewController.swift in Sources */,
 				739936FA223E7B6600A95E81 /* AppDelegate.swift in Sources */,
+				738EA108226FADF5001E24B3 /* ChatBotViewController.swift in Sources */,
 				731D5C2F225BE8EA00518DF2 /* Recipe.swift in Sources */,
 				73AB576D2268B301006C2E8E /* RecipeViewController.swift in Sources */,
 				73993702223E7B6600A95E81 /* Skuk.xcdatamodeld in Sources */,

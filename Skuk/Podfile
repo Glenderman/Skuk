@@ -7,6 +7,7 @@ target 'Skuk' do
 
   # Pods for Skuk
     pod 'Alamofire', '~> 4.3'
+    pod 'ApiAI'
 
   target 'SkukTests' do
     inherit! :search_paths

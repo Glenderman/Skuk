@@ -713,21 +713,133 @@
             </objects>
             <point key="canvasLocation" x="4710" y="455"/>
         </scene>
-        <!--View Controller-->
+        <!--Skük Bot-->
         <scene sceneID="ysC-99-AzR">
             <objects>
-                <viewController id="oqS-wu-tS6" sceneMemberID="viewController">
+                <viewController id="oqS-wu-tS6" customClass="ChatBotViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r2W-NP-H2l">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6dj-wA-RWH">
+                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX1-Dc-cvq">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Meal Plan">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="mealPlanBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="fDs-VR-Nzo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHC-et-thP">
+                                        <rect key="frame" x="0.0" y="40" width="105" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Shopping List">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="shoppingListBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="8P9-cT-I5k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-ak-i4V">
+                                        <rect key="frame" x="0.0" y="80" width="51" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Pantry">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="pantryBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="IGD-ZH-Zka"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbE-Xw-im5">
+                                        <rect key="frame" x="0.0" y="120" width="94" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Recipe Bank">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="r3M-M1-7LK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbR-Yp-qfm">
+                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Settings">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-cY-Nhb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skükena" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qeu-Ai-cAg">
+                                        <rect key="frame" x="54.5" y="198" width="305" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="305" id="Xbe-a2-0rG"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4X9-lC-kpa">
+                                        <rect key="frame" x="144" y="266" width="126" height="36"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <state key="normal" title="Send Message">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendMessageBtn:" destination="oqS-wu-tS6" eventType="touchUpInside" id="r2w-Bi-hw9"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say Hi!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INW-5Y-5Od">
+                                        <rect key="frame" x="57" y="79" width="300" height="23.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="300" id="Erh-oZ-Meb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="INW-5Y-5Od" firstAttribute="top" secondItem="JZs-cY-Nhb" secondAttribute="top" constant="79" id="0vg-1L-Vd6"/>
+                                    <constraint firstItem="Qeu-Ai-cAg" firstAttribute="centerX" secondItem="JZs-cY-Nhb" secondAttribute="centerX" id="KZP-lz-mDT"/>
+                                    <constraint firstItem="4X9-lC-kpa" firstAttribute="centerX" secondItem="JZs-cY-Nhb" secondAttribute="centerX" id="PXx-Wr-GMZ"/>
+                                    <constraint firstItem="4X9-lC-kpa" firstAttribute="top" secondItem="Qeu-Ai-cAg" secondAttribute="bottom" constant="38" id="Qsw-Hr-N5D"/>
+                                    <constraint firstItem="Qeu-Ai-cAg" firstAttribute="top" secondItem="JZs-cY-Nhb" secondAttribute="top" constant="198" id="VxS-7f-pzc"/>
+                                    <constraint firstItem="INW-5Y-5Od" firstAttribute="centerX" secondItem="JZs-cY-Nhb" secondAttribute="centerX" id="o9q-Pt-Ynh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="NavigationGrey"/>
+                        <constraints>
+                            <constraint firstItem="6dj-wA-RWH" firstAttribute="top" secondItem="wl7-JT-Chv" secondAttribute="top" constant="10" id="Hee-nl-9Vk"/>
+                            <constraint firstItem="JZs-cY-Nhb" firstAttribute="leading" secondItem="wl7-JT-Chv" secondAttribute="leading" id="UcH-p9-9KG"/>
+                            <constraint firstItem="JZs-cY-Nhb" firstAttribute="top" secondItem="wl7-JT-Chv" secondAttribute="top" id="Wmg-mf-2L6"/>
+                            <constraint firstItem="wl7-JT-Chv" firstAttribute="trailing" secondItem="6dj-wA-RWH" secondAttribute="trailing" constant="10" id="bn7-VN-5vC"/>
+                            <constraint firstItem="JZs-cY-Nhb" firstAttribute="trailing" secondItem="wl7-JT-Chv" secondAttribute="trailing" id="nSt-EA-ty0"/>
+                            <constraint firstAttribute="bottom" secondItem="JZs-cY-Nhb" secondAttribute="bottom" id="tTr-49-TVp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wl7-JT-Chv"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CAN-kd-HyA"/>
+                    <navigationItem key="navigationItem" title="Skük Bot" id="CAN-kd-HyA">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" style="done" id="KgE-Z4-Rhc">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="messageLbl" destination="INW-5Y-5Od" id="HlQ-zW-acQ"/>
+                        <outlet property="messageTextField" destination="Qeu-Ai-cAg" id="aqQ-3R-1KR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gj-I2-cMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5596" y="455"/>
+            <point key="canvasLocation" x="5595.652173913044" y="454.6875"/>
         </scene>
         <!--Recipe-->
         <scene sceneID="Y7G-vX-mVH">
