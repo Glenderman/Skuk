@@ -11,7 +11,7 @@ import Alamofire
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
     
-    let URL_USER_REGISTER = "https://student.csc.liv.ac.uk/~sgggrif2/register.php"
+    let URL_USER_REGISTER = "https://student.csc.liv.ac.uk/~sgggrif2/v1/register.php"
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var userNameField: UITextField!
@@ -39,7 +39,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             print(response)
             
             if let result = response.result.value {
-                
                 let jsonData = result as! NSDictionary
                 
                 self.labelMessage.text = jsonData.value(forKey: "message") as! String?

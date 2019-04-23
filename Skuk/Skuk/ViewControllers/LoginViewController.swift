@@ -11,7 +11,7 @@ import Alamofire
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    let URL_USER_LOGIN = "https://student.csc.liv.ac.uk/~sgggrif2/login.php"
+    let URL_USER_LOGIN = "https://student.csc.liv.ac.uk/~sgggrif2/v1/login.php"
     let defaultValues = UserDefaults.standard
     
     @IBOutlet weak var usernameField: UITextField!
