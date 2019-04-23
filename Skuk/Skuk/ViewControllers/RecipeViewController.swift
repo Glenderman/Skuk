@@ -11,7 +11,6 @@ import UIKit
 class RecipeViewController: UIViewController {
     
     var menuOpen = false
-    var recipeInfo = ""
     
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!

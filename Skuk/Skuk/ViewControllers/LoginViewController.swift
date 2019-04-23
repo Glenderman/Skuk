@@ -12,10 +12,9 @@ import Alamofire
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
     let URL_USER_LOGIN = "https://student.csc.liv.ac.uk/~sgggrif2/v1/login.php"
-    let defaultValues = UserDefaults.standard
     
-    @IBOutlet weak var usernameField: UITextField!
-    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet var usernameField: UITextField!
+    @IBOutlet var passwordField: UITextField!
     @IBOutlet var labelMessage: UILabel!
     
     @IBAction func loginBtn(_ sender: UIButton) {
@@ -34,19 +33,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 let jsonData = result as! NSDictionary
                 
                 if(!(jsonData.value(forKey: "error") as! Bool)){
-                    let user = jsonData.value(forKey: "user") as! NSDictionary
-                    
-                    //getting user values
-                    let userId = user.value(forKey: "id") as! Int
-                    let userName = user.value(forKey: "username") as! String
-                    let userEmail = user.value(forKey: "email") as! String
-                    
-                    //saving user values to defaults
-                    self.defaultValues.set(userId, forKey: "userid")
-                    self.defaultValues.set(userName, forKey: "username")
-                    self.defaultValues.set(userEmail, forKey: "useremail")
                     self.performSegue(withIdentifier: "loginToMealPlan", sender: self)
-                    self.dismiss(animated: false, completion: nil)
                 }
                 else {
                     self.labelMessage.text = "Invalid username or password"
@@ -82,10 +69,5 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let borderColour = UIColor.gray
         usernameField.layer.borderColor = borderColour.cgColor
         passwordField.layer.borderColor = borderColour.cgColor //sets border colours on textfields
-        
-        if defaultValues.string(forKey: "username") != nil {
-            let profileViewController = self.storyboard?.instantiateViewController(withIdentifier: "MealPlanVC") as! MealPlanViewController
-            self.navigationController?.pushViewController(profileViewController, animated: true)
-        }
     }
 }

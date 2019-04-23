@@ -103,9 +103,6 @@ class ShoppingListViewController: UIViewController, UITextFieldDelegate {
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMove(toParent: self)
-        self.view.isUserInteractionEnabled = false
-        self.view.isUserInteractionEnabled = true
-        
     }
     
     override func viewDidLoad() {

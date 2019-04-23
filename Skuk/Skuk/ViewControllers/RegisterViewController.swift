@@ -28,10 +28,10 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         sender.touchesBegan()
         
         let parameters: Parameters = [
-            "username":userNameField.text!,
-            "password":passwordField.text!,
-            "name":nameField.text!,
-            "email":emailAddressField.text!,
+            "username": userNameField.text!,
+            "password": passwordField.text!,
+            "name": nameField.text!,
+            "email": emailAddressField.text!,
         ]
         
         Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {

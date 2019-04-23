@@ -91,7 +91,6 @@ class BarcodeScannerViewController: UIViewController {
         view.addGestureRecognizer(swipeRight)
         view.addGestureRecognizer(swipeLeft)
         
-        doneBtn.setTitleTextAttributes([
-            NSAttributedString.Key.font: UIFont(name: "Kefa", size: 20)!],for: .normal)
+        doneBtn.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Kefa", size: 20)!],for: .normal)
     }
 }
