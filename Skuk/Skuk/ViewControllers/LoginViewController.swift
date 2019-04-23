@@ -27,7 +27,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         Alamofire.request(URL_USER_LOGIN, method: .post, parameters: parameters).responseJSON {
             response in
-            print(response)
             
             if let result = response.result.value {
                 let jsonData = result as! NSDictionary

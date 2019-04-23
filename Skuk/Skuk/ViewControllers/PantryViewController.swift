@@ -10,8 +10,10 @@ import UIKit
 
 class PantryViewController: UIViewController {
     
+    var pantryItems: [String] = ["Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen"]
     var menuOpen = false
     
+    @IBOutlet var pantryTable: UITableView!
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
@@ -71,6 +73,7 @@ class PantryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        pantryTable.tableFooterView = UIView(frame: CGRect.zero)
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         swipeRight.direction = .right
@@ -80,5 +83,34 @@ class PantryViewController: UIViewController {
         
         view.addGestureRecognizer(swipeRight)
         view.addGestureRecognizer(swipeLeft)
+    }
+}
+
+extension PantryViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pantryItems.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let pantryItem = pantryItems[indexPath.row]
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "pantryItem");
+        cell.textLabel?.text = pantryItem
+        cell.textLabel?.font = UIFont(name:"Kefa", size: 17)
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            pantryItems.remove(at: indexPath.row)
+            pantryTable.beginUpdates()
+            pantryTable.deleteRows(at: [indexPath], with: .fade)
+            pantryTable.endUpdates()
+        }
     }
 }

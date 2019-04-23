@@ -47,6 +47,11 @@ class MealPlanViewController: UIViewController {
         performSegue(withIdentifier: "MealPlanToRecipeBank", sender: self)
     }
     
+    @IBAction func BotBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "MealPlanToChatBot", sender: self)
+    }
+    
     @IBAction func settingsBtn(_ sender: UIButton) {
         sender.touchesBegan()
         performSegue(withIdentifier: "MealPlanToSettings", sender: self)
@@ -89,6 +94,7 @@ class MealPlanViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mealPlanTable.tableFooterView = UIView(frame: CGRect.zero)
         recipes = createArray()
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))

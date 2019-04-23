@@ -132,7 +132,8 @@ extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource
         let shoppingItem = shoppingItems[indexPath.row]
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "item");
         cell.textLabel?.text = shoppingItem
-        
+        cell.textLabel?.font = UIFont(name:"Kefa", size: 17)
+
         return cell
     }
     

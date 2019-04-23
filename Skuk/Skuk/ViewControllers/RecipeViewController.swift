@@ -36,18 +36,22 @@ class RecipeViewController: UIViewController {
     }
     
     @IBAction func shoppingListBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "RecipeToShoppingList", sender: self)
         sender.touchesBegan()
     }
     
     @IBAction func pantryBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "RecipeToPantry", sender: self)
         sender.touchesBegan()
     }
     
     @IBAction func recipeBankBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "RecipeToRecipeBank", sender: self)
         sender.touchesBegan()
     }
     
     @IBAction func settingsBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "RecipeToSettings", sender: self)
         sender.touchesBegan()
     }
 

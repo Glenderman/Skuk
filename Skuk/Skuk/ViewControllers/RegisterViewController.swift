@@ -34,19 +34,29 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             "email": emailAddressField.text!,
         ]
         
-        Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {
-            response in
-            print(response)
-            
-            if let result = response.result.value {
-                let jsonData = result as! NSDictionary
+        if((userNameField.text!.count) > 6) {
+            if ((passwordField.text!.count) > 6) {
                 
-                self.labelMessage.text = jsonData.value(forKey: "message") as! String?
-                self.nameField.text = ""
-                self.userNameField.text = ""
-                self.passwordField.text = ""
-                self.emailAddressField.text = ""
+                Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {
+                    response in
+                    print(response)
+                    print((self.userNameField.text!.count))
+                    
+                    if let result = response.result.value {
+                        let jsonData = result as! NSDictionary
+                        
+                        self.labelMessage.text = jsonData.value(forKey: "message") as! String?
+                        self.nameField.text = ""
+                        self.userNameField.text = ""
+                        self.passwordField.text = ""
+                        self.emailAddressField.text = ""
+                    }
+                }
+            } else {
+                labelMessage.text = "Password length must at least 6 characters"
             }
+        } else {
+            labelMessage.text = "Username length must at least 6 characters"
         }
     }
     
