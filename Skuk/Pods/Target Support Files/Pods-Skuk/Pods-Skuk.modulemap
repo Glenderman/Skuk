@@ -1,0 +1,6 @@
+framework module Pods_Skuk {
+  umbrella header "Pods-Skuk-umbrella.h"
+
+  export *
+  module * { export * }
+}

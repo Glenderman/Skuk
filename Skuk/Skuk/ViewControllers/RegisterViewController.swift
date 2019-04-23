@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Alamofire
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
+    
+    let URL_USER_REGISTER = "https://student.csc.liv.ac.uk/~sgggrif2/register.php"
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var userNameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var emailAddressField: UITextField!
+    @IBOutlet var labelMessage: UILabel!
     
     @IBAction func cancelBtn(_ sender: UIButton) {
         sender.touchesBegan()
@@ -22,7 +26,29 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func registerBtn(_ sender: UIButton) {
         sender.touchesBegan()
-        performSegue(withIdentifier: "RegisterToLogin", sender: self)
+        
+        let parameters: Parameters = [
+            "username":userNameField.text!,
+            "password":passwordField.text!,
+            "name":nameField.text!,
+            "email":emailAddressField.text!,
+        ]
+        
+        Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {
+            response in
+            print(response)
+            
+            if let result = response.result.value {
+                
+                let jsonData = result as! NSDictionary
+                
+                self.labelMessage.text = jsonData.value(forKey: "message") as! String?
+                self.nameField.text = ""
+                self.userNameField.text = ""
+                self.passwordField.text = ""
+                self.emailAddressField.text = ""
+            }
+        }
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -35,7 +61,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         if textField == self.passwordField {
             self.emailAddressField.becomeFirstResponder()
         }
-        
         textField.resignFirstResponder()
         return true
     }

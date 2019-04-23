@@ -1,0 +1,6 @@
+framework module Pods_SkukUITests {
+  umbrella header "Pods-SkukUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
