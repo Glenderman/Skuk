@@ -44,7 +44,6 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                 Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {
                     response in
                     print(response)
-                    print((self.userNameField.text!.count))
                     
                     if let result = response.result.value {
                         let jsonData = result as! NSDictionary
