@@ -38,6 +38,7 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         addTextField.delegate = self
+        addTextField.layer.borderColor = UIColor.gray.cgColor
         self.view.backgroundColor = UIColor(red: 0.49, green: 0.49, blue: 0.49, alpha: 0.6)
     }
 }

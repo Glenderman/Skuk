@@ -859,6 +859,13 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -918,7 +925,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-w5-bC8">
-                                <rect key="frame" x="299" y="54" width="105" height="232"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-Ks-e8d">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -987,7 +994,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jA-GT-tdx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -1049,6 +1056,13 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eca-ge-EKY">
                                         <rect key="frame" x="251" y="74" width="30" height="30"/>
@@ -1373,17 +1387,27 @@
                                         </connections>
                                     </tableView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BoF-3V-55a">
-                                        <rect key="frame" x="21" y="696" width="97" height="30"/>
+                                        <rect key="frame" x="21" y="696" width="121" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="97" id="hdT-KJ-mZh"/>
+                                            <constraint firstAttribute="width" constant="121" id="5oF-Jy-rwp"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a6g-kQ-xam">
                                         <rect key="frame" x="168" y="696" width="71" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="71" id="Xgb-DV-Bcl"/>
+                                        </constraints>
+                                        <state key="normal" title="Add"/>
                                         <connections>
                                             <action selector="addItemBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="C52-6Q-zFI"/>
                                         </connections>
@@ -1392,14 +1416,13 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="0ZE-4h-NW3" secondAttribute="trailing" id="4OD-Nh-rVH"/>
-                                    <constraint firstItem="BoF-3V-55a" firstAttribute="top" secondItem="a6g-kQ-xam" secondAttribute="top" id="8y4-YZ-dbU"/>
-                                    <constraint firstItem="a6g-kQ-xam" firstAttribute="leading" secondItem="BoF-3V-55a" secondAttribute="trailing" constant="50" id="PoG-mf-etr"/>
-                                    <constraint firstItem="BoF-3V-55a" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" constant="21" id="UBM-53-WG5"/>
+                                    <constraint firstItem="BoF-3V-55a" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" constant="21" id="G4n-xj-0ZP"/>
+                                    <constraint firstItem="BoF-3V-55a" firstAttribute="top" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="38" id="Kc8-tX-7WL"/>
+                                    <constraint firstItem="a6g-kQ-xam" firstAttribute="leading" secondItem="BoF-3V-55a" secondAttribute="trailing" constant="26" id="R5u-ct-A8V"/>
                                     <constraint firstItem="0ZE-4h-NW3" firstAttribute="top" secondItem="1OE-BW-GTd" secondAttribute="top" id="V2P-2R-WBe"/>
                                     <constraint firstItem="0ZE-4h-NW3" firstAttribute="leading" secondItem="1OE-BW-GTd" secondAttribute="leading" id="Y6h-BY-KoM"/>
-                                    <constraint firstItem="BoF-3V-55a" firstAttribute="top" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="38" id="YqZ-ib-e3Y"/>
+                                    <constraint firstItem="BoF-3V-55a" firstAttribute="top" secondItem="a6g-kQ-xam" secondAttribute="top" id="lPG-qe-e7q"/>
                                     <constraint firstAttribute="bottom" secondItem="0ZE-4h-NW3" secondAttribute="bottom" constant="150" id="wR8-ff-Bwj"/>
-                                    <constraint firstAttribute="trailing" secondItem="a6g-kQ-xam" secondAttribute="trailing" constant="175" id="zRC-di-Iex"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1447,7 +1470,7 @@
         <!--Meal Plan-->
         <scene sceneID="AUl-LZ-aFe">
             <objects>
-                <viewController storyboardIdentifier="mealPlanVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xhJ-4D-iXp" customClass="MealPlanViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xhJ-4D-iXp" customClass="MealPlanViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XA5-Z9-nNn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1614,7 +1637,7 @@
         <!--Navigation Controller-->
         <scene sceneID="IHK-Ys-SiT">
             <objects>
-                <navigationController storyboardIdentifier="MealPlanVC" automaticallyAdjustsScrollViewInsets="NO" id="4jf-VC-uth" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4jf-VC-uth" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kWd-tG-viI">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1712,12 +1735,13 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z1V-WW-tqb"/>
-        <segue reference="TnZ-cb-CZm"/>
-        <segue reference="9Fc-Ne-YN6"/>
-        <segue reference="phN-h3-22M"/>
-        <segue reference="1wy-mb-x9M"/>
-        <segue reference="SOe-ko-piU"/>
+        <segue reference="d5K-tE-vvQ"/>
+        <segue reference="V6A-vL-afU"/>
+        <segue reference="uFt-EF-D6v"/>
+        <segue reference="3yw-2c-Hg6"/>
+        <segue reference="ApW-or-95P"/>
+        <segue reference="jrC-2Z-VOj"/>
+        <segue reference="V1d-Zl-2i9"/>
         <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
 </document>

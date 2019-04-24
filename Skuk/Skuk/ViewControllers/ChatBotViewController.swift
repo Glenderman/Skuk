@@ -128,6 +128,9 @@ class ChatBotViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        messageTextField.delegate = self
+        messageTextField.layer.borderColor = UIColor.gray.cgColor
+        
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         swipeRight.direction = .right
         
