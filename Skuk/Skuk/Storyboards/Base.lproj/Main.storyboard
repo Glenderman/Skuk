@@ -361,9 +361,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rF-8v-o4f">
-                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="69" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkükBøt">
+                                        <state key="normal" title="Skük Bøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -514,9 +514,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t90-3O-q1C">
-                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="69" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkükBøt">
+                                        <state key="normal" title="Skük Bøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -542,7 +542,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeBankCell" rowHeight="120" id="2xm-3t-lhw" customClass="RecipeMealCell" customModule="Skuk" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="recipeBankCell" rowHeight="120" id="2xm-3t-lhw" customClass="RecipeMealCell" customModule="Skuk" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2xm-3t-lhw" id="dfa-jH-kR7">
@@ -680,9 +680,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AW-YM-bDk">
-                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="69" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkükBøt">
+                                        <state key="normal" title="Skük Bøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -755,7 +755,7 @@
             </objects>
             <point key="canvasLocation" x="4710" y="455"/>
         </scene>
-        <!--Skük Bot-->
+        <!--Skük Bøt-->
         <scene sceneID="ysC-99-AzR">
             <objects>
                 <viewController id="oqS-wu-tS6" customClass="ChatBotViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
@@ -811,9 +811,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NL4-A8-SlS">
-                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="69" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkükBøt">
+                                        <state key="normal" title="Skük Bøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -892,7 +892,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wl7-JT-Chv"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Skük Bot" id="CAN-kd-HyA">
+                    <navigationItem key="navigationItem" title="Skük Bøt" id="CAN-kd-HyA">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" style="done" id="KgE-Z4-Rhc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -972,9 +972,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG3-JL-km6">
-                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="69" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkükBøt">
+                                        <state key="normal" title="Skük Bøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -1224,9 +1224,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRy-KT-PBC">
-                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="69" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkükBøt">
+                                        <state key="normal" title="Skük Bøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -1365,9 +1365,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDP-Q1-x3f">
-                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="69" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkükBøt">
+                                        <state key="normal" title="Skük Bøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -1393,7 +1393,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="658"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="item" id="2pQ-75-Oo1">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="item" id="2pQ-75-Oo1">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2pQ-75-Oo1" id="TXb-bE-V3C">
@@ -1538,9 +1538,9 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC7-z8-nXu">
-                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <rect key="frame" x="0.0" y="160" width="69" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkükBøt">
+                                        <state key="normal" title="Skük Bøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -1566,7 +1566,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="120" id="Bbu-3W-Fgz" customClass="RecipeCell" customModule="Skuk" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="120" id="Bbu-3W-Fgz" customClass="RecipeCell" customModule="Skuk" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bbu-3W-Fgz" id="SDF-b5-zfk">
@@ -1754,12 +1754,12 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z1V-WW-tqb"/>
-        <segue reference="TnZ-cb-CZm"/>
-        <segue reference="9Fc-Ne-YN6"/>
-        <segue reference="phN-h3-22M"/>
-        <segue reference="tHv-Ye-H4S"/>
-        <segue reference="SOe-ko-piU"/>
+        <segue reference="kjY-fU-xM5"/>
+        <segue reference="uFt-EF-D6v"/>
+        <segue reference="fZz-3H-3vj"/>
+        <segue reference="Do3-pf-sHk"/>
+        <segue reference="1wy-mb-x9M"/>
+        <segue reference="V1d-Zl-2i9"/>
         <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
 </document>
