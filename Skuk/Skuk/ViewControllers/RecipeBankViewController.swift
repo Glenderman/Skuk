@@ -47,6 +47,15 @@ class RecipeBankViewController: UIViewController {
         performSegue(withIdentifier: "RecipeBankToPantry", sender: self)
     }
     
+    @IBAction func recipeBankBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+    }
+    
+    @IBAction func chatBotBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "RecipeBankToChatBot", sender: self)
+    }
+    
     @IBAction func settingsBtn(_ sender: UIButton) {
         sender.touchesBegan()
         performSegue(withIdentifier: "RecipeBankToSettings", sender: self)
@@ -56,11 +65,13 @@ class RecipeBankViewController: UIViewController {
         if sender.state == .ended {
             switch sender.direction {
             case .right:
+                leadingConstraint.constant = 0
                 trailingConstraint.constant = 0
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()
                 })
             case .left:
+                leadingConstraint.constant = -130
                 trailingConstraint.constant = -130
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()

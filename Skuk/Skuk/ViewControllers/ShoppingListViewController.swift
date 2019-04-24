@@ -42,6 +42,11 @@ class ShoppingListViewController: UIViewController, UITextFieldDelegate {
         performSegue(withIdentifier: "ShoppingListToMealPlan", sender: self)
     }
     
+    @IBAction func shoppingListBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+    }
+    
+    
     @IBAction func pantryBtn(_ sender: UIButton) {
         sender.touchesBegan()
         performSegue(withIdentifier: "ShoppingListToPantry", sender: self)
@@ -50,6 +55,11 @@ class ShoppingListViewController: UIViewController, UITextFieldDelegate {
     @IBAction func recipeBtn(_ sender: UIButton) {
         sender.touchesBegan()
         performSegue(withIdentifier: "ShoppingListToRecipeBank", sender: self)
+    }
+    
+    @IBAction func chatBotBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "ShoppingListToChatBot", sender: self)
     }
     
     @IBAction func settingsBtn(_ sender: UIButton) {
@@ -61,11 +71,13 @@ class ShoppingListViewController: UIViewController, UITextFieldDelegate {
         if sender.state == .ended {
             switch sender.direction {
             case .right:
+                leadingConstraint.constant = 0
                 trailingConstraint.constant = 0
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()
                 })
             case .left:
+                leadingConstraint.constant = -130
                 trailingConstraint.constant = -130
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()

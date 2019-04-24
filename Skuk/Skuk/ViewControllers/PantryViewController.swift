@@ -42,9 +42,18 @@ class PantryViewController: UIViewController {
         performSegue(withIdentifier: "PantryToShoppingList", sender: self)
     }
     
+    @IBAction func pantryBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+    }
+    
     @IBAction func recipeBankBtn(_ sender: UIButton) {
         sender.touchesBegan()
         performSegue(withIdentifier: "PantryToRecipeBank", sender: self)
+    }
+    
+    @IBAction func chatBotBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "PantryToChatBot", sender: self)
     }
     
     @IBAction func settingsBtn(_ sender: UIButton) {
@@ -56,11 +65,13 @@ class PantryViewController: UIViewController {
         if sender.state == .ended {
             switch sender.direction {
             case .right:
+                leadingConstraint.constant = 0
                 trailingConstraint.constant = 0
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()
                 })
             case .left:
+                leadingConstraint.constant = -130
                 trailingConstraint.constant = -130
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()

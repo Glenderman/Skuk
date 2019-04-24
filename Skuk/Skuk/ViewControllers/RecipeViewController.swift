@@ -50,6 +50,11 @@ class RecipeViewController: UIViewController {
         sender.touchesBegan()
     }
     
+    @IBAction func ChatBotBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "RecipeToChatBot", sender: self)
+    }
+    
     @IBAction func settingsBtn(_ sender: UIButton) {
         performSegue(withIdentifier: "RecipeToSettings", sender: self)
         sender.touchesBegan()
@@ -59,11 +64,13 @@ class RecipeViewController: UIViewController {
         if sender.state == .ended {
             switch sender.direction {
             case .right:
+                leadingConstraint.constant = 0
                 trailingConstraint.constant = 0
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()
                 })
             case .left:
+                leadingConstraint.constant = -130
                 trailingConstraint.constant = -130
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()

@@ -127,7 +127,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-g8-Id1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pQT-g8-Id1">
                                         <rect key="frame" x="0.0" y="260" width="354" height="0.0"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -318,7 +318,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-7q-HDh">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIR-6H-HZX">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -346,6 +346,9 @@
                                         <state key="normal" title="Pantry">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="pantryBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="853-AM-sMG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEv-6X-RqI">
                                         <rect key="frame" x="0.0" y="120" width="94" height="32"/>
@@ -357,8 +360,18 @@
                                             <action selector="recipeBankBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="Qdi-m7-WKH"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rF-8v-o4f">
+                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="SkükBøt">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chatBotBtn:" destination="2Yq-zq-2GU" eventType="touchUpInside" id="kOM-84-vJX"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Gy-iX-rnh">
-                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="200" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -442,6 +455,7 @@
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="PantryToRecipeBank" id="mnn-Zc-r2n"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="PantryToSettings" id="dji-5m-AxN"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="PantryToShoppingList" id="1Xp-Yr-lze"/>
+                        <segue destination="9uY-le-i6f" kind="show" identifier="PantryToChatBot" id="nlk-Kh-cMp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6lp-br-qNI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -457,7 +471,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-Ds-edI">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mz6-q1-ZoH">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -495,9 +509,22 @@
                                         <state key="normal" title="Recipe Bank">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="recipeBankBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="3YP-0K-TXf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t90-3O-q1C">
+                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="SkükBøt">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chatBotBtn:" destination="TW7-kx-80R" eventType="touchUpInside" id="KU3-ls-Hui"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F4e-gt-Sb0">
-                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="200" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -594,6 +621,7 @@
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="RecipeBankToShoppingList" id="vUZ-4s-0io"/>
                         <segue destination="4jf-VC-uth" kind="show" identifier="RecipeBankToMealPlan" id="C1O-2c-rE4"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="RecipeBankToPantry" id="dbX-f8-k9t"/>
+                        <segue destination="9uY-le-i6f" kind="show" identifier="RecipeBankToChatBot" id="VZn-H6-mBC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H1N-A3-WCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -609,7 +637,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UpK-Rz-vzP">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9J3-Ku-ITa">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -651,12 +679,25 @@
                                             <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="4WF-68-VTA"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AW-YM-bDk">
+                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="SkükBøt">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chatBotBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="Zb7-zF-MMg"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGG-1L-ntZ">
-                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="200" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="settingsBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="LGa-uc-vlE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -691,6 +732,7 @@
                         <segue destination="4jf-VC-uth" kind="show" identifier="SettingsToMealPlan" id="kR3-0N-4W9"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="SettingsToRecipeBank" id="86B-hn-Yym"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="SettingsToPantry" id="H4J-7g-cOO"/>
+                        <segue destination="9uY-le-i6f" kind="show" identifier="SettingsToChatBot" id="BfR-JL-NpA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ar-eI-c13" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -722,7 +764,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6dj-wA-RWH">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oX1-Dc-cvq">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -732,6 +774,7 @@
                                         </state>
                                         <connections>
                                             <action selector="mealPlanBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="fDs-VR-Nzo"/>
+                                            <action selector="mealPlanBtn:" destination="oqS-wu-tS6" eventType="touchUpInside" id="qsH-hA-PC6"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BHC-et-thP">
@@ -742,6 +785,7 @@
                                         </state>
                                         <connections>
                                             <action selector="shoppingListBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="8P9-cT-I5k"/>
+                                            <action selector="shoppingListBtn:" destination="oqS-wu-tS6" eventType="touchUpInside" id="NeN-JH-AgF"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-ak-i4V">
@@ -751,6 +795,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="pantryBtn:" destination="oqS-wu-tS6" eventType="touchUpInside" id="Hz9-th-6hG"/>
                                             <action selector="pantryBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="IGD-ZH-Zka"/>
                                         </connections>
                                     </button>
@@ -761,32 +806,37 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="recipeBankBtn:" destination="oqS-wu-tS6" eventType="touchUpInside" id="0Sj-fA-qBm"/>
                                             <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="r3M-M1-7LK"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NL4-A8-SlS">
+                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="SkükBøt">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chatBotBtn:" destination="oqS-wu-tS6" eventType="touchUpInside" id="l0p-bA-P3C"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FbR-Yp-qfm">
-                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="200" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="settingsBtn:" destination="oqS-wu-tS6" eventType="touchUpInside" id="jKu-F2-T25"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JZs-cY-Nhb">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skükena" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qeu-Ai-cAg">
-                                        <rect key="frame" x="54.5" y="198" width="305" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="305" id="Xbe-a2-0rG"/>
-                                        </constraints>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4X9-lC-kpa">
-                                        <rect key="frame" x="144" y="266" width="126" height="36"/>
+                                        <rect key="frame" x="144" y="250" width="126" height="36"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <state key="normal" title="Send Message">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -795,24 +845,32 @@
                                             <action selector="sendMessageBtn:" destination="oqS-wu-tS6" eventType="touchUpInside" id="r2w-Bi-hw9"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say Hi!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INW-5Y-5Od">
-                                        <rect key="frame" x="57" y="79" width="300" height="23.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say Hi!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INW-5Y-5Od">
+                                        <rect key="frame" x="57" y="48" width="300" height="66"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="Erh-oZ-Meb"/>
+                                            <constraint firstAttribute="height" constant="66" id="pDH-eP-bqs"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skükena" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Qeu-Ai-cAg">
+                                        <rect key="frame" x="97" y="166" width="220" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="INW-5Y-5Od" firstAttribute="top" secondItem="JZs-cY-Nhb" secondAttribute="top" constant="79" id="0vg-1L-Vd6"/>
-                                    <constraint firstItem="Qeu-Ai-cAg" firstAttribute="centerX" secondItem="JZs-cY-Nhb" secondAttribute="centerX" id="KZP-lz-mDT"/>
-                                    <constraint firstItem="4X9-lC-kpa" firstAttribute="centerX" secondItem="JZs-cY-Nhb" secondAttribute="centerX" id="PXx-Wr-GMZ"/>
-                                    <constraint firstItem="4X9-lC-kpa" firstAttribute="top" secondItem="Qeu-Ai-cAg" secondAttribute="bottom" constant="38" id="Qsw-Hr-N5D"/>
-                                    <constraint firstItem="Qeu-Ai-cAg" firstAttribute="top" secondItem="JZs-cY-Nhb" secondAttribute="top" constant="198" id="VxS-7f-pzc"/>
-                                    <constraint firstItem="INW-5Y-5Od" firstAttribute="centerX" secondItem="JZs-cY-Nhb" secondAttribute="centerX" id="o9q-Pt-Ynh"/>
+                                    <constraint firstItem="Qeu-Ai-cAg" firstAttribute="centerX" secondItem="4X9-lC-kpa" secondAttribute="centerX" id="1QG-wn-3Nz"/>
+                                    <constraint firstItem="Qeu-Ai-cAg" firstAttribute="top" secondItem="INW-5Y-5Od" secondAttribute="bottom" constant="52" id="9hQ-XI-e3V"/>
+                                    <constraint firstItem="INW-5Y-5Od" firstAttribute="centerX" secondItem="4X9-lC-kpa" secondAttribute="centerX" id="COY-gL-cxk"/>
+                                    <constraint firstItem="4X9-lC-kpa" firstAttribute="top" secondItem="Qeu-Ai-cAg" secondAttribute="bottom" constant="54" id="DCm-VE-8JO"/>
+                                    <constraint firstItem="INW-5Y-5Od" firstAttribute="top" secondItem="JZs-cY-Nhb" secondAttribute="top" constant="48" id="QUP-gG-oSn"/>
+                                    <constraint firstItem="INW-5Y-5Od" firstAttribute="leading" secondItem="JZs-cY-Nhb" secondAttribute="leading" constant="57" id="WCq-d0-QQK"/>
+                                    <constraint firstItem="Qeu-Ai-cAg" firstAttribute="leading" secondItem="JZs-cY-Nhb" secondAttribute="leading" constant="97" id="cIm-eb-Ezn"/>
+                                    <constraint firstItem="INW-5Y-5Od" firstAttribute="centerX" secondItem="JZs-cY-Nhb" secondAttribute="centerX" id="mx1-Xd-jJk"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -830,11 +888,21 @@
                     <navigationItem key="navigationItem" title="Skük Bot" id="CAN-kd-HyA">
                         <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" style="done" id="KgE-Z4-Rhc">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="navBtn:" destination="oqS-wu-tS6" id="Bit-EE-IJs"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="leadingConstraint" destination="UcH-p9-9KG" id="L7N-gM-5hJ"/>
                         <outlet property="messageLbl" destination="INW-5Y-5Od" id="HlQ-zW-acQ"/>
                         <outlet property="messageTextField" destination="Qeu-Ai-cAg" id="aqQ-3R-1KR"/>
+                        <outlet property="trailingConstraint" destination="nSt-EA-ty0" id="MPb-i4-sSZ"/>
+                        <segue destination="cNH-ph-DcX" kind="show" identifier="ChatBotToSettings" id="kjY-fU-xM5"/>
+                        <segue destination="5Iy-3C-8yh" kind="show" identifier="ChatBotToRecipeBank" id="fZz-3H-3vj"/>
+                        <segue destination="Q8O-Hs-PGq" kind="show" identifier="ChatBotToPantry" id="Do3-pf-sHk"/>
+                        <segue destination="Gjf-5W-Txe" kind="show" identifier="ChatBotToShoppingList" id="uFt-EF-D6v"/>
+                        <segue destination="4jf-VC-uth" kind="show" identifier="ChatBotToMealPlan" id="1wy-mb-x9M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8gj-I2-cMT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -850,7 +918,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-w5-bC8">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-Ks-e8d">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -896,8 +964,18 @@
                                             <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="WdU-Al-9fa"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG3-JL-km6">
+                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="SkükBøt">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChatBotBtn:" destination="cbs-gy-5XA" eventType="touchUpInside" id="0oJ-h7-eJz"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cCK-5A-Zkm">
-                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="200" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -939,6 +1017,7 @@
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="RecipeToPantry" id="iHE-Oi-hDM"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="RecipeToRecipeBank" id="d4P-Ci-HiB"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="RecipeToSettings" id="Vpg-WY-wCe"/>
+                        <segue destination="9uY-le-i6f" kind="show" identifier="RecipeToChatBot" id="3hC-0w-hwt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ksf-nh-o6g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1080,7 +1159,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5lY-kC-dkP">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-nR-rdz">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -1130,8 +1209,18 @@
                                             <action selector="recipeBankBtn:" destination="3ff-Hc-Ugn" eventType="touchUpInside" id="Ybd-OH-viD"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRy-KT-PBC">
+                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="SkükBøt">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ChatBotBtn:" destination="k5M-pB-fuX" eventType="touchUpInside" id="28e-cP-9ag"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CY9-L8-vk5">
-                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="200" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1182,6 +1271,7 @@
                         <segue destination="4jf-VC-uth" kind="show" identifier="ManualAddToMealPlan" id="2UY-5b-khf"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="ManualAddToRecipeBank" id="diT-qj-MW7"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="ManualAddToPantry" id="5It-LO-T8O"/>
+                        <segue destination="9uY-le-i6f" kind="show" identifier="BarcodeToChatBot" id="T5e-pr-2n5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNm-SJ-1Oy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1197,7 +1287,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="624-ff-a0K">
-                                <rect key="frame" x="299" y="98" width="105" height="192"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWt-JU-a8z">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -1215,6 +1305,9 @@
                                         <state key="normal" title="Shopping List">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="shoppingListBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="ZL5-8g-0IZ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AL-kB-mQp">
                                         <rect key="frame" x="0.0" y="80" width="51" height="32"/>
@@ -1236,8 +1329,18 @@
                                             <action selector="recipeBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="6kE-BP-DAk"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDP-Q1-x3f">
+                                        <rect key="frame" x="0.0" y="160" width="65" height="32"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="SkükBøt">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chatBotBtn:" destination="hRh-Vh-XDR" eventType="touchUpInside" id="YYC-eH-MT8"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iTb-dY-JSs">
-                                        <rect key="frame" x="0.0" y="160" width="64" height="32"/>
+                                        <rect key="frame" x="0.0" y="200" width="64" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Settings">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1334,6 +1437,7 @@
                         <segue destination="4jf-VC-uth" kind="show" identifier="ShoppingListToMealPlan" id="jrC-2Z-VOj"/>
                         <segue destination="5Iy-3C-8yh" kind="show" identifier="ShoppingListToRecipeBank" id="3yw-2c-Hg6"/>
                         <segue destination="Q8O-Hs-PGq" kind="show" identifier="ShoppingListToPantry" id="ApW-or-95P"/>
+                        <segue destination="9uY-le-i6f" kind="show" identifier="ShoppingListToChatBot" id="V1d-Zl-2i9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hpN-Ix-lXl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1357,6 +1461,9 @@
                                         <state key="normal" title="Meal Plan">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mealPlanBtn:" destination="xhJ-4D-iXp" eventType="touchUpInside" id="wLN-dm-nQl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YeA-2v-XZz">
                                         <rect key="frame" x="0.0" y="40" width="105" height="32"/>
@@ -1391,7 +1498,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VC7-z8-nXu">
                                         <rect key="frame" x="0.0" y="160" width="65" height="32"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <state key="normal" title="SkukBøt">
+                                        <state key="normal" title="SkükBøt">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -1605,11 +1712,12 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="z1V-WW-tqb"/>
-        <segue reference="TnZ-cb-CZm"/>
-        <segue reference="9Fc-Ne-YN6"/>
-        <segue reference="phN-h3-22M"/>
-        <segue reference="C1O-2c-rE4"/>
-        <segue reference="fbK-NT-iC6"/>
+        <segue reference="kjY-fU-xM5"/>
+        <segue reference="uFt-EF-D6v"/>
+        <segue reference="fZz-3H-3vj"/>
+        <segue reference="Do3-pf-sHk"/>
+        <segue reference="1wy-mb-x9M"/>
+        <segue reference="BfR-JL-NpA"/>
+        <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -32,6 +32,10 @@ class MealPlanViewController: UIViewController {
         })
     }
     
+    @IBAction func mealPlanBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+    }
+    
     @IBAction func shoppingListBtn(_ sender: UIButton) {
         sender.touchesBegan()
         performSegue(withIdentifier: "MealPlanToShoppingList", sender: self)
@@ -77,11 +81,13 @@ class MealPlanViewController: UIViewController {
         if sender.state == .ended {
             switch sender.direction {
             case .right:
+                leadingConstraint.constant = 0
                 trailingConstraint.constant = 0
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()
                 })
             case .left:
+                leadingConstraint.constant = -130
                 trailingConstraint.constant = -130
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()

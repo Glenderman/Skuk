@@ -55,6 +55,11 @@ class BarcodeScannerViewController: UIViewController {
         performSegue(withIdentifier: "ManualAddToRecipeBank", sender: self)
     }
     
+    @IBAction func ChatBotBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "BarcodeToChatBot", sender: self)
+    }
+    
     @IBAction func SettingsBtn(_ sender: UIButton) {
         sender.touchesBegan()
         performSegue(withIdentifier: "ManualAddToSettings", sender: self)
@@ -64,11 +69,13 @@ class BarcodeScannerViewController: UIViewController {
         if sender.state == .ended {
             switch sender.direction {
             case .right:
+                leadingConstraint.constant = 0
                 trailingConstraint.constant = 0
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()
                 })
             case .left:
+                leadingConstraint.constant = -130
                 trailingConstraint.constant = -130
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()

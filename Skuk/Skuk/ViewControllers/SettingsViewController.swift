@@ -50,15 +50,27 @@ class SettingsViewController: UIViewController {
         performSegue(withIdentifier: "SettingsToRecipeBank", sender: self)
     }
     
+    @IBAction func chatBotBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+        performSegue(withIdentifier: "SettingsToChatBot", sender: self)
+    }
+    
+    @IBAction func settingsBtn(_ sender: UIButton) {
+        sender.touchesBegan()
+    }
+    
+    
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
             case .right:
+                leadingConstraint.constant = 0
                 trailingConstraint.constant = 0
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()
                 })
             case .left:
+                leadingConstraint.constant = -130
                 trailingConstraint.constant = -130
                 UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
                     self.view.layoutIfNeeded()

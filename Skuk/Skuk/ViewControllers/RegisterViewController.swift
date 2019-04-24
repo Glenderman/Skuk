@@ -34,6 +34,10 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             "email": emailAddressField.text!,
         ]
         
+        guard let username = userNameField.text, let password = passwordField.text, let name = nameField.text, let email = emailAddressField.text, !username.isEmpty, !password.isEmpty, !name.isEmpty, !email.isEmpty else {
+            labelMessage.text = "Required parameters are missing"
+            return }
+        
         if((userNameField.text!.count) > 6) {
             if ((passwordField.text!.count) > 6) {
                 
@@ -53,7 +57,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
                     }
                 }
             } else {
-                labelMessage.text = "Password length must at least 6 characters"
+                labelMessage.text = "Password length must be at least 6 characters"
             }
         } else {
             labelMessage.text = "Username length must at least 6 characters"
