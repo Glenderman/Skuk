@@ -1248,7 +1248,26 @@
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQX-kS-GDG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-d1-9MJ">
+                                        <rect key="frame" x="48" y="0.0" width="318" height="65"/>
+                                        <color key="backgroundColor" name="SkukYellow"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8p-nc-YU1">
+                                        <rect key="frame" x="186" y="757" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LNT-d1-9MJ" secondAttribute="bottom" constant="743" id="1Sm-dJ-lCv"/>
+                                    <constraint firstItem="LNT-d1-9MJ" firstAttribute="leading" secondItem="IQX-kS-GDG" secondAttribute="leading" constant="48" id="BpO-UP-sFI"/>
+                                    <constraint firstItem="LNT-d1-9MJ" firstAttribute="top" secondItem="IQX-kS-GDG" secondAttribute="top" id="iaH-Ng-ZoL"/>
+                                    <constraint firstItem="LNT-d1-9MJ" firstAttribute="centerX" secondItem="IQX-kS-GDG" secondAttribute="centerX" id="ttI-Fd-EA4"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" name="NavigationGrey"/>
@@ -1279,6 +1298,8 @@
                     <connections>
                         <outlet property="doneBtn" destination="LiY-VZ-pvp" id="xpB-3q-x8o"/>
                         <outlet property="leadingConstraint" destination="U7Y-d9-odp" id="cb7-XM-RvP"/>
+                        <outlet property="messageLbl" destination="i8p-nc-YU1" id="AtT-U4-fVp"/>
+                        <outlet property="topBar" destination="LNT-d1-9MJ" id="o5e-p3-FeG"/>
                         <outlet property="trailingConstraint" destination="XdU-fu-GOz" id="EDL-Ew-5Is"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="ManualAddToShoppingList" id="JcM-ZJ-VPL"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="ManualAddToSettings" id="yzY-Xv-0bF"/>
