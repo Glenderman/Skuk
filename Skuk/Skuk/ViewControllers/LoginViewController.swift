@@ -15,7 +15,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var passwordField: UITextField!
-    @IBOutlet var labelMessage: UILabel!
+    @IBOutlet var errorMessage: UILabel!
     
     @IBAction func loginBtn(_ sender: UIButton) {
         sender.touchesBegan()
@@ -35,7 +35,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 if(!(jsonData.value(forKey: "error") as! Bool)) {
                     self.performSegue(withIdentifier: "loginToMealPlan", sender: self)
                 } else {
-                    self.labelMessage.text = "Invalid Username or Password"
+                    self.errorMessage.text = "Invalid Username or Password"
                 }
             }
         }
@@ -47,16 +47,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        //if statement allows for when user clicks next button on username textfield then it transfers to password textfield
         if textField == self.usernameField {
             self.passwordField.becomeFirstResponder()
         }
-        textField.resignFirstResponder() //when user clicks done button on keyboard the keyboard closes
+        textField.resignFirstResponder()
         return true
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true) //if the user touches outside the textfields/keyboard then the keyboard closes
+        self.view.endEditing(true)
     }
     
     override func viewDidLoad() {
@@ -67,6 +66,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         let borderColour = UIColor.gray
         usernameField.layer.borderColor = borderColour.cgColor
-        passwordField.layer.borderColor = borderColour.cgColor //sets border colours on textfields
+        passwordField.layer.borderColor = borderColour.cgColor
     }
 }

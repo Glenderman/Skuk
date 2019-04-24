@@ -17,7 +17,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var userNameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var emailAddressField: UITextField!
-    @IBOutlet var labelMessage: UILabel!
+    @IBOutlet var errorMessage: UILabel!
     
     @IBAction func cancelBtn(_ sender: UIButton) {
         sender.touchesBegan()
@@ -35,31 +35,30 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         ]
         
         guard let username = userNameField.text, let password = passwordField.text, let name = nameField.text, let email = emailAddressField.text, !username.isEmpty, !password.isEmpty, !name.isEmpty, !email.isEmpty else {
-            labelMessage.text = "Required parameters are missing"
+            errorMessage.text = "Required parameters are missing"
             return }
         
-        if((userNameField.text!.count) > 6) {
-            if ((passwordField.text!.count) > 6) {
+        guard let usernameCount = userNameField.text?.count, usernameCount > 6 else {
+            errorMessage.text = "Username length must be at least 6 characters"
+            return }
+        
+        guard let passwordCount = passwordField.text?.count, passwordCount > 6 else {
+            errorMessage.text = "Password length must at least 6 characters"
+            return }
+        
+        Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {
+            response in
+            print(response)
+            
+            if let result = response.result.value {
+                let jsonData = result as! NSDictionary
                 
-                Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {
-                    response in
-                    print(response)
-                    
-                    if let result = response.result.value {
-                        let jsonData = result as! NSDictionary
-                        
-                        self.labelMessage.text = jsonData.value(forKey: "message") as! String?
-                        self.nameField.text = ""
-                        self.userNameField.text = ""
-                        self.passwordField.text = ""
-                        self.emailAddressField.text = ""
-                    }
-                }
-            } else {
-                labelMessage.text = "Password length must be at least 6 characters"
+                self.errorMessage.text = jsonData.value(forKey: "message") as! String?
+                self.nameField.text = ""
+                self.userNameField.text = ""
+                self.passwordField.text = ""
+                self.emailAddressField.text = ""
             }
-        } else {
-            labelMessage.text = "Username length must at least 6 characters"
         }
     }
     
@@ -78,7 +77,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true) //if the user touches outside the textfields/keyboard then the keyboard closes
+        self.view.endEditing(true)
     }
     
     override func viewDidLoad() {

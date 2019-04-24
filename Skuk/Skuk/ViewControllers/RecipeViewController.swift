@@ -15,7 +15,6 @@ class RecipeViewController: UIViewController {
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     
-
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
             leadingConstraint.constant = -130

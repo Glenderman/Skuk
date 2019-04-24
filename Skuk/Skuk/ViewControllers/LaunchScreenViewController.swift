@@ -37,12 +37,12 @@ class LaunchScreenViewController: UIViewController {
         
         for skuk in name {
             skukLbl.text! += "\(skuk)"
-            RunLoop.current.run(until: Date()+0.4)
+            RunLoop.current.run(until: Date() + 0.4)
         }
         
         for skukSub in sublabel {
             scanCookLbl.text! += "\(skukSub)"
-            RunLoop.current.run(until: Date()+0.05)
+            RunLoop.current.run(until: Date() + 0.04)
         }
     }
     

@@ -180,7 +180,7 @@
                     <navigationItem key="navigationItem" id="bzA-4o-IKd"/>
                     <connections>
                         <outlet property="emailAddressField" destination="jDb-OO-2TK" id="c8n-1c-d3V"/>
-                        <outlet property="labelMessage" destination="pQT-g8-Id1" id="tf5-sV-Qdv"/>
+                        <outlet property="errorMessage" destination="pQT-g8-Id1" id="szE-Op-sqZ"/>
                         <outlet property="nameField" destination="NC0-PM-rme" id="StL-pl-Kw1"/>
                         <outlet property="passwordField" destination="jwf-BL-yBo" id="p6d-YY-bIx"/>
                         <outlet property="userNameField" destination="OuL-VT-cpK" id="IRI-Fv-EHK"/>
@@ -298,7 +298,7 @@
                         <viewLayoutGuide key="safeArea" id="D1s-xx-7yr"/>
                     </view>
                     <connections>
-                        <outlet property="labelMessage" destination="j2c-fX-5HL" id="9hL-UH-EG3"/>
+                        <outlet property="errorMessage" destination="j2c-fX-5HL" id="cac-g8-KRU"/>
                         <outlet property="passwordField" destination="hWa-1E-KLK" id="OHi-81-ZPS"/>
                         <outlet property="usernameField" destination="q4g-aQ-uke" id="gjf-Oe-Gxd"/>
                         <segue destination="DIS-Fk-aQQ" kind="show" identifier="LoginToRegister" id="d5K-tE-vvQ"/>
@@ -925,7 +925,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YGP-w5-bC8">
-                                <rect key="frame" x="299" y="54" width="105" height="232"/>
+                                <rect key="frame" x="299" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yf1-Ks-e8d">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -994,7 +994,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jA-GT-tdx">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
@@ -1737,7 +1737,7 @@
         <segue reference="TnZ-cb-CZm"/>
         <segue reference="9Fc-Ne-YN6"/>
         <segue reference="phN-h3-22M"/>
-        <segue reference="jrC-2Z-VOj"/>
+        <segue reference="tHv-Ye-H4S"/>
         <segue reference="SOe-ko-piU"/>
         <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>

@@ -73,9 +73,9 @@ class MealPlanViewController: UIViewController {
         performSegue(withIdentifier: "MealPlanToRecipe", sender: nil)
     }
     
-    //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    //        let detailVC = segue.destination as! RecipeViewController
-    //    }
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let detailVC = segue.destination as! RecipeViewController
+//    }
     
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
