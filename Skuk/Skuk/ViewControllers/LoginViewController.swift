@@ -32,7 +32,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             if let result = response.result.value {
                 let jsonData = result as! NSDictionary
                 
-                if(!(jsonData.value(forKey: "error") as! Bool)){
+                if(!(jsonData.value(forKey: "error") as! Bool)) {
                     self.performSegue(withIdentifier: "loginToMealPlan", sender: self)
                 } else {
                     self.labelMessage.text = "Invalid Username or Password"
