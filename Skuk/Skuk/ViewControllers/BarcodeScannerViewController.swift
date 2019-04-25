@@ -16,8 +16,6 @@ class BarcodeScannerViewController: UIViewController {
     @IBOutlet var topBar: UIView!
     @IBOutlet var messageLbl: UILabel!
     
-    
-    
     var captureSession = AVCaptureSession()
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
@@ -35,10 +33,6 @@ class BarcodeScannerViewController: UIViewController {
                                       AVMetadataObject.ObjectType.dataMatrix,
                                       AVMetadataObject.ObjectType.interleaved2of5,
                                       AVMetadataObject.ObjectType.qr]
-    
-    
-    
-    
     
     @IBOutlet var doneBtn: UIBarButtonItem!
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
@@ -128,7 +122,6 @@ class BarcodeScannerViewController: UIViewController {
         
         doneBtn.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Kefa", size: 20)!],for: .normal)
         
-        
         // Get the back-facing camera for capturing videos
         let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInDualCamera], mediaType: AVMediaType.video, position: .back)
         
@@ -151,7 +144,7 @@ class BarcodeScannerViewController: UIViewController {
             // Set delegate and use the default dispatch queue to execute the call back
             captureMetadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
             captureMetadataOutput.metadataObjectTypes = supportedCodeTypes
-            //            captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
+            captureMetadataOutput.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
             
         } catch {
             // If any error occurs, simply print it out and don't continue any more.
@@ -181,11 +174,6 @@ class BarcodeScannerViewController: UIViewController {
             view.addSubview(qrCodeFrameView)
             view.bringSubviewToFront(qrCodeFrameView)
         }
-        
-        
-        
-        
-        
     }
     
     func launchApp(decodedURL: String) {
@@ -208,7 +196,6 @@ class BarcodeScannerViewController: UIViewController {
         
         alertPrompt.addAction(confirmAction)
         alertPrompt.addAction(cancelAction)
-        
         present(alertPrompt, animated: true, completion: nil)
     }
 }

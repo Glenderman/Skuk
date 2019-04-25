@@ -38,11 +38,11 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             errorMessage.text = "Required parameters are missing"
             return }
         
-        guard let usernameCount = userNameField.text?.count, usernameCount > 6 else {
+        guard let usernameCount = userNameField.text?.count, usernameCount > 5 else {
             errorMessage.text = "Username length must be at least 6 characters"
             return }
         
-        guard let passwordCount = passwordField.text?.count, passwordCount > 6 else {
+        guard let passwordCount = passwordField.text?.count, passwordCount > 5 else {
             errorMessage.text = "Password length must at least 6 characters"
             return }
         

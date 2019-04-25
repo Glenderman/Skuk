@@ -1249,24 +1249,25 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IQX-kS-GDG">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LNT-d1-9MJ">
-                                        <rect key="frame" x="48" y="0.0" width="318" height="65"/>
-                                        <color key="backgroundColor" name="SkukYellow"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAB-AO-Hya">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8p-nc-YU1">
-                                        <rect key="frame" x="186" y="757" width="42" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i8p-nc-YU1">
+                                        <rect key="frame" x="187" y="745" width="40.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="LNT-d1-9MJ" secondAttribute="bottom" constant="743" id="1Sm-dJ-lCv"/>
-                                    <constraint firstItem="LNT-d1-9MJ" firstAttribute="leading" secondItem="IQX-kS-GDG" secondAttribute="leading" constant="48" id="BpO-UP-sFI"/>
-                                    <constraint firstItem="LNT-d1-9MJ" firstAttribute="top" secondItem="IQX-kS-GDG" secondAttribute="top" id="iaH-Ng-ZoL"/>
-                                    <constraint firstItem="LNT-d1-9MJ" firstAttribute="centerX" secondItem="IQX-kS-GDG" secondAttribute="centerX" id="ttI-Fd-EA4"/>
+                                    <constraint firstItem="XAB-AO-Hya" firstAttribute="top" secondItem="IQX-kS-GDG" secondAttribute="top" id="4Tt-ct-prQ"/>
+                                    <constraint firstItem="i8p-nc-YU1" firstAttribute="top" secondItem="XAB-AO-Hya" secondAttribute="bottom" constant="20" id="5Cc-tE-LGx"/>
+                                    <constraint firstItem="i8p-nc-YU1" firstAttribute="centerX" secondItem="XAB-AO-Hya" secondAttribute="centerX" id="QED-RZ-RzY"/>
+                                    <constraint firstAttribute="bottom" secondItem="i8p-nc-YU1" secondAttribute="bottom" constant="43" id="heX-3G-VDI"/>
+                                    <constraint firstAttribute="trailing" secondItem="XAB-AO-Hya" secondAttribute="trailing" id="mcU-qb-nDI"/>
+                                    <constraint firstItem="XAB-AO-Hya" firstAttribute="leading" secondItem="IQX-kS-GDG" secondAttribute="leading" id="x4d-7q-QuC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1299,7 +1300,7 @@
                         <outlet property="doneBtn" destination="LiY-VZ-pvp" id="xpB-3q-x8o"/>
                         <outlet property="leadingConstraint" destination="U7Y-d9-odp" id="cb7-XM-RvP"/>
                         <outlet property="messageLbl" destination="i8p-nc-YU1" id="AtT-U4-fVp"/>
-                        <outlet property="topBar" destination="LNT-d1-9MJ" id="o5e-p3-FeG"/>
+                        <outlet property="topBar" destination="XAB-AO-Hya" id="HiT-1c-XDf"/>
                         <outlet property="trailingConstraint" destination="XdU-fu-GOz" id="EDL-Ew-5Is"/>
                         <segue destination="Gjf-5W-Txe" kind="show" identifier="ManualAddToShoppingList" id="JcM-ZJ-VPL"/>
                         <segue destination="cNH-ph-DcX" kind="show" identifier="ManualAddToSettings" id="yzY-Xv-0bF"/>
@@ -1754,12 +1755,12 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kjY-fU-xM5"/>
-        <segue reference="uFt-EF-D6v"/>
-        <segue reference="fZz-3H-3vj"/>
-        <segue reference="Do3-pf-sHk"/>
-        <segue reference="1wy-mb-x9M"/>
-        <segue reference="V1d-Zl-2i9"/>
+        <segue reference="yzY-Xv-0bF"/>
+        <segue reference="JcM-ZJ-VPL"/>
+        <segue reference="diT-qj-MW7"/>
+        <segue reference="5It-LO-T8O"/>
+        <segue reference="2UY-5b-khf"/>
+        <segue reference="T5e-pr-2n5"/>
         <segue reference="9hK-Fm-1wI"/>
     </inferredMetricsTieBreakers>
 </document>
