@@ -44,7 +44,7 @@ class DbOperation
  
     public function getUserByUsername($username)
     {
-        $stmt = $this->conn->prepare("SELECT id, username, email FROM users WHERE username = ?");
+        $stmt = $this->conn->prepare("SELECT UserID, Username, Email FROM user_table WHERE Username = ?");
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $stmt->bind_result($id, $uname, $email);
