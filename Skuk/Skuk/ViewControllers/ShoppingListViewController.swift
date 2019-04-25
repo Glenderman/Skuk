@@ -8,18 +8,28 @@
 
 import UIKit
 
+var shoppingItems: [String] = []
+
 class ShoppingListViewController: UIViewController, UITextFieldDelegate {
     
     var menuOpen = false
-    var shoppingItems: [String] = []
     
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     @IBOutlet var shoppingListTable: UITableView!
     @IBOutlet var addItemField: UITextField!
     
+    //Add function button adds text to array then adds it to table
     @IBAction func addItemBtn(_ sender: Any) {
-        insertShoppingItem()
+        if (addItemField.text != "") {
+            shoppingItems.append(addItemField.text!)
+            let indexPath = IndexPath(row: shoppingItems.count - 1, section: 0)
+            shoppingListTable.beginUpdates()
+            shoppingListTable.insertRows(at: [indexPath], with: .fade)
+            shoppingListTable.endUpdates()
+        }
+        addItemField.text = ""
+        view.endEditing(true)
     }
     
     @IBAction func navBtn(_ sender: Any) {
@@ -45,7 +55,6 @@ class ShoppingListViewController: UIViewController, UITextFieldDelegate {
     @IBAction func shoppingListBtn(_ sender: UIButton) {
         sender.touchesBegan()
     }
-    
     
     @IBAction func pantryBtn(_ sender: UIButton) {
         sender.touchesBegan()
@@ -88,18 +97,6 @@ class ShoppingListViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func insertShoppingItem() {
-        if (addItemField.text != "") {
-            shoppingItems.append(addItemField.text!)
-            let indexPath = IndexPath(row: shoppingItems.count - 1, section: 0)
-            shoppingListTable.beginUpdates()
-            shoppingListTable.insertRows(at: [indexPath], with: .fade)
-            shoppingListTable.endUpdates()
-        }
-        addItemField.text = ""
-        view.endEditing(true)
-    }
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         addItemField.resignFirstResponder()
         return true
@@ -109,6 +106,7 @@ class ShoppingListViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    //Add btn in nav bar calls popupview
     @IBAction func addBtn(_ sender: Any) {
         let popOverVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "popUpVC") as! AddItemViewController
         self.addChild(popOverVC)
@@ -119,8 +117,7 @@ class ShoppingListViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        shoppingListTable.tableFooterView = UIView(frame: CGRect.zero)
-        
+        shoppingListTable.tableFooterView = UIView(frame: CGRect.zero) //removes empty lines from table
         addItemField.delegate = self
         
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
@@ -141,14 +138,14 @@ extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let shoppingItem = shoppingItems[indexPath.row]
         let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "item");
-        cell.textLabel?.text = shoppingItem
+        cell.textLabel?.text = shoppingItems[indexPath.row]
         cell.textLabel?.font = UIFont(name:"Kefa", size: 17)
 
         return cell
     }
     
+    //These two functions allow for cells to be deleted
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
