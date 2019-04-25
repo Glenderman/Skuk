@@ -10,20 +10,8 @@ import UIKit
 
 class AddItemViewController: UIViewController, UITextFieldDelegate {
     
+    var newItem: String = ""
     @IBOutlet var addTextField: UITextField!
-    
-    @IBAction func addBtn(_ sender: Any) {
-        addTextField.text = ""
-        view.endEditing(true)
-    }
-    
-    @IBAction func barcodeScannerBtn(_ sender: Any) {
-        performSegue(withIdentifier: "AddToBarcode", sender: self)
-    }
-    
-    @IBAction func closeBtn(_ sender: Any) {
-        self.view.removeFromSuperview()
-    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         addTextField.resignFirstResponder()
@@ -34,11 +22,17 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "doneSegue" {
+            newItem = addTextField.text!
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addTextField.delegate = self
         addTextField.layer.borderColor = UIColor.gray.cgColor
-        self.view.backgroundColor = UIColor(red: 0.49, green: 0.49, blue: 0.49, alpha: 0.6)
+        //self.view.backgroundColor = UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 0.6)
     }
 }
