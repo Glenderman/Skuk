@@ -1299,12 +1299,6 @@
                                 <action selector="doneBtn:" destination="Ns2-kK-SFL" id="rYF-V3-4vn"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="0Hz-JK-4BS">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="navBtn:" destination="Ns2-kK-SFL" id="49d-i3-WS6"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="doneBtn" destination="mx6-Fh-lHz" id="ywr-IK-ktv"/>
@@ -1547,10 +1541,10 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fvF-2M-drI">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <searchBar key="tableHeaderView" contentMode="redraw" id="4kX-5o-PXe">
+                                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Search Recipe" showsCancelButton="YES" id="4kX-5o-PXe">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                         </searchBar>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="120" id="hoD-Of-u88" customClass="RecipeCell" customModule="Skuk" customModuleProvider="target">
@@ -1823,14 +1817,14 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dKA-zm-d5Q"/>
-        <segue reference="Bcu-VK-tML"/>
-        <segue reference="EbA-iK-3pd"/>
-        <segue reference="fTh-Wd-SeI"/>
-        <segue reference="VZp-6g-0zw"/>
-        <segue reference="eov-vC-b05"/>
+        <segue reference="4Tm-E6-Jga"/>
+        <segue reference="0YF-z4-Qnn"/>
+        <segue reference="pIE-ni-n0T"/>
+        <segue reference="ya4-vm-Sou"/>
+        <segue reference="gAs-ks-imB"/>
+        <segue reference="8mx-Me-fTS"/>
         <segue reference="vTv-PU-2Ye"/>
-        <segue reference="zUF-xx-xcd"/>
+        <segue reference="0ax-ug-1ky"/>
         <segue reference="Mzq-ul-xgr"/>
     </inferredMetricsTieBreakers>
 </document>
