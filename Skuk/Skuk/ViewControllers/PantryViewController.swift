@@ -8,14 +8,16 @@
 
 import UIKit
 
+var pantryItems = [String]()
+
 class PantryViewController: UIViewController {
     
-    var pantryItems: [String] = ["Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen","Glen"]
+    var newItem: String = ""
     var menuOpen = false
     
-    @IBOutlet var pantryTable: UITableView!
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
+    @IBOutlet var pantryTable: UITableView!
     
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
@@ -61,6 +63,18 @@ class PantryViewController: UIViewController {
         performSegue(withIdentifier: "PantryToSettings", sender: self)
     }
     
+    @IBAction func cancel(segue: UIStoryboardSegue) {
+        
+    }
+    
+    @IBAction func done(segue: UIStoryboardSegue) {
+        let addingNewItem = segue.source as! AddPantryViewController
+        newItem = addingNewItem.newItem
+        
+        pantryItems.append(newItem)
+        pantryTable.reloadData()
+    }
+    
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
@@ -103,10 +117,13 @@ extension PantryViewController: UITableViewDelegate, UITableViewDataSource {
         return pantryItems.count
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let pantryItem = pantryItems[indexPath.row]
-        let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "pantryItem");
-        cell.textLabel?.text = pantryItem
+        let cell = tableView.dequeueReusableCell(withIdentifier: "pantryItem", for: indexPath)
+        cell.textLabel?.text = pantryItems[indexPath.row]
         cell.textLabel?.font = UIFont(name:"Kefa", size: 17)
         
         return cell

@@ -90,6 +90,10 @@ class RecipeBankViewController: UIViewController {
         return [recipe1, recipe2, recipe3]
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "RecipeBankToRecipe", sender: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

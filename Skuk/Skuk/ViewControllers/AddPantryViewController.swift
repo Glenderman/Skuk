@@ -1,22 +1,20 @@
 //
-//  BarcodeScannerViewController.swift
+//  AddPantryViewController.swift
 //  Skuk
 //
-//  Created by Glen Griffiths on 09/04/2019.
+//  Created by Glen Griffiths on 25/04/2019.
 //  Copyright © 2019 Glen Griffiths. All rights reserved.
 //
 
 import UIKit
 
-class AddItemViewController: UIViewController, UITextFieldDelegate {
+class AddPantryViewController: UIViewController , UITextFieldDelegate {
+    
+    @IBOutlet var doneBtn: UIBarButtonItem!
+    @IBOutlet var cancelBtn: UIBarButtonItem!
     
     var newItem: String = ""
     @IBOutlet var addTextField: UITextField!
-    
-    @IBAction func barcodeBtn(_ sender: UIButton) {
-        sender.touchesBegan()
-        performSegue(withIdentifier: "AddToBarcode", sender: self)
-    }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         addTextField.resignFirstResponder()
@@ -28,7 +26,7 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "doneSegue" {
+        if segue.identifier == "donePantrySegue" {
             newItem = addTextField.text!
         }
     }
@@ -38,5 +36,9 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
         
         addTextField.delegate = self
         addTextField.layer.borderColor = UIColor.gray.cgColor
+        
+        doneBtn.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Kefa", size: 17)!], for: UIControl.State.normal)
+        cancelBtn.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Kefa", size: 17)!], for: UIControl.State.normal)
     }
 }
+

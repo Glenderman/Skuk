@@ -11,13 +11,12 @@ import Alamofire
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
     
-    let URL_USER_REGISTER = "https://student.csc.liv.ac.uk/~sgggrif2/v1/register.php"
+    let URL_USER_REGISTER = "https://student.csc.liv.ac.uk/~sghforbe/v1/register.php"
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var userNameField: UITextField!
     @IBOutlet var passwordField: UITextField!
     @IBOutlet var emailAddressField: UITextField!
-    @IBOutlet var errorMessage: UILabel!
     
     @IBAction func cancelBtn(_ sender: UIButton) {
         sender.touchesBegan()
@@ -35,29 +34,53 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         ]
         
         guard let username = userNameField.text, let password = passwordField.text, let name = nameField.text, let email = emailAddressField.text, !username.isEmpty, !password.isEmpty, !name.isEmpty, !email.isEmpty else {
-            errorMessage.text = "Required parameters are missing"
-            return }
+            let alertController = UIAlertController(title: "Error", message: "Fill in all fields", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
         
         guard let usernameCount = userNameField.text?.count, usernameCount > 5 else {
-            errorMessage.text = "Username length must be at least 6 characters"
-            return }
+            let alertController = UIAlertController(title: "Error", message: "Username must be at least 6 characters", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
         
-        guard let passwordCount = passwordField.text?.count, passwordCount > 5 else {
-            errorMessage.text = "Password length must at least 6 characters"
-            return }
+        guard let passwordValid = passwordField.text, passwordValid.isPassword else {
+            let alertController = UIAlertController(title: "Error", message: "Password must be 8 characters, include a Capital Letter and a Number", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
+        
+        guard let emailValid = emailAddressField.text, emailValid.isEmail else {
+            let alertController = UIAlertController(title: "Error", message: "Email Address must be a valid address", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            self.present(alertController, animated: true, completion: nil)
+            return
+        }
         
         Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {
             response in
             print(response)
             
             if let result = response.result.value {
-                let jsonData = result as! NSDictionary
+                let _ = result as! NSDictionary
                 
-                self.errorMessage.text = jsonData.value(forKey: "message") as! String?
                 self.nameField.text = ""
                 self.userNameField.text = ""
                 self.passwordField.text = ""
                 self.emailAddressField.text = ""
+                
+                let alertController = UIAlertController(title: "Done", message: "User Created", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
             }
         }
     }
@@ -93,5 +116,19 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         userNameField.layer.borderColor = borderColour.cgColor
         passwordField.layer.borderColor = borderColour.cgColor
         emailAddressField.layer.borderColor = borderColour.cgColor
+    }
+}
+
+extension String {
+    var isEmail: Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,20}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: self)
+    }
+    
+    var isPassword:Bool {
+        let passwordRegEx = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z!@#$%^&*()\\-_=+{}|?>.<,:;~`’]{8,}$"
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordRegEx)
+        return passwordTest.evaluate(with: self)
     }
 }

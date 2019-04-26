@@ -14,6 +14,9 @@ class RecipeViewController: UIViewController {
     
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
+    @IBOutlet var recipeTitle: UILabel!
+    @IBOutlet var recipeImage: UIImageView!
+    @IBOutlet var recipeIngredients: UILabel!
     
     @IBAction func navBtn(_ sender: Any) {
         if !menuOpen {
@@ -31,6 +34,7 @@ class RecipeViewController: UIViewController {
     }
     
     @IBAction func mealPlanBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "RecipeToRecipeBank", sender: self)
         sender.touchesBegan()
     }
     

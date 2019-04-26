@@ -11,11 +11,10 @@ import Alamofire
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    let URL_USER_LOGIN = "https://student.csc.liv.ac.uk/~sgggrif2/v1/login.php"
+    let URL_USER_LOGIN = "https://student.csc.liv.ac.uk/~sghforbe/v1/login.php"
     
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var passwordField: UITextField!
-    @IBOutlet var errorMessage: UILabel!
     
     @IBAction func loginBtn(_ sender: UIButton) {
         sender.touchesBegan()
@@ -35,7 +34,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 if(!(jsonData.value(forKey: "error") as! Bool)) {
                     self.performSegue(withIdentifier: "loginToMealPlan", sender: self)
                 } else {
-                    self.errorMessage.text = "Invalid Username or Password"
+                    let alertController = UIAlertController(title: "Error", message: "Invalid Username or Password", preferredStyle: .alert)
+                    let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    alertController.addAction(defaultAction)
+                    self.present(alertController, animated: true, completion: nil)
                 }
             }
         }

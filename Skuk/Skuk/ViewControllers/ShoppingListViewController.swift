@@ -15,7 +15,6 @@ class ShoppingListViewController: UIViewController {
     var newItem: String = ""
     var menuOpen = false
 
-    
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     @IBOutlet var shoppingListTable: UITableView!
@@ -118,6 +117,10 @@ extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource
         return shoppingItems.count
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "item", for: indexPath)
         cell.textLabel?.text = shoppingItems[indexPath.row]
@@ -126,11 +129,6 @@ extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource
         return cell
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-    //These two functions allow for cells to be deleted
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
