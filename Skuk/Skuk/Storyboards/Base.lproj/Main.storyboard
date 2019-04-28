@@ -586,6 +586,12 @@
                         <viewLayoutGuide key="safeArea" id="2LF-5g-UJ8"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recipe Bank" id="UeF-7m-7xP">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="b3n-6t-lCU">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="ZFc-rg-dBk" kind="presentation" id="kHI-9f-TH8"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="hamburgerIcon" id="GNe-7H-CUS">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -608,6 +614,99 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19o-lQ-cKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1611.5942028985507" y="453.34821428571428"/>
+        </scene>
+        <!--Add Recipe View Controller-->
+        <scene sceneID="Rs9-Io-AiG">
+            <objects>
+                <viewController id="ZFc-rg-dBk" customClass="AddRecipeViewController" customModule="Skuk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Grk-Eq-799">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dt-1V-1Ii">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Recipe Bank" id="RC7-nI-T8Q">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="xfa-dL-Y5t">
+                                            <connections>
+                                                <segue destination="d8s-Ms-EE6" kind="unwind" identifier="cancelRecipeBankSegue" unwindAction="cancelWithSegue:" id="xzh-Bm-TCb"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdp-tU-fPn">
+                                <rect key="frame" x="60" y="239" width="275" height="179"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Add Recipe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Puw-au-gB4">
+                                        <rect key="frame" x="30" y="24" width="214" height="20"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Recipe" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="2cZ-hq-3cm">
+                                        <rect key="frame" x="30" y="68" width="214" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqd-6Y-ttp">
+                                        <rect key="frame" x="0.0" y="132" width="275" height="47"/>
+                                        <color key="backgroundColor" name="NavigationGrey"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="b3D-bg-1tn"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Add Item">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="d8s-Ms-EE6" kind="unwind" identifier="doneRecipeBankSegue" unwindAction="doneWithSegue:" id="83V-3E-vbN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="SkukYellow"/>
+                                <constraints>
+                                    <constraint firstItem="Puw-au-gB4" firstAttribute="trailing" secondItem="2cZ-hq-3cm" secondAttribute="trailing" id="1Wm-mp-EE3"/>
+                                    <constraint firstItem="Puw-au-gB4" firstAttribute="leading" secondItem="cdp-tU-fPn" secondAttribute="leading" constant="30" id="5tt-om-csA"/>
+                                    <constraint firstAttribute="trailing" secondItem="dqd-6Y-ttp" secondAttribute="trailing" id="CRN-Kp-f8c"/>
+                                    <constraint firstItem="dqd-6Y-ttp" firstAttribute="top" secondItem="2cZ-hq-3cm" secondAttribute="bottom" constant="34" id="N1e-9K-WTe"/>
+                                    <constraint firstItem="2cZ-hq-3cm" firstAttribute="top" secondItem="Puw-au-gB4" secondAttribute="bottom" constant="24" id="Ny5-gf-1Se"/>
+                                    <constraint firstAttribute="bottom" secondItem="dqd-6Y-ttp" secondAttribute="bottom" id="OvH-qt-zwG"/>
+                                    <constraint firstItem="dqd-6Y-ttp" firstAttribute="leading" secondItem="cdp-tU-fPn" secondAttribute="leading" id="TK4-jO-cin"/>
+                                    <constraint firstItem="Puw-au-gB4" firstAttribute="leading" secondItem="2cZ-hq-3cm" secondAttribute="leading" id="fEC-fg-Wkt"/>
+                                    <constraint firstItem="2cZ-hq-3cm" firstAttribute="centerX" secondItem="dqd-6Y-ttp" secondAttribute="centerX" id="y0V-Lg-ghx"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2dt-1V-1Ii" secondAttribute="trailing" id="Axh-MM-rMm"/>
+                            <constraint firstItem="0RZ-ed-FIj" firstAttribute="bottom" secondItem="cdp-tU-fPn" secondAttribute="bottom" constant="360" id="GsK-bE-0h5"/>
+                            <constraint firstItem="0RZ-ed-FIj" firstAttribute="trailing" secondItem="cdp-tU-fPn" secondAttribute="trailing" constant="40" id="MOV-3O-Pp0"/>
+                            <constraint firstItem="2dt-1V-1Ii" firstAttribute="leading" secondItem="Grk-Eq-799" secondAttribute="leading" id="Nek-ah-NZC"/>
+                            <constraint firstItem="cdp-tU-fPn" firstAttribute="top" secondItem="Grk-Eq-799" secondAttribute="top" constant="239" id="SRo-nH-zbM"/>
+                            <constraint firstItem="2dt-1V-1Ii" firstAttribute="top" secondItem="0RZ-ed-FIj" secondAttribute="top" id="Vv4-xz-Nec"/>
+                            <constraint firstItem="cdp-tU-fPn" firstAttribute="leading" secondItem="0RZ-ed-FIj" secondAttribute="leading" constant="60" id="ZoH-ld-XP3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0RZ-ed-FIj"/>
+                    </view>
+                    <connections>
+                        <outlet property="addTextField" destination="2cZ-hq-3cm" id="bXp-ON-vLE"/>
+                        <outlet property="cancelBtn" destination="xfa-dL-Y5t" id="yDM-fb-jZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vj2-MS-API" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="d8s-Ms-EE6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1605.5999999999999" y="1192.6108374384237"/>
         </scene>
         <!--Settings-->
         <scene sceneID="XCK-XO-2G6">
@@ -1731,8 +1830,8 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="be4-eR-LPf">
                                 <rect key="frame" x="60" y="239" width="275" height="179"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Item to Shopping List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cf-ey-y0p">
-                                        <rect key="frame" x="30" y="24" width="199" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Item to Pantry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cf-ey-y0p">
+                                        <rect key="frame" x="30" y="24" width="215" height="20"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -1773,7 +1872,7 @@
                                     <constraint firstItem="XC4-23-pcS" firstAttribute="centerX" secondItem="xqy-NH-jD2" secondAttribute="centerX" id="Sjy-Ca-hOc"/>
                                     <constraint firstItem="5cf-ey-y0p" firstAttribute="leading" secondItem="be4-eR-LPf" secondAttribute="leading" constant="30" id="TDL-7Z-dU4"/>
                                     <constraint firstItem="xqy-NH-jD2" firstAttribute="top" secondItem="5cf-ey-y0p" secondAttribute="bottom" constant="24" id="XNz-s4-hDd"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5cf-ey-y0p" secondAttribute="trailing" constant="30" id="afb-do-TRu"/>
+                                    <constraint firstAttribute="trailing" secondItem="5cf-ey-y0p" secondAttribute="trailing" constant="30" id="afb-do-TRu"/>
                                     <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="xqy-NH-jD2" secondAttribute="trailing" constant="30" id="dlY-bo-YLz"/>
                                     <constraint firstItem="XC4-23-pcS" firstAttribute="leading" secondItem="be4-eR-LPf" secondAttribute="leading" id="xa5-As-v2x"/>
                                 </constraints>
@@ -1824,13 +1923,13 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RQK-rl-55q"/>
-        <segue reference="WLX-mI-kkR"/>
-        <segue reference="gdB-wj-RIN"/>
-        <segue reference="Kl0-xT-exs"/>
-        <segue reference="xuU-bQ-Ktq"/>
+        <segue reference="cgh-JY-Dhj"/>
+        <segue reference="uVQ-XV-qTt"/>
+        <segue reference="BS4-Ah-KhM"/>
+        <segue reference="eb6-wW-Na7"/>
+        <segue reference="QKC-R6-gQ8"/>
         <segue reference="CuL-34-7D2"/>
-        <segue reference="1Uy-ig-yNQ"/>
+        <segue reference="yEx-oo-HRc"/>
         <segue reference="Mzq-ul-xgr"/>
     </inferredMetricsTieBreakers>
 </document>

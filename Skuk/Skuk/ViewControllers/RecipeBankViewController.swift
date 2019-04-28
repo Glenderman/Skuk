@@ -61,6 +61,10 @@ class RecipeBankViewController: UIViewController {
         performSegue(withIdentifier: "RecipeBankToSettings", sender: self)
     }
     
+    @IBAction func cancel(segue: UIStoryboardSegue) {
+        
+    }
+    
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
