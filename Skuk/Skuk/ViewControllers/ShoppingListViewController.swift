@@ -14,7 +14,7 @@ class ShoppingListViewController: UIViewController {
     
     var newItem: String = ""
     var menuOpen = false
-
+    
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     @IBOutlet var shoppingListTable: UITableView!
@@ -125,7 +125,7 @@ extension ShoppingListViewController: UITableViewDelegate, UITableViewDataSource
         let cell = tableView.dequeueReusableCell(withIdentifier: "item", for: indexPath)
         cell.textLabel?.text = shoppingItems[indexPath.row]
         cell.textLabel?.font = UIFont(name:"Kefa", size: 17)
-
+        
         return cell
     }
     

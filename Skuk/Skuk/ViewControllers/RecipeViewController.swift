@@ -62,7 +62,7 @@ class RecipeViewController: UIViewController {
         performSegue(withIdentifier: "RecipeToSettings", sender: self)
         sender.touchesBegan()
     }
-
+    
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
