@@ -11,7 +11,7 @@ import Alamofire
 
 class RegisterViewController: UIViewController, UITextFieldDelegate {
     
-    let URL_USER_REGISTER = "https://student.csc.liv.ac.uk/~sghforbe/v1/register.php"
+    let registerURL = "https://student.csc.liv.ac.uk/~sghforbe/v1/register.php"
     
     @IBOutlet var nameField: UITextField!
     @IBOutlet var userNameField: UITextField!
@@ -32,7 +32,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             "name": nameField.text!,
             "email": emailAddressField.text!,
         ]
-        
+        //The following four guard statements add validation to the text fields
         guard let username = userNameField.text, let password = passwordField.text, let name = nameField.text, let email = emailAddressField.text, !username.isEmpty, !password.isEmpty, !name.isEmpty, !email.isEmpty else {
             let alertController = UIAlertController(title: "Error", message: "Fill in all fields", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -65,13 +65,13 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
             return
         }
         
-        Alamofire.request(URL_USER_REGISTER, method: .post, parameters: parameters).responseJSON {
+        Alamofire.request(registerURL, method: .post, parameters: parameters).responseJSON {
             response in
             print(response)
             
             if let result = response.result.value {
                 let _ = result as! NSDictionary
-                
+                //empties the text in the text fields and popup message shows to say user has been created
                 self.nameField.text = ""
                 self.userNameField.text = ""
                 self.passwordField.text = ""
@@ -118,7 +118,7 @@ class RegisterViewController: UIViewController, UITextFieldDelegate {
         emailAddressField.layer.borderColor = borderColour.cgColor
     }
 }
-
+//This extenstion checked that the email and password and valid and the var is called in the guard statements above
 extension String {
     var isEmail: Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,20}"

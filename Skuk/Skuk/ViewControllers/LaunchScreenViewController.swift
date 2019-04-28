@@ -20,7 +20,7 @@ class LaunchScreenViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         self.splashAnimation()
-        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(nextVC), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(nextVC), userInfo: nil, repeats: false) //Timer calls next view controller after alloted time
     }
     
     @objc func nextVC() {

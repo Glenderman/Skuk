@@ -11,7 +11,7 @@ import Alamofire
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
-    let URL_USER_LOGIN = "https://student.csc.liv.ac.uk/~sghforbe/v1/login.php"
+    let loginURL = "https://student.csc.liv.ac.uk/~sghforbe/v1/login.php"
     
     @IBOutlet var usernameField: UITextField!
     @IBOutlet var passwordField: UITextField!
@@ -23,8 +23,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             "username": usernameField.text!,
             "password": passwordField.text!
         ]
-        
-        Alamofire.request(URL_USER_LOGIN, method: .post, parameters: parameters).responseJSON {
+        //connects to service uses loginURl which is a PHP script connected to MYSQL database allowing for login services
+        Alamofire.request(loginURL, method: .post, parameters: parameters).responseJSON {
             response in
             print(response)
             
@@ -33,7 +33,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 
                 if(!(jsonData.value(forKey: "error") as! Bool)) {
                     self.performSegue(withIdentifier: "loginToMealPlan", sender: self)
-                } else {
+                } else { //Popup message message
                     let alertController = UIAlertController(title: "Error", message: "Invalid Username or Password", preferredStyle: .alert)
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
@@ -47,7 +47,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         sender.touchesBegan()
         performSegue(withIdentifier: "LoginToRegister", sender: self)
     }
-    
+    //This function lets for the next button on the username field take the keyboard to the password field and for the done button on the keyboard to close the keyboard
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == self.usernameField {
             self.passwordField.becomeFirstResponder()
@@ -55,7 +55,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textField.resignFirstResponder()
         return true
     }
-    
+    //Function allows for user to click outside the keyboard/text fields and close the keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -65,7 +65,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         usernameField.delegate = self
         passwordField.delegate = self
-        
+        //Changes border color of text fields
         let borderColour = UIColor.gray
         usernameField.layer.borderColor = borderColour.cgColor
         passwordField.layer.borderColor = borderColour.cgColor

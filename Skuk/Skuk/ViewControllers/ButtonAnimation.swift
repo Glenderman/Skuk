@@ -8,9 +8,8 @@
 
 import Foundation
 import UIKit
-
+//This button extensions adds an animation onto buttons which uses this function
 extension UIButton {
-    
     func touchesBegan() {
         self.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         

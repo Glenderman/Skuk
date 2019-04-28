@@ -16,18 +16,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
+        //Setup to connect chatbot with API service
         let configuration = AIDefaultConfiguration()
         configuration.clientAccessToken = "dcfbe45760c448bba7f2058d08d6d43c"
-        
-        let apiai = ApiAI.shared()
-        apiai?.configuration = configuration
-        
-        let navigationBarAppearance = UINavigationBar.appearance()
-        
-        navigationBarAppearance.tintColor = UIColor(red:255/255, green:255/255, blue:255/255, alpha:1)
-        navigationBarAppearance.barTintColor = UIColor(red:1.00, green:0.75, blue:0.01, alpha:1.0)
-        navigationBarAppearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Kefa", size: 30)!]
+        //connects to chat bot service
+        let apiAI = ApiAI.shared()
+        apiAI!.configuration = configuration
+        //Changes default appearance of navigation bar on all Views
+        let navBar = UINavigationBar.appearance()
+        navBar.tintColor = UIColor(red:255/255, green:255/255, blue:255/255, alpha:1)
+        navBar.barTintColor = UIColor(red:1.00, green:0.75, blue:0.01, alpha:1.0)
+        navBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white, NSAttributedString.Key.font: UIFont(name: "Kefa", size: 30)!]
         
         return true
     }

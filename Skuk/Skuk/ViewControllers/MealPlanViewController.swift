@@ -17,7 +17,7 @@ class MealPlanViewController: UIViewController {
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
     @IBOutlet var mealPlanTable: UITableView!
-    
+    //This allows for the menu to slide out/in on touch of the hamburger menu icon
     @IBAction func slideOutMenu(_ sender: Any) {
         if !menuOpen {
             leadingConstraint.constant = -130
@@ -77,7 +77,7 @@ class MealPlanViewController: UIViewController {
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        let detailVC = segue.destination as! RecipeViewController
 //    }
-    
+    //Allows for swiping left and right to close the menu
     @objc func handleSwipe(sender: UISwipeGestureRecognizer) {
         if sender.state == .ended {
             switch sender.direction {
@@ -103,7 +103,7 @@ class MealPlanViewController: UIViewController {
         super.viewDidLoad()
         mealPlanTable.tableFooterView = UIView(frame: CGRect.zero)
         recipes = createArray()
-        
+        //These lines below use the handleSwipe function so that the swipe works to open the menu
         let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipe(sender:)))
         swipeRight.direction = .right
         
@@ -125,13 +125,13 @@ class RecipeCell: UITableViewCell {
         mealLbl.text = recipe.title
     }
 }
-
+//Extension allows for manuipulation of table
 extension MealPlanViewController: UITableViewDataSource, UITableViewDelegate {
-    
+    //The number of rows is the number of items in recipes array
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
     }
-    
+    //Following two functions allow for rows to be deleted
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
