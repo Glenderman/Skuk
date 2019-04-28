@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wd3-1M-7hn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hMV-jp-oyL">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -39,8 +39,8 @@
                         </subviews>
                         <color key="backgroundColor" name="SkukYellow"/>
                         <constraints>
-                            <constraint firstItem="MGt-Y2-OJf" firstAttribute="top" secondItem="QWu-xQ-VGa" secondAttribute="top" constant="200" id="tCC-Ym-2WY"/>
-                            <constraint firstItem="MGt-Y2-OJf" firstAttribute="centerX" secondItem="vXp-CX-06i" secondAttribute="centerX" id="uVx-1r-U8D"/>
+                            <constraint firstItem="MGt-Y2-OJf" firstAttribute="centerX" secondItem="vXp-CX-06i" secondAttribute="centerX" id="2Vv-bn-EJF"/>
+                            <constraint firstItem="MGt-Y2-OJf" firstAttribute="top" secondItem="QWu-xQ-VGa" secondAttribute="top" constant="200" id="XFe-9k-KIJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QWu-xQ-VGa"/>
                     </view>
@@ -521,14 +521,9 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VM6-rt-y7P">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <searchBar key="tableHeaderView" contentMode="redraw" id="mvj-bf-NaU">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </searchBar>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="recipeBankCell" rowHeight="120" id="k6z-uH-tPI" customClass="RecipeMealCell" customModule="Skuk" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="72" width="375" height="120"/>
+                                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="k6z-uH-tPI" id="6b3-kt-Vug">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.66666666666667"/>
@@ -542,7 +537,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fcf-bj-qKQ">
-                                                            <rect key="frame" x="210.00000000000003" y="15" width="40.666666666666657" height="20"/>
+                                                            <rect key="frame" x="210" y="15" width="40.666666666666657" height="20"/>
                                                             <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -840,7 +835,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skükena" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="33c-2K-DGR">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Skükella" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="33c-2K-DGR">
                                         <rect key="frame" x="97" y="166" width="181" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
@@ -1069,14 +1064,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZI-Cp-24j">
-                                <rect key="frame" x="0.0" y="46" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Shopping List" id="bk5-g6-MNy"/>
-                                </items>
-                            </navigationBar>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeL-TB-3tr">
-                                <rect key="frame" x="50" y="229" width="275" height="179"/>
+                                <rect key="frame" x="50" y="229" width="259" height="179"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Item to Shopping List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5p3-lU-FRv">
                                         <rect key="frame" x="30" y="24" width="199" height="20"/>
@@ -1085,7 +1074,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uBZ-0c-CG7">
-                                        <rect key="frame" x="30" y="68" width="215" height="30"/>
+                                        <rect key="frame" x="30" y="68" width="199" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
@@ -1113,7 +1102,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woA-Ks-feP">
-                                        <rect key="frame" x="137" y="132" width="138" height="47"/>
+                                        <rect key="frame" x="137" y="132" width="122" height="47"/>
                                         <color key="backgroundColor" name="NavigationGrey"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <state key="normal" title="Add Item">
@@ -1140,28 +1129,40 @@
                                     <constraint firstAttribute="bottom" secondItem="5s5-si-deW" secondAttribute="bottom" id="xVy-9e-Sfc"/>
                                 </constraints>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZI-Cp-24j">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Shopping List" id="bk5-g6-MNy">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Zsj-rt-cQV">
+                                            <connections>
+                                                <segue destination="f06-L2-Rpp" kind="unwind" unwindAction="cancelWithSegue:" id="MJx-Fs-X5D"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="oZI-Cp-24j" secondAttribute="trailing" id="9LT-GB-Uno"/>
                             <constraint firstItem="deV-pY-S3E" firstAttribute="bottom" secondItem="zeL-TB-3tr" secondAttribute="bottom" constant="370" id="BNv-77-Hbi"/>
-                            <constraint firstItem="zeL-TB-3tr" firstAttribute="centerX" secondItem="oZI-Cp-24j" secondAttribute="centerX" id="VRX-yV-rbQ"/>
+                            <constraint firstItem="oZI-Cp-24j" firstAttribute="leading" secondItem="3x2-fj-7h2" secondAttribute="leading" id="RUk-Ri-IIi"/>
                             <constraint firstItem="zeL-TB-3tr" firstAttribute="top" secondItem="3x2-fj-7h2" secondAttribute="top" constant="229" id="hGD-dh-s37"/>
-                            <constraint firstItem="oZI-Cp-24j" firstAttribute="leading" secondItem="3x2-fj-7h2" secondAttribute="leading" id="u5k-Ex-Ugm"/>
+                            <constraint firstItem="oZI-Cp-24j" firstAttribute="top" secondItem="deV-pY-S3E" secondAttribute="top" id="kyo-Bg-3kZ"/>
+                            <constraint firstAttribute="trailing" secondItem="oZI-Cp-24j" secondAttribute="trailing" id="pJy-x7-Fa0"/>
                             <constraint firstItem="zeL-TB-3tr" firstAttribute="leading" secondItem="deV-pY-S3E" secondAttribute="leading" constant="50" id="xvs-Ua-O8g"/>
-                            <constraint firstItem="oZI-Cp-24j" firstAttribute="top" secondItem="deV-pY-S3E" secondAttribute="top" constant="2" id="zMo-uP-pdw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="deV-pY-S3E"/>
                     </view>
                     <connections>
                         <outlet property="addTextField" destination="uBZ-0c-CG7" id="gAH-38-8Oj"/>
+                        <outlet property="cancelBtn" destination="Zsj-rt-cQV" id="7bY-RO-GSx"/>
                         <segue destination="irf-PD-sm5" kind="show" identifier="AddToBarcode" id="4Tm-E6-Jga"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dld-th-Vpr" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="f06-L2-Rpp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3656.8000000000002" y="-1397.2906403940888"/>
+            <point key="canvasLocation" x="3656.521739130435" y="-1398.0978260869567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="86w-xd-Snu">
@@ -1541,14 +1542,9 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fvF-2M-drI">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <searchBar key="tableHeaderView" contentMode="redraw" text="" placeholder="Search Recipe" showsCancelButton="YES" id="4kX-5o-PXe">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
-                                        </searchBar>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="mealCell" rowHeight="120" id="hoD-Of-u88" customClass="RecipeCell" customModule="Skuk" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="72" width="375" height="120"/>
+                                                <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hoD-Of-u88" id="wYh-6U-BeZ">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119.66666666666667"/>
@@ -1732,37 +1728,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsZ-lv-ACa">
-                                <rect key="frame" x="0.0" y="46" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="Pantry" id="QGf-ea-NRO">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="gkC-24-nqo">
-                                            <connections>
-                                                <segue destination="oP1-jP-PmI" kind="unwind" identifier="cancelPantrySegue" unwindAction="doneWithSegue:" id="YQV-kB-oix"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="Done" id="HBB-ew-kXf">
-                                            <connections>
-                                                <segue destination="oP1-jP-PmI" kind="unwind" identifier="donePantrySegue" unwindAction="doneWithSegue:" id="uvr-yB-6ih"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lJ-Ue-uAa">
-                                <rect key="frame" x="50" y="229" width="275" height="150"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="be4-eR-LPf">
+                                <rect key="frame" x="60" y="239" width="275" height="179"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Item to Pantry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UXF-VD-NWU">
-                                        <rect key="frame" x="30" y="24" width="146" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Item to Shopping List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cf-ey-y0p">
+                                        <rect key="frame" x="30" y="24" width="199" height="20"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RpI-Xj-qa6">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xqy-NH-jD2">
                                         <rect key="frame" x="30" y="68" width="215" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1771,40 +1750,68 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XC4-23-pcS">
+                                        <rect key="frame" x="0.0" y="132" width="275" height="47"/>
+                                        <color key="backgroundColor" name="NavigationGrey"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="Vrg-I2-smt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
+                                        <state key="normal" title="Add Item">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="oP1-jP-PmI" kind="unwind" identifier="donePantrySegue" unwindAction="doneWithSegue:" id="J07-zJ-tJA"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" name="SkukYellow"/>
                                 <constraints>
-                                    <constraint firstItem="UXF-VD-NWU" firstAttribute="top" secondItem="5lJ-Ue-uAa" secondAttribute="top" constant="24" id="DMu-1T-jGO"/>
-                                    <constraint firstItem="RpI-Xj-qa6" firstAttribute="leading" secondItem="5lJ-Ue-uAa" secondAttribute="leading" constant="30" id="WRI-k5-3KJ"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UXF-VD-NWU" secondAttribute="trailing" constant="30" id="dJ8-3B-Yem"/>
-                                    <constraint firstItem="RpI-Xj-qa6" firstAttribute="top" secondItem="UXF-VD-NWU" secondAttribute="bottom" constant="24" id="mkx-BA-KY1"/>
-                                    <constraint firstItem="UXF-VD-NWU" firstAttribute="leading" secondItem="5lJ-Ue-uAa" secondAttribute="leading" constant="30" id="yec-3s-0Fm"/>
-                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="RpI-Xj-qa6" secondAttribute="trailing" constant="30" id="zrd-6d-eZH"/>
+                                    <constraint firstItem="xqy-NH-jD2" firstAttribute="leading" secondItem="be4-eR-LPf" secondAttribute="leading" constant="30" id="3Uf-sH-FLd"/>
+                                    <constraint firstItem="5cf-ey-y0p" firstAttribute="top" secondItem="be4-eR-LPf" secondAttribute="top" constant="24" id="EWZ-de-ij8"/>
+                                    <constraint firstAttribute="bottom" secondItem="XC4-23-pcS" secondAttribute="bottom" id="GYb-px-tnY"/>
+                                    <constraint firstItem="XC4-23-pcS" firstAttribute="centerX" secondItem="xqy-NH-jD2" secondAttribute="centerX" id="Sjy-Ca-hOc"/>
+                                    <constraint firstItem="5cf-ey-y0p" firstAttribute="leading" secondItem="be4-eR-LPf" secondAttribute="leading" constant="30" id="TDL-7Z-dU4"/>
+                                    <constraint firstItem="xqy-NH-jD2" firstAttribute="top" secondItem="5cf-ey-y0p" secondAttribute="bottom" constant="24" id="XNz-s4-hDd"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="5cf-ey-y0p" secondAttribute="trailing" constant="30" id="afb-do-TRu"/>
+                                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="xqy-NH-jD2" secondAttribute="trailing" constant="30" id="dlY-bo-YLz"/>
+                                    <constraint firstItem="XC4-23-pcS" firstAttribute="leading" secondItem="be4-eR-LPf" secondAttribute="leading" id="xa5-As-v2x"/>
                                 </constraints>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LsZ-lv-ACa">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Pantry" id="QGf-ea-NRO">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="gkC-24-nqo">
+                                            <connections>
+                                                <segue destination="oP1-jP-PmI" kind="unwind" unwindAction="cancelWithSegue:" id="hU2-x0-43j"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="LsZ-lv-ACa" firstAttribute="top" secondItem="UBF-mO-dcK" secondAttribute="top" constant="2" id="H0P-bm-IIA"/>
-                            <constraint firstItem="5lJ-Ue-uAa" firstAttribute="leading" secondItem="UBF-mO-dcK" secondAttribute="leading" constant="50" id="NIM-xD-y8t"/>
-                            <constraint firstItem="5lJ-Ue-uAa" firstAttribute="centerX" secondItem="LsZ-lv-ACa" secondAttribute="centerX" id="YcU-nc-Ial"/>
-                            <constraint firstItem="UBF-mO-dcK" firstAttribute="bottom" secondItem="5lJ-Ue-uAa" secondAttribute="bottom" constant="399" id="bQp-Xa-9un"/>
+                            <constraint firstItem="be4-eR-LPf" firstAttribute="top" secondItem="WjZ-q1-wMl" secondAttribute="top" constant="239" id="7b4-Eb-oko"/>
+                            <constraint firstItem="UBF-mO-dcK" firstAttribute="trailing" secondItem="be4-eR-LPf" secondAttribute="trailing" constant="40" id="DPI-tF-laa"/>
+                            <constraint firstItem="LsZ-lv-ACa" firstAttribute="top" secondItem="UBF-mO-dcK" secondAttribute="top" id="H0P-bm-IIA"/>
+                            <constraint firstItem="UBF-mO-dcK" firstAttribute="bottom" secondItem="be4-eR-LPf" secondAttribute="bottom" constant="360" id="J21-5o-6wy"/>
                             <constraint firstAttribute="trailing" secondItem="LsZ-lv-ACa" secondAttribute="trailing" id="e6D-Z0-K4q"/>
+                            <constraint firstItem="be4-eR-LPf" firstAttribute="leading" secondItem="UBF-mO-dcK" secondAttribute="leading" constant="60" id="tvw-kt-h9b"/>
                             <constraint firstItem="LsZ-lv-ACa" firstAttribute="leading" secondItem="WjZ-q1-wMl" secondAttribute="leading" id="vnu-gs-Tza"/>
-                            <constraint firstItem="5lJ-Ue-uAa" firstAttribute="top" secondItem="WjZ-q1-wMl" secondAttribute="top" constant="229" id="zWW-YI-C29"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UBF-mO-dcK"/>
                     </view>
                     <connections>
-                        <outlet property="addTextField" destination="RpI-Xj-qa6" id="yzk-kM-dHT"/>
-                        <outlet property="cancelBtn" destination="gkC-24-nqo" id="Shv-Bj-Y7L"/>
-                        <outlet property="doneBtn" destination="HBB-ew-kXf" id="IYf-y0-MpQ"/>
+                        <outlet property="addTextField" destination="xqy-NH-jD2" id="dr5-Oh-JXV"/>
+                        <outlet property="cancelBtn" destination="gkC-24-nqo" id="42b-WY-e5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lWn-Vz-va7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="oP1-jP-PmI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-422" y="1193"/>
+            <point key="canvasLocation" x="-423.19999999999999" y="1192.6108374384237"/>
         </scene>
     </scenes>
     <resources>
@@ -1813,18 +1820,17 @@
             <color red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="SkukYellow">
-            <color red="1" green="0.75294117647058822" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.99607843137254903" green="0.7803921568627451" blue="0.15294117647058825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4Tm-E6-Jga"/>
-        <segue reference="0YF-z4-Qnn"/>
-        <segue reference="pIE-ni-n0T"/>
-        <segue reference="ya4-vm-Sou"/>
-        <segue reference="gAs-ks-imB"/>
-        <segue reference="8mx-Me-fTS"/>
-        <segue reference="vTv-PU-2Ye"/>
-        <segue reference="0ax-ug-1ky"/>
+        <segue reference="RQK-rl-55q"/>
+        <segue reference="WLX-mI-kkR"/>
+        <segue reference="gdB-wj-RIN"/>
+        <segue reference="Kl0-xT-exs"/>
+        <segue reference="xuU-bQ-Ktq"/>
+        <segue reference="CuL-34-7D2"/>
+        <segue reference="1Uy-ig-yNQ"/>
         <segue reference="Mzq-ul-xgr"/>
     </inferredMetricsTieBreakers>
 </document>

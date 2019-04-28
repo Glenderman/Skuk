@@ -12,6 +12,7 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
     
     var newItem: String = ""
     @IBOutlet var addTextField: UITextField!
+    @IBOutlet var cancelBtn: UIBarButtonItem!
     
     @IBAction func barcodeBtn(_ sender: UIButton) {
         sender.touchesBegan()
@@ -38,5 +39,12 @@ class AddItemViewController: UIViewController, UITextFieldDelegate {
         
         addTextField.delegate = self
         addTextField.layer.borderColor = UIColor.gray.cgColor
+        
+        cancelBtn.setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Kefa", size: 17)!], for: UIControl.State.normal)
+        
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        if statusBar.responds(to: #selector(setter: UIView.backgroundColor)) {
+            statusBar.backgroundColor = UIColor(red:1.00, green:0.78, blue:0.15, alpha:1.0)
+        }
     }
 }

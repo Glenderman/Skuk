@@ -8,10 +8,11 @@
 
 import UIKit
 
+var recipes: [Recipe] = []
+
 class MealPlanViewController: UIViewController {
     
     var menuOpen = false
-    var recipes: [Recipe] = []
     
     @IBOutlet var leadingConstraint: NSLayoutConstraint!
     @IBOutlet var trailingConstraint: NSLayoutConstraint!
@@ -129,6 +130,19 @@ extension MealPlanViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return recipes.count
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            recipes.remove(at: indexPath.row)
+            mealPlanTable.beginUpdates()
+            mealPlanTable.deleteRows(at: [indexPath], with: .fade)
+            mealPlanTable.endUpdates()
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
