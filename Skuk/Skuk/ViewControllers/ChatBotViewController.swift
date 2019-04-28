@@ -36,6 +36,7 @@ class ChatBotViewController: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func sendMessageBtn(_ sender: UIButton) {
+        sender.touchesBegan()
         let request = ApiAI.shared().textRequest()
         
         if let text = self.messageTextField.text, text != "" {

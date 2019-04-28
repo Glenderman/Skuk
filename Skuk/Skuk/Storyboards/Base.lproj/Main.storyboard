@@ -938,7 +938,7 @@
                                         <rect key="frame" x="97" y="166" width="181" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" name="Kefa-Regular" family="Kefa" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -1923,11 +1923,11 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="cgh-JY-Dhj"/>
-        <segue reference="uVQ-XV-qTt"/>
-        <segue reference="BS4-Ah-KhM"/>
-        <segue reference="eb6-wW-Na7"/>
-        <segue reference="QKC-R6-gQ8"/>
+        <segue reference="RQK-rl-55q"/>
+        <segue reference="WLX-mI-kkR"/>
+        <segue reference="gdB-wj-RIN"/>
+        <segue reference="Kl0-xT-exs"/>
+        <segue reference="xuU-bQ-Ktq"/>
         <segue reference="CuL-34-7D2"/>
         <segue reference="yEx-oo-HRc"/>
         <segue reference="Mzq-ul-xgr"/>

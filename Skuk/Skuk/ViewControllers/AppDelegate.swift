@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         configuration.clientAccessToken = "dcfbe45760c448bba7f2058d08d6d43c"
         //connects to chat bot service
         let apiAI = ApiAI.shared()
-        apiAI!.configuration = configuration
+        apiAI?.configuration = configuration
         //Changes default appearance of navigation bar on all Views
         let navBar = UINavigationBar.appearance()
         navBar.tintColor = UIColor(red:255/255, green:255/255, blue:255/255, alpha:1)
