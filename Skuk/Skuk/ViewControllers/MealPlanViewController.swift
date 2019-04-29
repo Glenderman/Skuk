@@ -66,8 +66,19 @@ class MealPlanViewController: UIViewController {
         let recipe1 = Recipe(image: #imageLiteral(resourceName: "Cheesecake"), title: "Cheesecake")
         let recipe2 = Recipe(image: #imageLiteral(resourceName: "ChickenPotPie"), title: "Chicken Pot Pie")
         let recipe3 = Recipe(image: #imageLiteral(resourceName: "Lasagna"), title: "Lasagna")
+        let recipe4 = Recipe(image: #imageLiteral(resourceName: "ChickenChowMein"), title: "Chicken Chow Mein")
+        let recipe5 = Recipe(image: #imageLiteral(resourceName: "Brownies"), title: "Brownies")
+        let recipe6 = Recipe(image: #imageLiteral(resourceName: "Prawns"), title: "Coronation Prawns on Toasted Naan")
+        let recipe7 = Recipe(image: #imageLiteral(resourceName: "TurkeyNoodles"), title: "Crispy Chilli Turkey Noodles")
+        let recipe8 = Recipe(image: #imageLiteral(resourceName: "Carrot Cake"), title: "Carrot Cake Granola")
+        let recipe9 = Recipe(image: #imageLiteral(resourceName: "FrenchToastie"), title: "French Toastie")
+        let recipe10 = Recipe(image: #imageLiteral(resourceName: "Salmon"), title: "Salmon")
+        let recipe11 = Recipe(image: #imageLiteral(resourceName: "CroqueMonsieur"), title: "Croque Monsieur")
+        let recipe12 = Recipe(image: #imageLiteral(resourceName: "DuckWrap"), title: "Duck Wrap")
+        let recipe13 = Recipe(image: #imageLiteral(resourceName: "Black Bean"), title: "Black Bean–Stuffed Sweet Potatoes")
+        let recipe14 = Recipe(image: #imageLiteral(resourceName: "PestoChickenBake"), title: "Pesto Chicken Bake")
         
-        return [recipe1, recipe2, recipe3]
+        return [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13, recipe14]
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
