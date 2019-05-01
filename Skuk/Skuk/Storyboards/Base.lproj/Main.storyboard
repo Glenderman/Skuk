@@ -925,8 +925,8 @@
                                             <action selector="sendMessageBtn:" destination="oAd-TD-GTW" eventType="touchUpInside" id="PNB-8X-pqo"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say Hi!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRC-KR-sVY">
-                                        <rect key="frame" x="57" y="48" width="261" height="66"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Say Hi!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRC-KR-sVY">
+                                        <rect key="frame" x="20" y="48" width="335" height="66"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="66" id="eno-L5-URX"/>
                                         </constraints>
@@ -952,7 +952,7 @@
                                 <constraints>
                                     <constraint firstItem="33c-2K-DGR" firstAttribute="top" secondItem="QRC-KR-sVY" secondAttribute="bottom" constant="52" id="N5J-gh-W8n"/>
                                     <constraint firstItem="33c-2K-DGR" firstAttribute="centerX" secondItem="ZPK-iI-8ia" secondAttribute="centerX" id="Ugn-Io-03g"/>
-                                    <constraint firstItem="QRC-KR-sVY" firstAttribute="leading" secondItem="GGO-eH-3bg" secondAttribute="leading" constant="57" id="bcI-GC-W1c"/>
+                                    <constraint firstItem="QRC-KR-sVY" firstAttribute="leading" secondItem="GGO-eH-3bg" secondAttribute="leading" constant="20" id="bcI-GC-W1c"/>
                                     <constraint firstItem="ZPK-iI-8ia" firstAttribute="top" secondItem="33c-2K-DGR" secondAttribute="bottom" constant="54" id="dYp-RR-2P4"/>
                                     <constraint firstItem="QRC-KR-sVY" firstAttribute="centerX" secondItem="GGO-eH-3bg" secondAttribute="centerX" id="fVA-ql-Rfr"/>
                                     <constraint firstItem="33c-2K-DGR" firstAttribute="leading" secondItem="GGO-eH-3bg" secondAttribute="leading" constant="97" id="h4P-bv-W1Q"/>
@@ -1005,7 +1005,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="V5Q-dF-los">
-                                <rect key="frame" x="260" y="54" width="105" height="232"/>
+                                <rect key="frame" x="260" y="98" width="105" height="232"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTs-RH-uxd">
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="32"/>
@@ -1074,7 +1074,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMp-Pc-QXF">
-                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bg7-8J-wVM">
                                         <rect key="frame" x="24" y="8" width="327" height="29"/>
@@ -1923,11 +1923,11 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XzB-aY-jIz"/>
-        <segue reference="u3e-Ym-iFI"/>
-        <segue reference="fTh-Wd-SeI"/>
-        <segue reference="FDC-Ac-oMW"/>
-        <segue reference="aT2-RB-fJs"/>
+        <segue reference="RQK-rl-55q"/>
+        <segue reference="WLX-mI-kkR"/>
+        <segue reference="gdB-wj-RIN"/>
+        <segue reference="Kl0-xT-exs"/>
+        <segue reference="xuU-bQ-Ktq"/>
         <segue reference="CuL-34-7D2"/>
         <segue reference="1Uy-ig-yNQ"/>
         <segue reference="Mzq-ul-xgr"/>

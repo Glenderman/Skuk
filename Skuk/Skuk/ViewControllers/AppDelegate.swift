@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         //Setup to connect chatbot with API service
         let configuration = AIDefaultConfiguration()
-        configuration.clientAccessToken = "dcfbe45760c448bba7f2058d08d6d43c"
+        configuration.clientAccessToken = "b32ffb8a08744cc6993234f57bb4596e"
         //connects to chat bot service
         let apiAI = ApiAI.shared()
         apiAI?.configuration = configuration

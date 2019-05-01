@@ -77,8 +77,9 @@ class MealPlanViewController: UIViewController {
         let recipe12 = Recipe(image: #imageLiteral(resourceName: "DuckWrap"), title: "Duck Wrap")
         let recipe13 = Recipe(image: #imageLiteral(resourceName: "Black Bean"), title: "Black Bean–Stuffed Sweet Potatoes")
         let recipe14 = Recipe(image: #imageLiteral(resourceName: "PestoChickenBake"), title: "Pesto Chicken Bake")
+        let recipe15 = Recipe(image: #imageLiteral(resourceName: "BeansWeiners"), title: "Beans and Weiners")
         
-        return [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13, recipe14]
+        return [recipe1, recipe2, recipe3, recipe4, recipe5, recipe6, recipe7, recipe8, recipe9, recipe10, recipe11, recipe12, recipe13, recipe14, recipe15]
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
